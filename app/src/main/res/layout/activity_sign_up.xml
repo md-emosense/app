@@ -28,8 +28,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="@android:color/white"
-                app:cardBorderColor="@color/primary"
-                app:cardBorderWidth="2dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true"
@@ -135,8 +133,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="@android:color/white"
-                app:cardBorderColor="@color/primary"
-                app:cardBorderWidth="2dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
                 app:cardUseCompatPadding="true"
@@ -237,11 +233,40 @@
 
             <Button
                 android:id="@+id/signupButton"
-                android:layout_width="match_parent"
-                android:layout_height="64dp"
-                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="end"
                 android:backgroundTint="@color/primary"
-                android:text="@string/signup" />
+                android:drawableEnd="@drawable/baseline_arrow_forward_24"
+                android:text="@string/signup"
+                android:paddingEnd="8dp"
+                android:paddingStart="16dp"
+                android:drawablePadding="8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/alreadyHaveAccountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah memiliki akun?"
+                    android:textColor="@android:color/black"
+                    android:paddingEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/loginTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

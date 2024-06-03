@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.EmoSense" >
         <activity
+            android:name="com.example.emosense.view.signup.SignUpActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.emosense.MainActivity"
             android:exported="true" >
             <intent-filter>

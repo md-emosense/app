@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:2:1-26:12
+ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:2:1-29:12
 MERGED from [androidx.databinding:viewbinding:8.4.0] /Users/refianyshadrina/.gradle/caches/transforms-4/d49931ad603f63c93f061b50c96b9b8f/transformed/viewbinding-8.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.12.0] /Users/refianyshadrina/.gradle/caches/transforms-4/004b5c6650afce95965544b16e73ebd0/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/refianyshadrina/.gradle/caches/transforms-4/0fb3108b3025993b4a78d472cabb24e6/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
@@ -60,8 +60,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/refianysh
 	xmlns:android
 		ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:5:5-24:19
-INJECTED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:5:5-24:19
+ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:5:5-27:19
+INJECTED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:5:5-27:19
 MERGED from [com.google.android.material:material:1.12.0] /Users/refianyshadrina/.gradle/caches/transforms-4/004b5c6650afce95965544b16e73ebd0/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /Users/refianyshadrina/.gradle/caches/transforms-4/004b5c6650afce95965544b16e73ebd0/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/refianyshadrina/.gradle/caches/transforms-4/0fb3108b3025993b4a78d472cabb24e6/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -100,22 +100,28 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/refi
 		ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:13:9-46
 	android:dataExtractionRules
 		ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:7:9-65
-activity#com.example.emosense.MainActivity
-ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:15:9-23:20
+activity#com.example.emosense.view.signup.SignUpActivity
+ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:15:9-17:40
 	android:exported
-		ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:17:13-36
+		ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:16:13-41
+		ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:16:13-55
+activity#com.example.emosense.MainActivity
+ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:18:9-26:20
+	android:exported
+		ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:20:13-36
+	android:name
+		ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:19:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:18:13-22:29
+ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:21:17-77
+ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:21:27-74
+		ADDED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml:24:27-74
 uses-sdk
 INJECTED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/refianyshadrina/Documents/emosense/app/src/main/AndroidManifest.xml
