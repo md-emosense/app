@@ -7,8 +7,8 @@
     <string name="title_signup_page">Data Diri</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="message_login_page">Masukkan dulu datamu ya</string>
-    <string name="title_login_page">Sudah siap untuk membagikan cerita?</string>
+    <string name="message_login_page">Siap membagikan cerita?</string>
+    <string name="title_login_page">Selamat Datang Kembali di Emosense!</string>
     <string name="name">Nama</string>
     <string name="greeting">Halo %1$s,</string>
     <string name="logout">Keluar</string>
