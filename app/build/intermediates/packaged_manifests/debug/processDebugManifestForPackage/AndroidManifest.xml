@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.EmoSense" >
         <activity
+            android:name="com.example.emosense.view.login.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.emosense.view.signup.SignUpActivity"
             android:exported="false" />
         <activity
@@ -39,6 +42,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

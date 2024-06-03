@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,6 +23,9 @@ import java.lang.String;
 public final class ActivitySignUpBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final TextView alreadyHaveAccountTextView;
 
   @NonNull
   public final CardView cardView;
@@ -69,6 +73,9 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final TextView familyTitleTextView;
 
   @NonNull
+  public final TextView loginTextView;
+
+  @NonNull
   public final ConstraintLayout main;
 
   @NonNull
@@ -90,12 +97,16 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final TextView passwordTextView;
 
   @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
   public final Button signupButton;
 
   @NonNull
   public final TextView titleTextView;
 
-  private ActivitySignUpBinding(@NonNull ConstraintLayout rootView, @NonNull CardView cardView,
+  private ActivitySignUpBinding(@NonNull ConstraintLayout rootView,
+      @NonNull TextView alreadyHaveAccountTextView, @NonNull CardView cardView,
       @NonNull TextInputEditText emailEditText, @NonNull TextInputLayout emailEditTextLayout,
       @NonNull TextView emailTextView, @NonNull TextInputEditText familyAdhdDescriptionEditText,
       @NonNull TextInputLayout familyAdhdDescriptionEditTextLayout,
@@ -104,12 +115,14 @@ public final class ActivitySignUpBinding implements ViewBinding {
       @NonNull TextInputLayout familyDobEditTextLayout, @NonNull TextView familyDobTextView,
       @NonNull TextInputEditText familyNameEditText,
       @NonNull TextInputLayout familyNameEditTextLayout, @NonNull TextView familyNameTextView,
-      @NonNull TextView familyTitleTextView, @NonNull ConstraintLayout main,
-      @NonNull TextInputEditText nameEditText, @NonNull TextInputLayout nameEditTextLayout,
-      @NonNull TextView nameTextView, @NonNull TextInputEditText passwordEditText,
-      @NonNull TextInputLayout passwordEditTextLayout, @NonNull TextView passwordTextView,
+      @NonNull TextView familyTitleTextView, @NonNull TextView loginTextView,
+      @NonNull ConstraintLayout main, @NonNull TextInputEditText nameEditText,
+      @NonNull TextInputLayout nameEditTextLayout, @NonNull TextView nameTextView,
+      @NonNull TextInputEditText passwordEditText, @NonNull TextInputLayout passwordEditTextLayout,
+      @NonNull TextView passwordTextView, @NonNull ProgressBar progressBar,
       @NonNull Button signupButton, @NonNull TextView titleTextView) {
     this.rootView = rootView;
+    this.alreadyHaveAccountTextView = alreadyHaveAccountTextView;
     this.cardView = cardView;
     this.emailEditText = emailEditText;
     this.emailEditTextLayout = emailEditTextLayout;
@@ -125,6 +138,7 @@ public final class ActivitySignUpBinding implements ViewBinding {
     this.familyNameEditTextLayout = familyNameEditTextLayout;
     this.familyNameTextView = familyNameTextView;
     this.familyTitleTextView = familyTitleTextView;
+    this.loginTextView = loginTextView;
     this.main = main;
     this.nameEditText = nameEditText;
     this.nameEditTextLayout = nameEditTextLayout;
@@ -132,6 +146,7 @@ public final class ActivitySignUpBinding implements ViewBinding {
     this.passwordEditText = passwordEditText;
     this.passwordEditTextLayout = passwordEditTextLayout;
     this.passwordTextView = passwordTextView;
+    this.progressBar = progressBar;
     this.signupButton = signupButton;
     this.titleTextView = titleTextView;
   }
@@ -163,6 +178,12 @@ public final class ActivitySignUpBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.alreadyHaveAccountTextView;
+      TextView alreadyHaveAccountTextView = ViewBindings.findChildViewById(rootView, id);
+      if (alreadyHaveAccountTextView == null) {
+        break missingId;
+      }
+
       id = R.id.cardView;
       CardView cardView = ViewBindings.findChildViewById(rootView, id);
       if (cardView == null) {
@@ -253,6 +274,12 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.loginTextView;
+      TextView loginTextView = ViewBindings.findChildViewById(rootView, id);
+      if (loginTextView == null) {
+        break missingId;
+      }
+
       ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.nameEditText;
@@ -291,6 +318,12 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
       id = R.id.signupButton;
       Button signupButton = ViewBindings.findChildViewById(rootView, id);
       if (signupButton == null) {
@@ -303,13 +336,14 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySignUpBinding((ConstraintLayout) rootView, cardView, emailEditText,
-          emailEditTextLayout, emailTextView, familyAdhdDescriptionEditText,
-          familyAdhdDescriptionEditTextLayout, familyAdhdDescriptionTextView, familyCardView,
-          familyDobEditText, familyDobEditTextLayout, familyDobTextView, familyNameEditText,
-          familyNameEditTextLayout, familyNameTextView, familyTitleTextView, main, nameEditText,
-          nameEditTextLayout, nameTextView, passwordEditText, passwordEditTextLayout,
-          passwordTextView, signupButton, titleTextView);
+      return new ActivitySignUpBinding((ConstraintLayout) rootView, alreadyHaveAccountTextView,
+          cardView, emailEditText, emailEditTextLayout, emailTextView,
+          familyAdhdDescriptionEditText, familyAdhdDescriptionEditTextLayout,
+          familyAdhdDescriptionTextView, familyCardView, familyDobEditText, familyDobEditTextLayout,
+          familyDobTextView, familyNameEditText, familyNameEditTextLayout, familyNameTextView,
+          familyTitleTextView, loginTextView, main, nameEditText, nameEditTextLayout, nameTextView,
+          passwordEditText, passwordEditTextLayout, passwordTextView, progressBar, signupButton,
+          titleTextView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -2988,6 +2988,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_arrow_forward_24
 drawable baseline_calendar_month_24
 drawable baseline_camera_alt_24
 drawable baseline_logout_24
@@ -3179,6 +3180,7 @@ id alertTitle
 id aligned
 id all
 id allStates
+id alreadyHaveAccountTextView
 id always
 id animateToEnd
 id animateToStart
@@ -3340,6 +3342,8 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id guidelineHorizontal
+id guidelineHorizontal2
 id header_title
 id hide_ime_id
 id hideable
@@ -3353,6 +3357,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3373,6 +3378,8 @@ id line3
 id linear
 id listMode
 id list_item
+id loginButton
+id loginTextView
 id logoTemp
 id m3_side_sheet
 id main
@@ -3402,6 +3409,7 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id message
+id messageTextView
 id middle
 id mini
 id month_grid
@@ -3496,6 +3504,7 @@ id postLayout
 id poster
 id pressed
 id profileButton
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -3543,6 +3552,8 @@ id showCustom
 id showHome
 id showTitle
 id signupButton
+id signupLinkTextView
+id signupTextView
 id sin
 id skipCollapsed
 id skipped
@@ -3763,6 +3774,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_login
 layout activity_main
 layout activity_sign_up
 layout custom_dialog
