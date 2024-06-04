@@ -1,4 +1,4 @@
-package com.example.emosense
+package com.example.emosense.view.main
 
 import android.os.Build
 import android.os.Bundle
