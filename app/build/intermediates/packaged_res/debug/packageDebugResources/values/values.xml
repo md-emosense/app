@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="light_gray">#9F9F9F</color>
     <color name="primary">#FF9800</color>
+    <color name="text_primary">#2D2D2D</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="white_primary">#F8F8FF</color>
     <string name="app_name">EmoSense</string>
     <string name="email">Email</string>
     <string name="family_adhd_description">Deskripsi ADHD</string>
@@ -22,6 +25,7 @@
     <string name="title_signup_page">Data Diri</string>
     <string name="title_welcome_page">Selamat datang di Dicoding!</string>
     <style name="Base.Theme.EmoSense" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/inter_medium</item>
         
         
     </style>

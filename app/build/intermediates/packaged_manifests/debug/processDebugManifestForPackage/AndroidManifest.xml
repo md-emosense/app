@@ -28,13 +28,22 @@
         android:testOnly="true"
         android:theme="@style/Theme.EmoSense" >
         <activity
+            android:name="com.example.emosense.view.clinic.ClinicActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.emosense.view.news.NewsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.emosense.view.profile.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.emosense.view.login.LoginActivity"
             android:exported="false" />
         <activity
             android:name="com.example.emosense.view.signup.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.emosense.MainActivity"
+            android:name="com.example.emosense.view.main.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

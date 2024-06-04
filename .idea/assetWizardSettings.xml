@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/arrow_forward/baseline_arrow_forward_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/arrow_back_ios_new/baseline_arrow_back_ios_new_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,8 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="baseline_arrow_forward_24" />
+                            <entry key="color" value="ff9800" />
+                            <entry key="outputName" value="ic_back" />
+                            <entry key="sourceFile" value="D:\emosense" />
                           </map>
                         </option>
                       </PersistentState>

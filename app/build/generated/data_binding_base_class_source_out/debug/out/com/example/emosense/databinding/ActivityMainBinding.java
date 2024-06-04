@@ -4,17 +4,17 @@ package com.example.emosense.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ScrollView;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.emosense.R;
-import com.google.android.material.imageview.ShapeableImageView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,101 +24,64 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final LinearLayout article1;
+  public final BottomNavigationView bottomNavigation;
 
   @NonNull
-  public final TextView article1Desc;
+  public final CardView imageView;
 
   @NonNull
-  public final ShapeableImageView article1Poster;
+  public final ConstraintLayout main;
 
   @NonNull
-  public final LinearLayout article1Text;
+  public final ImageButton profileButton;
 
   @NonNull
-  public final TextView article1Title;
+  public final RecyclerView rvClinic;
 
   @NonNull
-  public final LinearLayout article2;
+  public final RecyclerView rvNews;
 
   @NonNull
-  public final ShapeableImageView article2Poster;
+  public final TextView textView4;
 
   @NonNull
-  public final LinearLayout articleLayout2;
+  public final TextView textView5;
 
   @NonNull
-  public final TextView articleSection;
+  public final TextView tvMoreClinic;
 
   @NonNull
-  public final TextView articleTitle2;
+  public final TextView tvMoreNews;
 
   @NonNull
-  public final LinearLayout detailButton1;
+  public final TextView tvName;
 
   @NonNull
-  public final TextView detailButtonText1;
+  public final TextView tvTitle;
 
   @NonNull
-  public final TextView logoTemp;
+  public final TextView tvWelcome;
 
-  @NonNull
-  public final ImageView poster;
-
-  @NonNull
-  public final ImageView profileButton;
-
-  @NonNull
-  public final LinearLayout rgug36knhz3k;
-
-  @NonNull
-  public final ScrollView rsf1pk02okgd;
-
-  @NonNull
-  public final TextView rxbik0kiujoj;
-
-  @NonNull
-  public final TextView rygb2a2jny0m;
-
-  @NonNull
-  public final LinearLayout topPanel;
-
-  @NonNull
-  public final TextView welcomeText;
-
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout article1,
-      @NonNull TextView article1Desc, @NonNull ShapeableImageView article1Poster,
-      @NonNull LinearLayout article1Text, @NonNull TextView article1Title,
-      @NonNull LinearLayout article2, @NonNull ShapeableImageView article2Poster,
-      @NonNull LinearLayout articleLayout2, @NonNull TextView articleSection,
-      @NonNull TextView articleTitle2, @NonNull LinearLayout detailButton1,
-      @NonNull TextView detailButtonText1, @NonNull TextView logoTemp, @NonNull ImageView poster,
-      @NonNull ImageView profileButton, @NonNull LinearLayout rgug36knhz3k,
-      @NonNull ScrollView rsf1pk02okgd, @NonNull TextView rxbik0kiujoj,
-      @NonNull TextView rygb2a2jny0m, @NonNull LinearLayout topPanel,
-      @NonNull TextView welcomeText) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
+      @NonNull BottomNavigationView bottomNavigation, @NonNull CardView imageView,
+      @NonNull ConstraintLayout main, @NonNull ImageButton profileButton,
+      @NonNull RecyclerView rvClinic, @NonNull RecyclerView rvNews, @NonNull TextView textView4,
+      @NonNull TextView textView5, @NonNull TextView tvMoreClinic, @NonNull TextView tvMoreNews,
+      @NonNull TextView tvName, @NonNull TextView tvTitle, @NonNull TextView tvWelcome) {
     this.rootView = rootView;
-    this.article1 = article1;
-    this.article1Desc = article1Desc;
-    this.article1Poster = article1Poster;
-    this.article1Text = article1Text;
-    this.article1Title = article1Title;
-    this.article2 = article2;
-    this.article2Poster = article2Poster;
-    this.articleLayout2 = articleLayout2;
-    this.articleSection = articleSection;
-    this.articleTitle2 = articleTitle2;
-    this.detailButton1 = detailButton1;
-    this.detailButtonText1 = detailButtonText1;
-    this.logoTemp = logoTemp;
-    this.poster = poster;
+    this.bottomNavigation = bottomNavigation;
+    this.imageView = imageView;
+    this.main = main;
     this.profileButton = profileButton;
-    this.rgug36knhz3k = rgug36knhz3k;
-    this.rsf1pk02okgd = rsf1pk02okgd;
-    this.rxbik0kiujoj = rxbik0kiujoj;
-    this.rygb2a2jny0m = rygb2a2jny0m;
-    this.topPanel = topPanel;
-    this.welcomeText = welcomeText;
+    this.rvClinic = rvClinic;
+    this.rvNews = rvNews;
+    this.textView4 = textView4;
+    this.textView5 = textView5;
+    this.tvMoreClinic = tvMoreClinic;
+    this.tvMoreNews = tvMoreNews;
+    this.tvName = tvName;
+    this.tvTitle = tvTitle;
+    this.tvWelcome = tvWelcome;
   }
 
   @Override
@@ -148,137 +111,83 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.article1;
-      LinearLayout article1 = ViewBindings.findChildViewById(rootView, id);
-      if (article1 == null) {
+      id = R.id.bottom_navigation;
+      BottomNavigationView bottomNavigation = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavigation == null) {
         break missingId;
       }
 
-      id = R.id.article1Desc;
-      TextView article1Desc = ViewBindings.findChildViewById(rootView, id);
-      if (article1Desc == null) {
+      id = R.id.imageView;
+      CardView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
         break missingId;
       }
 
-      id = R.id.article1Poster;
-      ShapeableImageView article1Poster = ViewBindings.findChildViewById(rootView, id);
-      if (article1Poster == null) {
-        break missingId;
-      }
-
-      id = R.id.article1Text;
-      LinearLayout article1Text = ViewBindings.findChildViewById(rootView, id);
-      if (article1Text == null) {
-        break missingId;
-      }
-
-      id = R.id.article1Title;
-      TextView article1Title = ViewBindings.findChildViewById(rootView, id);
-      if (article1Title == null) {
-        break missingId;
-      }
-
-      id = R.id.article2;
-      LinearLayout article2 = ViewBindings.findChildViewById(rootView, id);
-      if (article2 == null) {
-        break missingId;
-      }
-
-      id = R.id.article2Poster;
-      ShapeableImageView article2Poster = ViewBindings.findChildViewById(rootView, id);
-      if (article2Poster == null) {
-        break missingId;
-      }
-
-      id = R.id.articleLayout2;
-      LinearLayout articleLayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (articleLayout2 == null) {
-        break missingId;
-      }
-
-      id = R.id.articleSection;
-      TextView articleSection = ViewBindings.findChildViewById(rootView, id);
-      if (articleSection == null) {
-        break missingId;
-      }
-
-      id = R.id.articleTitle2;
-      TextView articleTitle2 = ViewBindings.findChildViewById(rootView, id);
-      if (articleTitle2 == null) {
-        break missingId;
-      }
-
-      id = R.id.detailButton1;
-      LinearLayout detailButton1 = ViewBindings.findChildViewById(rootView, id);
-      if (detailButton1 == null) {
-        break missingId;
-      }
-
-      id = R.id.detailButtonText1;
-      TextView detailButtonText1 = ViewBindings.findChildViewById(rootView, id);
-      if (detailButtonText1 == null) {
-        break missingId;
-      }
-
-      id = R.id.logoTemp;
-      TextView logoTemp = ViewBindings.findChildViewById(rootView, id);
-      if (logoTemp == null) {
-        break missingId;
-      }
-
-      id = R.id.poster;
-      ImageView poster = ViewBindings.findChildViewById(rootView, id);
-      if (poster == null) {
-        break missingId;
-      }
+      ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.profileButton;
-      ImageView profileButton = ViewBindings.findChildViewById(rootView, id);
+      ImageButton profileButton = ViewBindings.findChildViewById(rootView, id);
       if (profileButton == null) {
         break missingId;
       }
 
-      id = R.id.rgug36knhz3k;
-      LinearLayout rgug36knhz3k = ViewBindings.findChildViewById(rootView, id);
-      if (rgug36knhz3k == null) {
+      id = R.id.rvClinic;
+      RecyclerView rvClinic = ViewBindings.findChildViewById(rootView, id);
+      if (rvClinic == null) {
         break missingId;
       }
 
-      id = R.id.rsf1pk02okgd;
-      ScrollView rsf1pk02okgd = ViewBindings.findChildViewById(rootView, id);
-      if (rsf1pk02okgd == null) {
+      id = R.id.rvNews;
+      RecyclerView rvNews = ViewBindings.findChildViewById(rootView, id);
+      if (rvNews == null) {
         break missingId;
       }
 
-      id = R.id.rxbik0kiujoj;
-      TextView rxbik0kiujoj = ViewBindings.findChildViewById(rootView, id);
-      if (rxbik0kiujoj == null) {
+      id = R.id.textView4;
+      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
+      if (textView4 == null) {
         break missingId;
       }
 
-      id = R.id.rygb2a2jny0m;
-      TextView rygb2a2jny0m = ViewBindings.findChildViewById(rootView, id);
-      if (rygb2a2jny0m == null) {
+      id = R.id.textView5;
+      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
+      if (textView5 == null) {
         break missingId;
       }
 
-      id = R.id.topPanel;
-      LinearLayout topPanel = ViewBindings.findChildViewById(rootView, id);
-      if (topPanel == null) {
+      id = R.id.tvMoreClinic;
+      TextView tvMoreClinic = ViewBindings.findChildViewById(rootView, id);
+      if (tvMoreClinic == null) {
         break missingId;
       }
 
-      id = R.id.welcomeText;
-      TextView welcomeText = ViewBindings.findChildViewById(rootView, id);
-      if (welcomeText == null) {
+      id = R.id.tvMoreNews;
+      TextView tvMoreNews = ViewBindings.findChildViewById(rootView, id);
+      if (tvMoreNews == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, article1, article1Desc,
-          article1Poster, article1Text, article1Title, article2, article2Poster, articleLayout2,
-          articleSection, articleTitle2, detailButton1, detailButtonText1, logoTemp, poster,
-          profileButton, rgug36knhz3k, rsf1pk02okgd, rxbik0kiujoj, rygb2a2jny0m, topPanel,
-          welcomeText);
+      id = R.id.tvName;
+      TextView tvName = ViewBindings.findChildViewById(rootView, id);
+      if (tvName == null) {
+        break missingId;
+      }
+
+      id = R.id.tvTitle;
+      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.tvWelcome;
+      TextView tvWelcome = ViewBindings.findChildViewById(rootView, id);
+      if (tvWelcome == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((ConstraintLayout) rootView, bottomNavigation, imageView, main,
+          profileButton, rvClinic, rvNews, textView4, textView5, tvMoreClinic, tvMoreNews, tvName,
+          tvTitle, tvWelcome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

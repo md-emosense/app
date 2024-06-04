@@ -1,14 +1,42 @@
 [
     {
-        "merged": "com.example.emosense.app-mergeDebugResources-42:/layout/activity_login.xml",
-        "source": "com.example.emosense.app-main-45:/layout/activity_login.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-42:\\layout\\activity_news.xml",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-45:\\layout\\activity_news.xml"
     },
     {
-        "merged": "com.example.emosense.app-mergeDebugResources-42:/layout/activity_main.xml",
-        "source": "com.example.emosense.app-main-45:/layout/activity_main.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-42:\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-45:\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "com.example.emosense.app-mergeDebugResources-42:/layout/activity_sign_up.xml",
-        "source": "com.example.emosense.app-main-45:/layout/activity_sign_up.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-42:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-45:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-42:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-45:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-42:\\layout\\activity_clinic.xml",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-45:\\layout\\activity_clinic.xml"
+    },
+    {
+        "merged": "com.example.emosense.app-mergeDebugResources-42:/layout/activity_news.xml",
+        "source": "com.example.emosense.app-main-45:/layout/activity_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-42:\\layout\\item_clinic.xml",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-45:\\layout\\item_clinic.xml"
+    },
+    {
+        "merged": "com.example.emosense.app-mergeDebugResources-42:/layout/activity_clinic.xml",
+        "source": "com.example.emosense.app-main-45:/layout/activity_clinic.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-42:\\layout\\item_news.xml",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-45:\\layout\\item_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-42:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-45:\\layout\\activity_login.xml"
     }
 ]

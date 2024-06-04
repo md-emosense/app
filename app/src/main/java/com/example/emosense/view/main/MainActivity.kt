@@ -1,5 +1,6 @@
 package com.example.emosense.view.main
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.WindowInsets
@@ -10,6 +11,9 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.bumptech.glide.Glide
 import com.example.emosense.databinding.ActivityMainBinding
+import com.example.emosense.view.clinic.ClinicActivity
+import com.example.emosense.view.news.NewsActivity
+import com.example.emosense.view.profile.ProfileActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -17,14 +21,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-//            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-//            insets
-//        }
 
-        //sdhasdjsad
         setupView()
+        setupAction()
 
     }
 
@@ -39,5 +38,22 @@ class MainActivity : AppCompatActivity() {
             )
         }
         supportActionBar?.hide()
+    }
+
+    private fun setupAction() {
+        binding.profileButton.setOnClickListener {
+            val intent = Intent(this@MainActivity, ProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.tvMoreNews.setOnClickListener {
+            val intent = Intent(this@MainActivity, NewsActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.tvMoreClinic.setOnClickListener {
+            val intent = Intent(this@MainActivity, ClinicActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
