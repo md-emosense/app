@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 //            insets
 //        }
 
+        //sdhasdjsad
         setupView()
 
     }
