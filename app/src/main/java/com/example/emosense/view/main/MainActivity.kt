@@ -1,4 +1,4 @@
-package com.example.emosense.view.main
+package com.example.emosense
 
 import android.os.Build
 import android.os.Bundle
@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 //            insets
 //        }
 
+        //sdhasdjsad
         setupView()
 
     }
