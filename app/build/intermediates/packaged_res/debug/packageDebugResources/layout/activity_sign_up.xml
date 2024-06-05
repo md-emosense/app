@@ -122,7 +122,7 @@
                         android:id="@+id/passwordEditTextLayout"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
-                        android:layout_height="63dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginBottom="0dp"
                         app:endIconMode="password_toggle"
                         app:errorEnabled="true"
@@ -227,7 +227,7 @@
                         android:id="@+id/familyAdhdDescriptionEditTextLayout"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
-                        android:layout_height="61dp"
+                        android:layout_height="wrap_content"
                         app:errorEnabled="true"
                         app:startIconDrawable="@drawable/baseline_post_add_24">
 

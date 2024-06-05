@@ -44,18 +44,10 @@ class LoginActivity : AppCompatActivity() {
         viewModel.message.observe(this) {message ->
             message?.let {
                 if (it == "Success") {
-                    AlertDialog.Builder(this).apply {
-                        setTitle("Sukses")
-                        setMessage("Autentikasi berhasil. Silakan lanjutkan untuk melihat Story")
-                        setPositiveButton("Lanjut") { _, _ ->
-                            val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-                            startActivity(intent)
-                            finish()
-                        }
-                        create()
-                        show()
-                    }
+                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                    startActivity(intent)
+                    finish()
                 } else {
                     AlertDialog.Builder(this).apply {
                         setTitle("Error")

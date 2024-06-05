@@ -28,12 +28,12 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/ic_person.xml"
     },
     {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/font_inter_regular.ttf.flat",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/font/inter_regular.ttf"
-    },
-    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/font_inter_regular.ttf.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/font/inter_regular.ttf"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_image_news_5.jpg.flat",
@@ -56,24 +56,28 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/ic_baseline_person_24.xml"
     },
     {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/ic_launcher_foreground.xml"
-    },
-    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/layout_item_news.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/item_news.xml"
+    },
+    {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/ic_launcher_foreground.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/layout_activity_news_detail.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/activity_news_detail.xml"
     },
     {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_post_add_24.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/baseline_post_add_24.xml"
+    },
+    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_image_news_1.jpg.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/image_news_1.jpg"
     },
     {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_post_add_24.xml.flat",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/baseline_post_add_24.xml"
+        "merged": "com.example.emosense.app-debug-43:/layout_activity_sign_up.xml.flat",
+        "source": "com.example.emosense.app-main-45:/layout/activity_sign_up.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_ic_baseline_email_24.xml.flat",
@@ -106,10 +110,6 @@
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/mipmap-mdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-43:/layout_activity_login.xml.flat",
-        "source": "com.example.emosense.app-main-45:/layout/activity_login.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_camera_alt_24.xml.flat",
