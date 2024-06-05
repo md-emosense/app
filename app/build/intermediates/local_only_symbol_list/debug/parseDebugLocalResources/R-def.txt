@@ -57,6 +57,7 @@ id guidelineHorizontal
 id guidelineHorizontal2
 id imageView
 id imageView3
+id informationalTextView
 id ivClinic
 id ivLogo
 id ivNews
@@ -86,6 +87,7 @@ id textView
 id textView2
 id textView4
 id textView5
+id titleDaftarTextView
 id titleTextView
 id tvDesc
 id tvMoreClinic

@@ -3374,6 +3374,7 @@ int id immediateStop 0x7f0a00f4
 int id included 0x7f0a00f5
 int id indeterminate 0x7f0a00f6
 int id info 0x7f0a00f7
+int id informationalTextView 0x7f0a022e
 int id invisible 0x7f0a00f8
 int id inward 0x7f0a00f9
 int id italic 0x7f0a00fa
@@ -3637,6 +3638,7 @@ int id textinput_prefix_text 0x7f0a01fb
 int id textinput_suffix_text 0x7f0a01fc
 int id time 0x7f0a01fd
 int id title 0x7f0a01fe
+int id titleDaftarTextView 0x7f0a022f
 int id titleDividerNoCustom 0x7f0a01ff
 int id titleTextView 0x7f0a0200
 int id title_template 0x7f0a0201
