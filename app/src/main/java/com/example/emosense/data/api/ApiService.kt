@@ -2,7 +2,6 @@ package com.example.emosense.data.api
 
 
 import com.example.emosense.data.response.RegisterResponse
-import com.google.gson.annotations.SerializedName
 import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
