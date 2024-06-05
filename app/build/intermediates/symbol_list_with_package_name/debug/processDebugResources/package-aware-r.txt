@@ -77,6 +77,9 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array data_description
+array data_photo
+array data_title
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -3039,6 +3042,12 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_person
 drawable ic_search_black_24
+drawable image_card_1
+drawable image_news_1
+drawable image_news_2
+drawable image_news_3
+drawable image_news_4
+drawable image_news_5
 drawable indeterminate_static
 drawable logo_landscape
 drawable m3_avd_hide_password
@@ -3371,6 +3380,7 @@ id inward
 id italic
 id item_touch_helper_previous_elevation
 id ivClinic
+id ivLogo
 id ivNews
 id jumpToEnd
 id jumpToStart
@@ -3506,6 +3516,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id photoCard
 id pin
 id position
 id postLayout
@@ -3645,6 +3656,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvDesc
 id tvMoreClinic
 id tvMoreNews
 id tvName
@@ -3791,6 +3803,7 @@ layout activity_clinic
 layout activity_login
 layout activity_main
 layout activity_news
+layout activity_news_detail
 layout activity_profile
 layout activity_sign_up
 layout custom_dialog

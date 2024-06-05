@@ -4,6 +4,7 @@ package com.example.emosense.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,15 +21,23 @@ public final class ItemNewsBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final CardView ivNews;
+  public final ImageView ivNews;
+
+  @NonNull
+  public final CardView photoCard;
+
+  @NonNull
+  public final TextView tvDesc;
 
   @NonNull
   public final TextView tvTitle;
 
-  private ItemNewsBinding(@NonNull CardView rootView, @NonNull CardView ivNews,
-      @NonNull TextView tvTitle) {
+  private ItemNewsBinding(@NonNull CardView rootView, @NonNull ImageView ivNews,
+      @NonNull CardView photoCard, @NonNull TextView tvDesc, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.ivNews = ivNews;
+    this.photoCard = photoCard;
+    this.tvDesc = tvDesc;
     this.tvTitle = tvTitle;
   }
 
@@ -60,8 +69,20 @@ public final class ItemNewsBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.ivNews;
-      CardView ivNews = ViewBindings.findChildViewById(rootView, id);
+      ImageView ivNews = ViewBindings.findChildViewById(rootView, id);
       if (ivNews == null) {
+        break missingId;
+      }
+
+      id = R.id.photoCard;
+      CardView photoCard = ViewBindings.findChildViewById(rootView, id);
+      if (photoCard == null) {
+        break missingId;
+      }
+
+      id = R.id.tvDesc;
+      TextView tvDesc = ViewBindings.findChildViewById(rootView, id);
+      if (tvDesc == null) {
         break missingId;
       }
 
@@ -71,7 +92,7 @@ public final class ItemNewsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemNewsBinding((CardView) rootView, ivNews, tvTitle);
+      return new ItemNewsBinding((CardView) rootView, ivNews, photoCard, tvDesc, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.EmoSense" >
         <activity
+            android:name="com.example.emosense.view.news.NewsDetailActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.emosense.view.clinic.ClinicActivity"
             android:exported="false" />
         <activity

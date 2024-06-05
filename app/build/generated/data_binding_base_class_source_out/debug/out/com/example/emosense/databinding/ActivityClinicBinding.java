@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.emosense.R;
@@ -27,13 +28,17 @@ public final class ActivityClinicBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final RecyclerView rvClinic;
+
+  @NonNull
   public final TextView textView2;
 
   private ActivityClinicBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton backButton,
-      @NonNull ConstraintLayout main, @NonNull TextView textView2) {
+      @NonNull ConstraintLayout main, @NonNull RecyclerView rvClinic, @NonNull TextView textView2) {
     this.rootView = rootView;
     this.backButton = backButton;
     this.main = main;
+    this.rvClinic = rvClinic;
     this.textView2 = textView2;
   }
 
@@ -72,13 +77,20 @@ public final class ActivityClinicBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.rvClinic;
+      RecyclerView rvClinic = ViewBindings.findChildViewById(rootView, id);
+      if (rvClinic == null) {
+        break missingId;
+      }
+
       id = R.id.textView2;
       TextView textView2 = ViewBindings.findChildViewById(rootView, id);
       if (textView2 == null) {
         break missingId;
       }
 
-      return new ActivityClinicBinding((ConstraintLayout) rootView, backButton, main, textView2);
+      return new ActivityClinicBinding((ConstraintLayout) rootView, backButton, main, rvClinic,
+          textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

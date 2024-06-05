@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,6 +32,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final CardView imageView;
 
   @NonNull
+  public final ImageView ivLogo;
+
+  @NonNull
   public final ConstraintLayout main;
 
   @NonNull
@@ -40,6 +45,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final RecyclerView rvNews;
+
+  @NonNull
+  public final ScrollView scrollView;
 
   @NonNull
   public final TextView textView4;
@@ -57,30 +65,28 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView tvName;
 
   @NonNull
-  public final TextView tvTitle;
-
-  @NonNull
   public final TextView tvWelcome;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull BottomNavigationView bottomNavigation, @NonNull CardView imageView,
-      @NonNull ConstraintLayout main, @NonNull ImageButton profileButton,
-      @NonNull RecyclerView rvClinic, @NonNull RecyclerView rvNews, @NonNull TextView textView4,
-      @NonNull TextView textView5, @NonNull TextView tvMoreClinic, @NonNull TextView tvMoreNews,
-      @NonNull TextView tvName, @NonNull TextView tvTitle, @NonNull TextView tvWelcome) {
+      @NonNull ImageView ivLogo, @NonNull ConstraintLayout main, @NonNull ImageButton profileButton,
+      @NonNull RecyclerView rvClinic, @NonNull RecyclerView rvNews, @NonNull ScrollView scrollView,
+      @NonNull TextView textView4, @NonNull TextView textView5, @NonNull TextView tvMoreClinic,
+      @NonNull TextView tvMoreNews, @NonNull TextView tvName, @NonNull TextView tvWelcome) {
     this.rootView = rootView;
     this.bottomNavigation = bottomNavigation;
     this.imageView = imageView;
+    this.ivLogo = ivLogo;
     this.main = main;
     this.profileButton = profileButton;
     this.rvClinic = rvClinic;
     this.rvNews = rvNews;
+    this.scrollView = scrollView;
     this.textView4 = textView4;
     this.textView5 = textView5;
     this.tvMoreClinic = tvMoreClinic;
     this.tvMoreNews = tvMoreNews;
     this.tvName = tvName;
-    this.tvTitle = tvTitle;
     this.tvWelcome = tvWelcome;
   }
 
@@ -123,7 +129,17 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout main = (ConstraintLayout) rootView;
+      id = R.id.ivLogo;
+      ImageView ivLogo = ViewBindings.findChildViewById(rootView, id);
+      if (ivLogo == null) {
+        break missingId;
+      }
+
+      id = R.id.main;
+      ConstraintLayout main = ViewBindings.findChildViewById(rootView, id);
+      if (main == null) {
+        break missingId;
+      }
 
       id = R.id.profileButton;
       ImageButton profileButton = ViewBindings.findChildViewById(rootView, id);
@@ -140,6 +156,12 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.rvNews;
       RecyclerView rvNews = ViewBindings.findChildViewById(rootView, id);
       if (rvNews == null) {
+        break missingId;
+      }
+
+      id = R.id.scrollView;
+      ScrollView scrollView = ViewBindings.findChildViewById(rootView, id);
+      if (scrollView == null) {
         break missingId;
       }
 
@@ -173,21 +195,15 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvTitle;
-      TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
-      if (tvTitle == null) {
-        break missingId;
-      }
-
       id = R.id.tvWelcome;
       TextView tvWelcome = ViewBindings.findChildViewById(rootView, id);
       if (tvWelcome == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, bottomNavigation, imageView, main,
-          profileButton, rvClinic, rvNews, textView4, textView5, tvMoreClinic, tvMoreNews, tvName,
-          tvTitle, tvWelcome);
+      return new ActivityMainBinding((ConstraintLayout) rootView, bottomNavigation, imageView,
+          ivLogo, main, profileButton, rvClinic, rvNews, scrollView, textView4, textView5,
+          tvMoreClinic, tvMoreNews, tvName, tvWelcome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
