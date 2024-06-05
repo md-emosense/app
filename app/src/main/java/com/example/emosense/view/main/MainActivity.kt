@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -16,13 +17,20 @@ import com.bumptech.glide.Glide
 import com.example.emosense.R
 import com.example.emosense.data.dataclass.News
 import com.example.emosense.databinding.ActivityMainBinding
+import com.example.emosense.view.ViewModelFactory
 import com.example.emosense.view.clinic.ClinicActivity
+import com.example.emosense.view.login.LoginActivity
 import com.example.emosense.view.news.ListNewsAdapter
 import com.example.emosense.view.news.NewsActivity
 import com.example.emosense.view.news.NewsDetailActivity
 import com.example.emosense.view.profile.ProfileActivity
+import com.example.emosense.view.signup.SignUpActivity
 
 class MainActivity : AppCompatActivity() {
+    private val viewModel by viewModels<MainViewModel> {
+        ViewModelFactory.getInstance(this)
+    }
+
     private lateinit var binding: ActivityMainBinding
     private lateinit var rvNews: RecyclerView
     private val list = ArrayList<News>()
@@ -31,6 +39,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        viewModel.getSession().observe(this) { user ->
+            if (!user.isLogin) {
+                startActivity(Intent(this, LoginActivity::class.java))
+                finish()
+            }
+        }
 
         setupView()
         setupAction()
