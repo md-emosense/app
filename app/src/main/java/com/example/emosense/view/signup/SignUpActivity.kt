@@ -2,6 +2,7 @@ package com.example.emosense.view.signup
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.text.Editable
@@ -13,6 +14,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.emosense.databinding.ActivitySignUpBinding
+import com.example.emosense.view.login.LoginActivity
 
 
 class SignUpActivity : AppCompatActivity() {
@@ -29,6 +31,7 @@ class SignUpActivity : AppCompatActivity() {
         setupView()
         playAnimation()
         validateInput()
+        setupAction()
 
         signupViewModel.isLoading.observe(this) {
             showLoading(it)
@@ -61,6 +64,13 @@ class SignUpActivity : AppCompatActivity() {
         }
 
         submitCheck()
+    }
+
+    private fun setupAction() {
+        binding.loginTextView.setOnClickListener {
+            val intent = Intent(this@SignUpActivity, LoginActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun submitCheck() {
@@ -103,7 +113,7 @@ class SignUpActivity : AppCompatActivity() {
             }
 
             if (adhdDesc.isEmpty()) {
-                binding.familyAdhdDescriptionEditTextLayout.error = "Harap isi deskripsi"
+                binding.familyAdhdDescriptionEditTextLayout.error = "Deskripsi tidak boleh kosong"
                 isValid = false
             } else {
                 binding.familyAdhdDescriptionEditTextLayout.error = null
