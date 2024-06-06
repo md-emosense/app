@@ -1,4 +1,4 @@
-package com.example.emosense.data.di
+package com.example.emosense.di
 
 import android.content.Context
 import com.example.emosense.data.database.UserRepository

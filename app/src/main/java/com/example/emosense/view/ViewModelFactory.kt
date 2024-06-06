@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.emosense.data.database.UserRepository
-import com.example.emosense.data.di.Injection
+import com.example.emosense.di.Injection
 import com.example.emosense.view.login.LoginViewModel
 import com.example.emosense.view.main.MainViewModel
 
