@@ -1,12 +1,16 @@
 package com.example.emosense.data.api
 
 
+import com.example.emosense.data.response.ListClinicResponse
 import com.example.emosense.data.response.LoginResponse
 import com.example.emosense.data.response.RegisterResponse
 import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
+import retrofit2.http.GET
+import retrofit2.http.Header
 import retrofit2.http.POST
+import retrofit2.http.Query
 
 interface ApiService {
     @FormUrlEncoded
@@ -26,4 +30,7 @@ interface ApiService {
         @Field("email") email: String,
         @Field("password") password: String
     ): Call<LoginResponse>
+
+    @GET("clinic")
+    fun getClinic(): Call<ListClinicResponse>
 }
