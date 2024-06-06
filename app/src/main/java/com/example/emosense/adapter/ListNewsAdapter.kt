@@ -1,4 +1,4 @@
-package com.example.emosense.view.news
+package com.example.emosense.adapter
 
 import android.view.LayoutInflater
 import android.view.View
