@@ -4,20 +4,44 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/activity_profile.xml"
     },
     {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-42:/layout/activity_main.xml",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.emosense.app-mergeDebugResources-42:/layout/activity_news_detail.xml",
+        "source": "com.example.emosense.app-main-45:/layout/activity_news_detail.xml"
+    },
+    {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-42:/layout/activity_news.xml",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/activity_news.xml"
+    },
+    {
+        "merged": "com.example.emosense.app-mergeDebugResources-42:/layout/activity_news.xml",
+        "source": "com.example.emosense.app-main-45:/layout/activity_news.xml"
+    },
+    {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-42:/layout/item_news.xml",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/item_news.xml"
+    },
+    {
+        "merged": "com.example.emosense.app-mergeDebugResources-42:/layout/activity_clinic.xml",
+        "source": "com.example.emosense.app-main-45:/layout/activity_clinic.xml"
+    },
+    {
+        "merged": "com.example.emosense.app-mergeDebugResources-42:/layout/activity_sign_up.xml",
+        "source": "com.example.emosense.app-main-45:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "com.example.emosense.app-mergeDebugResources-42:/layout/activity_login.xml",
+        "source": "com.example.emosense.app-main-45:/layout/activity_login.xml"
+    },
+    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-42:/layout/item_clinic.xml",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/item_clinic.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-42:/layout/activity_clinic.xml",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/activity_clinic.xml"
-    },
-    {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-42:/layout/activity_main.xml",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/activity_main.xml"
-    },
-    {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-42:/layout/activity_news.xml",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/activity_news.xml"
     },
     {
         "merged": "com.example.emosense.app-mergeDebugResources-42:/layout/item_clinic.xml",
@@ -36,7 +60,11 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-42:/layout/item_news.xml",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/item_news.xml"
+        "merged": "com.example.emosense.app-mergeDebugResources-42:/layout/item_news.xml",
+        "source": "com.example.emosense.app-main-45:/layout/item_news.xml"
+    },
+    {
+        "merged": "com.example.emosense.app-mergeDebugResources-42:/layout/activity_main.xml",
+        "source": "com.example.emosense.app-main-45:/layout/activity_main.xml"
     }
 ]

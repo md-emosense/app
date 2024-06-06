@@ -35,6 +35,8 @@ drawable image_news_5
 drawable logo_landscape
 font inter_medium
 font inter_regular
+font poppins
+font poppins_regular
 id alreadyHaveAccountTextView
 id backButton
 id bottom_navigation
@@ -66,7 +68,6 @@ id ivNews
 id loginButton
 id loginTextView
 id main
-id messageTextView
 id nameEditText
 id nameEditTextLayout
 id nameTextView

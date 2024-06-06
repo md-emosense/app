@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Daftar"
+        android:fontFamily="@font/poppins"
         android:textColor="@color/primary"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -64,6 +65,7 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
+                android:fontFamily="@font/poppins"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -84,6 +86,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="16dp"
                         android:text="@string/title_signup_page"
+                        android:fontFamily="@font/poppins"
                         android:textColor="@color/primary"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -94,6 +97,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:text="@string/name"
+                        android:fontFamily="@font/poppins"
                         android:textColor="@color/black" />
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -103,6 +107,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         app:errorEnabled="true"
+                        android:fontFamily="@font/poppins"
                         app:startIconDrawable="@drawable/ic_baseline_person_24">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -110,6 +115,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
+                            android:fontFamily="@font/poppins"
                             android:inputType="text" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -119,7 +125,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:text="@string/email"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"/>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/emailEditTextLayout"
@@ -128,6 +135,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         app:errorEnabled="true"
+                        android:fontFamily="@font/poppins"
                         app:startIconDrawable="@drawable/ic_baseline_email_24">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -135,6 +143,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
+                            android:fontFamily="@font/poppins"
                             android:inputType="textEmailAddress" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -144,6 +153,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:text="@string/password"
+                        android:fontFamily="@font/poppins"
                         android:textColor="@color/black" />
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -153,6 +163,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="0dp"
                         app:endIconMode="password_toggle"
+                        android:fontFamily="@font/poppins"
                         app:errorEnabled="true"
                         app:startIconDrawable="@drawable/ic_baseline_lock_24">
 
@@ -161,6 +172,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
+                            android:fontFamily="@font/poppins"
                             android:inputType="textPassword" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -190,6 +202,7 @@
                         android:layout_marginBottom="16dp"
                         android:text="@string/title_family_data"
                         android:textColor="@color/primary"
+                        android:fontFamily="@font/poppins"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -199,6 +212,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:text="@string/family_name"
+                        android:fontFamily="@font/poppins"
                         android:textColor="@color/black" />
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -207,6 +221,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/poppins"
                         app:errorEnabled="true"
                         app:startIconDrawable="@drawable/ic_baseline_person_24">
 
@@ -215,6 +230,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
+                            android:fontFamily="@font/poppins"
                             android:inputType="text" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -224,6 +240,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:text="@string/family_dob"
+                        android:fontFamily="@font/poppins"
                         android:textColor="@color/black" />
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -232,6 +249,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/poppins"
                         app:errorEnabled="true"
                         app:startIconDrawable="@drawable/baseline_calendar_month_24">
 
@@ -240,6 +258,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
+                            android:fontFamily="@font/poppins"
                             android:inputType="date" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -248,6 +267,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/poppins"
                         android:text="@string/family_adhd_description"
                         android:textColor="@color/black" />
 
@@ -257,6 +277,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:errorEnabled="true"
+                        android:fontFamily="@font/poppins"
                         app:startIconDrawable="@drawable/baseline_post_add_24">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -264,6 +285,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
+                            android:fontFamily="@font/poppins"
                             android:inputType="textMultiLine" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -275,6 +297,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_gravity="end"
+                android:fontFamily="@font/poppins"
                 android:layout_marginTop="8dp"
                 android:backgroundTint="@color/primary"
                 android:drawableEnd="@drawable/baseline_arrow_forward_24"
@@ -296,6 +319,7 @@
                     android:layout_height="wrap_content"
                     android:paddingEnd="4dp"
                     android:text="Sudah memiliki akun?"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@android:color/black" />
 
                 <TextView
@@ -303,6 +327,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Login"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/primary"
                     android:textStyle="bold|italic" />
             </LinearLayout>
