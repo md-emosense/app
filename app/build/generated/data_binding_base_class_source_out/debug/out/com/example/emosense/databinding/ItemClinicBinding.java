@@ -21,20 +21,24 @@ public final class ItemClinicBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
+  public final TextView cityprovince;
+
+  @NonNull
+  public final TextView clinicName;
+
+  @NonNull
   public final ImageView imageView3;
 
   @NonNull
   public final ImageView ivClinic;
 
-  @NonNull
-  public final TextView textView;
-
-  private ItemClinicBinding(@NonNull CardView rootView, @NonNull ImageView imageView3,
-      @NonNull ImageView ivClinic, @NonNull TextView textView) {
+  private ItemClinicBinding(@NonNull CardView rootView, @NonNull TextView cityprovince,
+      @NonNull TextView clinicName, @NonNull ImageView imageView3, @NonNull ImageView ivClinic) {
     this.rootView = rootView;
+    this.cityprovince = cityprovince;
+    this.clinicName = clinicName;
     this.imageView3 = imageView3;
     this.ivClinic = ivClinic;
-    this.textView = textView;
   }
 
   @Override
@@ -64,6 +68,18 @@ public final class ItemClinicBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.cityprovince;
+      TextView cityprovince = ViewBindings.findChildViewById(rootView, id);
+      if (cityprovince == null) {
+        break missingId;
+      }
+
+      id = R.id.clinicName;
+      TextView clinicName = ViewBindings.findChildViewById(rootView, id);
+      if (clinicName == null) {
+        break missingId;
+      }
+
       id = R.id.imageView3;
       ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
       if (imageView3 == null) {
@@ -76,13 +92,8 @@ public final class ItemClinicBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
-        break missingId;
-      }
-
-      return new ItemClinicBinding((CardView) rootView, imageView3, ivClinic, textView);
+      return new ItemClinicBinding((CardView) rootView, cityprovince, clinicName, imageView3,
+          ivClinic);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

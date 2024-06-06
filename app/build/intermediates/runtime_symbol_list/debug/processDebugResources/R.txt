@@ -3245,7 +3245,9 @@ int id checkbox 0x7f0a0073
 int id checked 0x7f0a0074
 int id chronometer 0x7f0a0075
 int id circle_center 0x7f0a0076
+int id cityprovince 0x7f0a0230
 int id clear_text 0x7f0a0077
+int id clinicName 0x7f0a0231
 int id clip_horizontal 0x7f0a0078
 int id clip_vertical 0x7f0a0079
 int id clockwise 0x7f0a007a
@@ -3623,7 +3625,6 @@ int id textSpacerNoButtons 0x7f0a01ec
 int id textSpacerNoTitle 0x7f0a01ed
 int id textStart 0x7f0a01ee
 int id textTop 0x7f0a01ef
-int id textView 0x7f0a01f0
 int id textView2 0x7f0a01f1
 int id textView4 0x7f0a01f2
 int id textView5 0x7f0a01f3

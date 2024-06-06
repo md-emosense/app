@@ -39,6 +39,8 @@ id alreadyHaveAccountTextView
 id backButton
 id bottom_navigation
 id cardView
+id cityprovince
+id clinicName
 id emailEditText
 id emailEditTextLayout
 id emailTextView
@@ -83,7 +85,6 @@ id scrollView
 id signupButton
 id signupLinkTextView
 id signupTextView
-id textView
 id textView2
 id textView4
 id textView5

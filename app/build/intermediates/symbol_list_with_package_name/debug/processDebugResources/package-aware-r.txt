@@ -3246,7 +3246,9 @@ id checkbox
 id checked
 id chronometer
 id circle_center
+id cityprovince
 id clear_text
+id clinicName
 id clip_horizontal
 id clip_vertical
 id clockwise
@@ -3624,7 +3626,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView2
 id textView4
 id textView5
