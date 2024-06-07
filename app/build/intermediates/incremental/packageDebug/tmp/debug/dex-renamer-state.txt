@@ -1,4 +1,4 @@
-#Fri Jun 07 18:33:14 WIB 2024
+#Fri Jun 07 19:37:03 WIB 2024
 base.0=/Users/refianyshadrina/Documents/emosense/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/refianyshadrina/Documents/emosense/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.10=/Users/refianyshadrina/Documents/emosense/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex

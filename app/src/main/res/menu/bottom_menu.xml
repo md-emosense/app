@@ -11,8 +11,8 @@ belum add warna yang grey
         android:title="Beranda" />
     <item
         android:id="@+id/navigation_detection"
-        android:icon="@drawable/ic_camera_filled"
-        android:title="Deteksi" />
+        android:enabled="false"
+        android:title="" />
     <item
         android:id="@+id/navigation_forum"
         android:icon="@drawable/ic_forum_filled"

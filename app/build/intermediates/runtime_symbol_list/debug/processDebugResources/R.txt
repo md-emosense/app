@@ -3126,6 +3126,7 @@ int drawable notification_template_icon_bg 0x7f0800fb
 int drawable notification_template_icon_low_bg 0x7f0800fc
 int drawable notification_tile_bg 0x7f0800fd
 int drawable notify_panel_notification_icon_bg 0x7f0800fe
+int drawable profile 0x7f080102
 int drawable test_level_drawable 0x7f0800ff
 int drawable tooltip_frame_dark 0x7f080100
 int drawable tooltip_frame_light 0x7f080101
@@ -3231,6 +3232,7 @@ int id beginning 0x7f0a005d
 int id bestChoice 0x7f0a005e
 int id blocking 0x7f0a005f
 int id bottom 0x7f0a0060
+int id bottomNavigationView 0x7f0a023e
 int id bottom_navigation 0x7f0a0061
 int id bounce 0x7f0a0062
 int id bounceBoth 0x7f0a0063

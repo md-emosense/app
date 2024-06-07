@@ -38,6 +38,7 @@ drawable image_news_3
 drawable image_news_4
 drawable image_news_5
 drawable logo_landscape
+drawable profile
 font inter_medium
 font inter_regular
 font poppins
@@ -46,6 +47,7 @@ id addressContainer
 id alreadyHaveAccountTextView
 id appTitle
 id backButton
+id bottomNavigationView
 id bottom_navigation
 id cardView
 id cityContainer

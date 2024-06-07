@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.emosense.R;
+import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -29,7 +30,10 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView appTitle;
 
   @NonNull
-  public final BottomNavigationView bottomNavigation;
+  public final BottomAppBar bottomNavigation;
+
+  @NonNull
+  public final BottomNavigationView bottomNavigationView;
 
   @NonNull
   public final CardView headerCardView;
@@ -74,15 +78,16 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView tvWelcome;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appTitle,
-      @NonNull BottomNavigationView bottomNavigation, @NonNull CardView headerCardView,
-      @NonNull CardView imageView, @NonNull ImageView ivLogo, @NonNull ConstraintLayout main,
-      @NonNull ImageButton profileButton, @NonNull RecyclerView rvClinic,
-      @NonNull RecyclerView rvNews, @NonNull ScrollView scrollView, @NonNull TextView textView4,
-      @NonNull TextView textView5, @NonNull TextView tvMoreClinic, @NonNull TextView tvMoreNews,
-      @NonNull TextView tvName, @NonNull TextView tvWelcome) {
+      @NonNull BottomAppBar bottomNavigation, @NonNull BottomNavigationView bottomNavigationView,
+      @NonNull CardView headerCardView, @NonNull CardView imageView, @NonNull ImageView ivLogo,
+      @NonNull ConstraintLayout main, @NonNull ImageButton profileButton,
+      @NonNull RecyclerView rvClinic, @NonNull RecyclerView rvNews, @NonNull ScrollView scrollView,
+      @NonNull TextView textView4, @NonNull TextView textView5, @NonNull TextView tvMoreClinic,
+      @NonNull TextView tvMoreNews, @NonNull TextView tvName, @NonNull TextView tvWelcome) {
     this.rootView = rootView;
     this.appTitle = appTitle;
     this.bottomNavigation = bottomNavigation;
+    this.bottomNavigationView = bottomNavigationView;
     this.headerCardView = headerCardView;
     this.imageView = imageView;
     this.ivLogo = ivLogo;
@@ -133,8 +138,14 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       id = R.id.bottom_navigation;
-      BottomNavigationView bottomNavigation = ViewBindings.findChildViewById(rootView, id);
+      BottomAppBar bottomNavigation = ViewBindings.findChildViewById(rootView, id);
       if (bottomNavigation == null) {
+        break missingId;
+      }
+
+      id = R.id.bottomNavigationView;
+      BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavigationView == null) {
         break missingId;
       }
 
@@ -223,8 +234,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, appTitle, bottomNavigation,
-          headerCardView, imageView, ivLogo, main, profileButton, rvClinic, rvNews, scrollView,
-          textView4, textView5, tvMoreClinic, tvMoreNews, tvName, tvWelcome);
+          bottomNavigationView, headerCardView, imageView, ivLogo, main, profileButton, rvClinic,
+          rvNews, scrollView, textView4, textView5, tvMoreClinic, tvMoreNews, tvName, tvWelcome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
