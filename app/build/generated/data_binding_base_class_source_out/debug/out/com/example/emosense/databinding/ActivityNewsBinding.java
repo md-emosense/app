@@ -8,6 +8,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
@@ -25,6 +26,9 @@ public final class ActivityNewsBinding implements ViewBinding {
   public final ImageButton backButton;
 
   @NonNull
+  public final CardView headerCardView;
+
+  @NonNull
   public final ConstraintLayout main;
 
   @NonNull
@@ -34,9 +38,11 @@ public final class ActivityNewsBinding implements ViewBinding {
   public final TextView textView2;
 
   private ActivityNewsBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton backButton,
-      @NonNull ConstraintLayout main, @NonNull RecyclerView rvNews, @NonNull TextView textView2) {
+      @NonNull CardView headerCardView, @NonNull ConstraintLayout main,
+      @NonNull RecyclerView rvNews, @NonNull TextView textView2) {
     this.rootView = rootView;
     this.backButton = backButton;
+    this.headerCardView = headerCardView;
     this.main = main;
     this.rvNews = rvNews;
     this.textView2 = textView2;
@@ -75,6 +81,12 @@ public final class ActivityNewsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.headerCardView;
+      CardView headerCardView = ViewBindings.findChildViewById(rootView, id);
+      if (headerCardView == null) {
+        break missingId;
+      }
+
       ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.rvNews;
@@ -89,8 +101,8 @@ public final class ActivityNewsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityNewsBinding((ConstraintLayout) rootView, backButton, main, rvNews,
-          textView2);
+      return new ActivityNewsBinding((ConstraintLayout) rootView, backButton, headerCardView, main,
+          rvNews, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

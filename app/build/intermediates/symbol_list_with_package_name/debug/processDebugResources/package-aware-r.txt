@@ -3373,6 +3373,7 @@ id grouping
 id groups
 id guidelineHorizontal
 id guidelineHorizontal2
+id headerCardView
 id header_title
 id hide_ime_id
 id hideable

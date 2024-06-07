@@ -45,7 +45,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Klinik Armedika"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:fontFamily="@font/poppins"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -58,9 +58,10 @@
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
                     android:maxLines="1"
+                    android:textSize="12dp"
                     android:textColor="@color/black"
                     android:fontFamily="@font/poppins"
-                    android:text="DKI Jakarta, Jakarta Utara" />
+                    android:text="Jakarta Utara, DKI Jakarta" />
             </LinearLayout>
 
             <ImageButton
@@ -84,7 +85,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:visibility="gone"
             android:layout_marginTop="8dp">
 
             <LinearLayout
@@ -104,7 +104,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Kelapa Gading, DKI Jakarta, Jakarta Utara"
-                    android:textSize="14sp"
+                    android:textSize="12sp"
                     android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:layout_marginStart="8dp"/>
@@ -128,7 +128,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Komplek Ruko Gading Indah Blok O.10, rt18, Jkt Utara, Daerah Khusus Ibukota Jakarta 14240"
-                    android:textSize="14sp"
+                    android:textSize="12sp"
                     android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:layout_marginStart="8dp"/>
@@ -152,7 +152,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="+62 21 12345678"
-                    android:textSize="14sp"
+                    android:textSize="12sp"
                     android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:layout_marginStart="8dp"/>

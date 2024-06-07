@@ -53,7 +53,7 @@
                 android:text="Selamat datang,"
                 android:fontFamily="@font/poppins"
                 android:textColor="@color/primary"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -67,7 +67,7 @@
                 android:text="Aisha"
                 android:fontFamily="@font/poppins"
                 android:textColor="@color/primary"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/tvWelcome"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -99,7 +99,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Rekomendasi Klinik"
                 android:textColor="@color/primary"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:fontFamily="@font/poppins"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -112,6 +112,8 @@
                 android:layout_marginEnd="16dp"
                 android:text="Lihat lainnya"
                 android:textColor="@color/light_gray"
+                android:fontFamily="@font/poppins"
+                android:textSize="14sp"
                 app:layout_constraintBottom_toTopOf="@+id/rvClinic"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -119,7 +121,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvClinic"
                 android:layout_width="match_parent"
-                android:layout_height="212dp"
+                android:layout_height="172dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:orientation="horizontal"
@@ -135,7 +137,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Berita terhangat"
                 android:textColor="@color/primary"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:fontFamily="@font/poppins"
 
                 android:textStyle="bold"
@@ -149,6 +151,7 @@
                 android:layout_marginEnd="16dp"
                 android:text="Lihat lainnya"
                 android:fontFamily="@font/poppins"
+                android:textSize="14sp"
                 android:textColor="@color/light_gray"
                 app:layout_constraintBottom_toTopOf="@+id/rvNews"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -72,6 +72,7 @@ id familyNameTextView
 id familyTitleTextView
 id guidelineHorizontal
 id guidelineHorizontal2
+id headerCardView
 id imageView
 id imageView3
 id informationalTextView
