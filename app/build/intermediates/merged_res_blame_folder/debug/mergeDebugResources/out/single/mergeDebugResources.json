@@ -56,20 +56,24 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/baseline_calendar_month_24.xml"
     },
     {
+        "merged": "com.example.emosense.app-debug-43:/layout_activity_main.xml.flat",
+        "source": "com.example.emosense.app-main-45:/layout/activity_main.xml"
+    },
+    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_ic_baseline_person_24.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/ic_baseline_person_24.xml"
     },
     {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/ic_launcher_foreground.xml"
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/layout_item_news.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/item_news.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/font_poppins_regular.ttf.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/font/poppins_regular.ttf"
     },
     {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/layout_item_news.xml.flat",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/item_news.xml"
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/ic_launcher_foreground.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_expand_more_24.xml.flat",
@@ -84,12 +88,12 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/activity_news_detail.xml"
     },
     {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_image_news_1.jpg.flat",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/image_news_1.jpg"
-    },
-    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_post_add_24.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/baseline_post_add_24.xml"
+    },
+    {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_image_news_1.jpg.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/image_news_1.jpg"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_ic_baseline_email_24.xml.flat",
@@ -126,10 +130,6 @@
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_camera_alt_24.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/baseline_camera_alt_24.xml"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-43:/layout_activity_clinic.xml.flat",
-        "source": "com.example.emosense.app-main-45:/layout/activity_clinic.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/mipmap-xhdpi_ic_launcher.webp.flat",
@@ -174,6 +174,10 @@
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_image_news_3.jpg.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/image_news_3.jpg"
+    },
+    {
+        "merged": "com.example.emosense.app-debug-43:/layout_activity_news.xml.flat",
+        "source": "com.example.emosense.app-main-45:/layout/activity_news.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/mipmap-xxxhdpi_ic_launcher.webp.flat",

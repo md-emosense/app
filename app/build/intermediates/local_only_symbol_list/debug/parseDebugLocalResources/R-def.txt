@@ -44,6 +44,7 @@ font poppins
 font poppins_regular
 id addressContainer
 id alreadyHaveAccountTextView
+id appTitle
 id backButton
 id bottom_navigation
 id cardView

@@ -3216,6 +3216,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appTitle
 id arc
 id asConfigured
 id async

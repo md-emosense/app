@@ -26,7 +26,13 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView appTitle;
+
+  @NonNull
   public final BottomNavigationView bottomNavigation;
+
+  @NonNull
+  public final CardView headerCardView;
 
   @NonNull
   public final CardView imageView;
@@ -67,14 +73,17 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView tvWelcome;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNavigation, @NonNull CardView imageView,
-      @NonNull ImageView ivLogo, @NonNull ConstraintLayout main, @NonNull ImageButton profileButton,
-      @NonNull RecyclerView rvClinic, @NonNull RecyclerView rvNews, @NonNull ScrollView scrollView,
-      @NonNull TextView textView4, @NonNull TextView textView5, @NonNull TextView tvMoreClinic,
-      @NonNull TextView tvMoreNews, @NonNull TextView tvName, @NonNull TextView tvWelcome) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appTitle,
+      @NonNull BottomNavigationView bottomNavigation, @NonNull CardView headerCardView,
+      @NonNull CardView imageView, @NonNull ImageView ivLogo, @NonNull ConstraintLayout main,
+      @NonNull ImageButton profileButton, @NonNull RecyclerView rvClinic,
+      @NonNull RecyclerView rvNews, @NonNull ScrollView scrollView, @NonNull TextView textView4,
+      @NonNull TextView textView5, @NonNull TextView tvMoreClinic, @NonNull TextView tvMoreNews,
+      @NonNull TextView tvName, @NonNull TextView tvWelcome) {
     this.rootView = rootView;
+    this.appTitle = appTitle;
     this.bottomNavigation = bottomNavigation;
+    this.headerCardView = headerCardView;
     this.imageView = imageView;
     this.ivLogo = ivLogo;
     this.main = main;
@@ -117,9 +126,21 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.appTitle;
+      TextView appTitle = ViewBindings.findChildViewById(rootView, id);
+      if (appTitle == null) {
+        break missingId;
+      }
+
       id = R.id.bottom_navigation;
       BottomNavigationView bottomNavigation = ViewBindings.findChildViewById(rootView, id);
       if (bottomNavigation == null) {
+        break missingId;
+      }
+
+      id = R.id.headerCardView;
+      CardView headerCardView = ViewBindings.findChildViewById(rootView, id);
+      if (headerCardView == null) {
         break missingId;
       }
 
@@ -201,9 +222,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, bottomNavigation, imageView,
-          ivLogo, main, profileButton, rvClinic, rvNews, scrollView, textView4, textView5,
-          tvMoreClinic, tvMoreNews, tvName, tvWelcome);
+      return new ActivityMainBinding((ConstraintLayout) rootView, appTitle, bottomNavigation,
+          headerCardView, imageView, ivLogo, main, profileButton, rvClinic, rvNews, scrollView,
+          textView4, textView5, tvMoreClinic, tvMoreNews, tvName, tvWelcome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
