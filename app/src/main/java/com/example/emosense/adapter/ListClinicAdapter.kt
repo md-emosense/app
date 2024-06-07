@@ -35,7 +35,7 @@ class ListClinicAdapter : ListAdapter<ClinicItem, ListClinicAdapter.ViewHolder>(
 
         fun bind(clinic: ClinicItem) {
             clinicName.text = clinic.clinicName
-            cityProvince.text = clinic.province + ", " + clinic.city
+            cityProvince.text = clinic.suburb + ", " + clinic.city
 
         }
     }

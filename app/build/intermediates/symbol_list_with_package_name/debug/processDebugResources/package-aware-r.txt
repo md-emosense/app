@@ -2998,7 +2998,12 @@ drawable banner
 drawable baseline_arrow_forward_24
 drawable baseline_calendar_month_24
 drawable baseline_camera_alt_24
+drawable baseline_expand_less_24
+drawable baseline_expand_more_24
+drawable baseline_location_city_24
+drawable baseline_location_primary
 drawable baseline_logout_24
+drawable baseline_phone_24
 drawable baseline_post_add_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3200,6 +3205,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addressContainer
 id alertTitle
 id aligned
 id all
@@ -3248,9 +3254,14 @@ id checkbox
 id checked
 id chronometer
 id circle_center
+id cityContainer
+id cityProvince
 id cityprovince
 id clear_text
+id clinicAddress
 id clinicName
+id clinicPhone
+id clinicPhoto
 id clip_horizontal
 id clip_vertical
 id clockwise
@@ -3284,6 +3295,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detailsContainer
 id dialog_button
 id dimensions
 id direct
@@ -3319,6 +3331,7 @@ id enterAlways
 id enterAlwaysCollapsed
 id escape
 id exitUntilCollapsed
+id expandButton
 id expand_activities_button
 id expanded_menu
 id fade
@@ -3520,6 +3533,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id phoneContainer
 id photoCard
 id pin
 id position
@@ -3570,6 +3584,7 @@ id sharedValueUnset
 id shortcut
 id showCustom
 id showHome
+id showLessButton
 id showTitle
 id signupButton
 id signupLinkTextView
@@ -3605,6 +3620,7 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id suburbProvinceCity
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -3829,6 +3845,7 @@ layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_clinic
+layout item_clinic_view_all
 layout item_news
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
