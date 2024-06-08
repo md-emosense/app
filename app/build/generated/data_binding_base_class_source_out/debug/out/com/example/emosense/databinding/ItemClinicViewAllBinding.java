@@ -41,13 +41,13 @@ public final class ItemClinicViewAllBinding implements ViewBinding {
   public final TextView clinicPhone;
 
   @NonNull
-  public final ImageView clinicPhoto;
-
-  @NonNull
   public final LinearLayout detailsContainer;
 
   @NonNull
   public final ImageButton expandButton;
+
+  @NonNull
+  public final ImageView ivClinic;
 
   @NonNull
   public final LinearLayout phoneContainer;
@@ -64,8 +64,8 @@ public final class ItemClinicViewAllBinding implements ViewBinding {
   private ItemClinicViewAllBinding(@NonNull CardView rootView,
       @NonNull LinearLayout addressContainer, @NonNull LinearLayout cityContainer,
       @NonNull TextView cityProvince, @NonNull TextView clinicAddress, @NonNull TextView clinicName,
-      @NonNull TextView clinicPhone, @NonNull ImageView clinicPhoto,
-      @NonNull LinearLayout detailsContainer, @NonNull ImageButton expandButton,
+      @NonNull TextView clinicPhone, @NonNull LinearLayout detailsContainer,
+      @NonNull ImageButton expandButton, @NonNull ImageView ivClinic,
       @NonNull LinearLayout phoneContainer, @NonNull CardView photoCard,
       @NonNull ImageButton showLessButton, @NonNull TextView suburbProvinceCity) {
     this.rootView = rootView;
@@ -75,9 +75,9 @@ public final class ItemClinicViewAllBinding implements ViewBinding {
     this.clinicAddress = clinicAddress;
     this.clinicName = clinicName;
     this.clinicPhone = clinicPhone;
-    this.clinicPhoto = clinicPhoto;
     this.detailsContainer = detailsContainer;
     this.expandButton = expandButton;
+    this.ivClinic = ivClinic;
     this.phoneContainer = phoneContainer;
     this.photoCard = photoCard;
     this.showLessButton = showLessButton;
@@ -147,12 +147,6 @@ public final class ItemClinicViewAllBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.clinicPhoto;
-      ImageView clinicPhoto = ViewBindings.findChildViewById(rootView, id);
-      if (clinicPhoto == null) {
-        break missingId;
-      }
-
       id = R.id.detailsContainer;
       LinearLayout detailsContainer = ViewBindings.findChildViewById(rootView, id);
       if (detailsContainer == null) {
@@ -162,6 +156,12 @@ public final class ItemClinicViewAllBinding implements ViewBinding {
       id = R.id.expandButton;
       ImageButton expandButton = ViewBindings.findChildViewById(rootView, id);
       if (expandButton == null) {
+        break missingId;
+      }
+
+      id = R.id.ivClinic;
+      ImageView ivClinic = ViewBindings.findChildViewById(rootView, id);
+      if (ivClinic == null) {
         break missingId;
       }
 
@@ -190,8 +190,8 @@ public final class ItemClinicViewAllBinding implements ViewBinding {
       }
 
       return new ItemClinicViewAllBinding((CardView) rootView, addressContainer, cityContainer,
-          cityProvince, clinicAddress, clinicName, clinicPhone, clinicPhoto, detailsContainer,
-          expandButton, phoneContainer, photoCard, showLessButton, suburbProvinceCity);
+          cityProvince, clinicAddress, clinicName, clinicPhone, detailsContainer, expandButton,
+          ivClinic, phoneContainer, photoCard, showLessButton, suburbProvinceCity);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

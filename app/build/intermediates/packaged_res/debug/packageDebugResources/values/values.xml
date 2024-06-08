@@ -154,8 +154,14 @@ Pengguna DAS lainnya, Jessica Kiss, yang kedua anaknya penyandang disabilitas, b
         <item>Disney Ubah Layanan untuk Penyandang Disabilitas di Disneyland dan Walt Disney World</item>
     </string-array>
     <color name="black">#FF000000</color>
+    <color name="lavender">#8692f7</color>
     <color name="light_gray">#9F9F9F</color>
     <color name="primary">#FF9800</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
     <color name="text_primary">#2D2D2D</color>
     <color name="white">#FFFFFFFF</color>
     <color name="white_primary">#F8F8FF</color>
@@ -181,6 +187,15 @@ Pengguna DAS lainnya, Jessica Kiss, yang kedua anaknya penyandang disabilitas, b
         <item name="android:fontFamily">@font/inter_medium</item>
         
         
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorSecondaryVariant">@color/primary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     </style>
     <style name="Theme.EmoSense" parent="Base.Theme.EmoSense"/>
 </resources>

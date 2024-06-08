@@ -9,8 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-         >
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/ivClinic"
@@ -24,15 +23,19 @@
 
         <TextView
             android:id="@+id/clinicName"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:singleLine="true"
             android:text="Klinik Sukajadi"
             android:fontFamily="@font/poppins"
             android:textStyle="bold"
             android:textSize="10dp"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ivClinic" />
 
         <ImageView
@@ -47,14 +50,18 @@
 
         <TextView
             android:id="@+id/cityprovince"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:maxLines="1"
             android:text="Jalan Sukajadi, Bandung"
             android:textColor="@color/light_gray"
             android:textSize="8sp"
             android:fontFamily="@font/poppins"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/clinicName" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

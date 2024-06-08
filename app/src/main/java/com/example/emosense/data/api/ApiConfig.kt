@@ -9,7 +9,7 @@ import com.example.emosense.BuildConfig;
 
 class ApiConfig {
     companion object{
-        private const val BASE_URL = "https://story-api.dicoding.dev/"
+        private const val BASE_URL = "http://34.101.246.57:9000/"
 
         fun getApiService(): ApiService {
             val loggingInterceptor = if (BuildConfig.DEBUG) {

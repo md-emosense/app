@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.emosense.data.response.ClinicItem
 import com.example.emosense.databinding.ItemClinicViewAllBinding
 
@@ -39,6 +40,7 @@ class ListClinicAllAdapter : ListAdapter<ClinicItem, ListClinicAllAdapter.ViewHo
         private val expandButton = binding.expandButton
         private val showLessButton = binding.showLessButton
         private val detailsContainer = binding.detailsContainer
+        private val img = binding.ivClinic
 
         fun bind(clinic: ClinicItem) {
             clinicName.text = clinic.clinicName
@@ -46,6 +48,7 @@ class ListClinicAllAdapter : ListAdapter<ClinicItem, ListClinicAllAdapter.ViewHo
             clinicAddress.text = clinic.streetAddress
             suburbProvinceCity.text = "${clinic.suburb}, ${clinic.province}, ${clinic.city}"
             clinicPhone.text = clinic.phone
+
 
             expandButton.setOnClickListener {
                 detailsContainer.visibility = View.VISIBLE
@@ -58,6 +61,10 @@ class ListClinicAllAdapter : ListAdapter<ClinicItem, ListClinicAllAdapter.ViewHo
                 expandButton.visibility = View.VISIBLE
                 showLessButton.visibility = View.GONE
             }
+
+            Glide.with(itemView.context)
+                .load(clinic.picture)
+                .into(img)
         }
     }
 

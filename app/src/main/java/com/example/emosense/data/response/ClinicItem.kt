@@ -4,6 +4,9 @@ import com.google.gson.annotations.SerializedName
 
 data class ClinicItem(
 
+    @field:SerializedName("clinicName")
+    val clinicName: String? = null,
+
     @field:SerializedName("province")
     val province: String? = null,
 
@@ -16,12 +19,12 @@ data class ClinicItem(
     @field:SerializedName("phone")
     val phone: String? = null,
 
-    @field:SerializedName("clinic_name")
-    val clinicName: String? = null,
-
     @field:SerializedName("suburb")
     val suburb: String? = null,
 
     @field:SerializedName("id")
-    val id: Int? = null
+    val id: Int? = null,
+
+    @field:SerializedName("picture")
+    val picture: String? = null
 )

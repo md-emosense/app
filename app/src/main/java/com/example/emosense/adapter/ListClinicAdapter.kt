@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.emosense.data.response.ClinicItem
 import com.example.emosense.databinding.ItemClinicBinding
 
@@ -32,12 +33,17 @@ class ListClinicAdapter : ListAdapter<ClinicItem, ListClinicAdapter.ViewHolder>(
     class ViewHolder(private val binding: ItemClinicBinding) : RecyclerView.ViewHolder(binding.root) {
         private val clinicName = binding.clinicName
         private val cityProvince = binding.cityprovince
+        private val img = binding.ivClinic
 
         fun bind(clinic: ClinicItem) {
             clinicName.text = clinic.clinicName
             cityProvince.text = clinic.suburb + ", " + clinic.city
 
+            Glide.with(itemView.context)
+                .load(clinic.picture)
+                .into(img)
         }
+
     }
 
     companion object {
