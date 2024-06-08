@@ -3246,6 +3246,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnLogout
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3653,6 +3654,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id textView2
 id textView4
 id textView5

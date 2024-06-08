@@ -56,6 +56,7 @@ id appTitle
 id backButton
 id bottomNavigationView
 id bottom_navigation
+id btnLogout
 id cardView
 id cityContainer
 id cityProvince
@@ -112,6 +113,7 @@ id signupButton
 id signupLinkTextView
 id signupTextView
 id suburbProvinceCity
+id textView
 id textView2
 id textView4
 id textView5

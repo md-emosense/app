@@ -7,7 +7,9 @@ import androidx.lifecycle.viewModelScope
 import com.example.emosense.data.api.ApiConfig
 import com.example.emosense.data.database.UserRepository
 import com.example.emosense.data.preferences.UserModel
+import com.example.emosense.data.request.UserRequest
 import com.example.emosense.data.response.LoginResponse
+import com.example.emosense.data.response.UserResponse
 import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Response
@@ -30,7 +32,8 @@ class LoginViewModel(private val repository: UserRepository) : ViewModel() {
 
     fun login(email: String, password: String, token: String) {
         _isLoading.value = true
-        val api = ApiConfig.getApiService().login(email, password)
+        val request = UserRequest(email, password)
+        val api = ApiConfig.getApiService().login(request)
         api.enqueue(object : retrofit2.Callback<LoginResponse> {
             override fun onResponse(
                 call: Call<LoginResponse>,
