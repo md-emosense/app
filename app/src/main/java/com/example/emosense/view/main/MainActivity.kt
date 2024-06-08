@@ -49,12 +49,12 @@ class MainActivity : AppCompatActivity() {
         adapter = ListClinicAdapter()
         binding.rvClinic.adapter = adapter
 
-//        viewModel.getSession().observe(this) { user ->
-//            if (!user.isLogin) {
-//                startActivity(Intent(this, LoginActivity::class.java))
-//                finish()
-//            }
-//        }
+        viewModel.getSession().observe(this) { user ->
+            if (!user.isLogin) {
+                startActivity(Intent(this, LoginActivity::class.java))
+                finish()
+            }
+        }
 
         setupView()
         setupAction()

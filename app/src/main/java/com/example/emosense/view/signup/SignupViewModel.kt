@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.emosense.data.api.ApiConfig
 import com.example.emosense.data.response.RegisterResponse
+import com.example.emosense.data.response.UserResponse
 import retrofit2.Call
 import retrofit2.Response
 
@@ -18,7 +19,9 @@ class SignupViewModel : ViewModel() {
 
     fun signup(name: String, email: String, password: String, childName: String, adhdDesc: String, childBirthday: String) {
         _isLoading.value = true
-        val api = ApiConfig.getApiService().register(name, email, password, childName, adhdDesc, childBirthday)
+
+        val request = UserResponse(password, childName, name, adhdDesc, childBirthday, email)
+        val api = ApiConfig.getApiService().register(request)
         api.enqueue(object : retrofit2.Callback<RegisterResponse> {
             override fun onResponse(
                 call: Call<RegisterResponse>,
