@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\emosense\app\src\main\AndroidManifest.xml:2:1-58:12
-INJECTED from D:\emosense\app\src\main\AndroidManifest.xml:2:1-58:12
-INJECTED from D:\emosense\app\src\main\AndroidManifest.xml:2:1-58:12
-INJECTED from D:\emosense\app\src\main\AndroidManifest.xml:2:1-58:12
+ADDED from D:\emosense\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from D:\emosense\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from D:\emosense\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from D:\emosense\app\src\main\AndroidManifest.xml:2:1-67:12
 MERGED from [androidx.databinding:viewbinding:8.4.0] C:\Users\aisha\.gradle\caches\transforms-4\adf442488d66c35c66effa33953ebc72\transformed\viewbinding-8.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\aisha\.gradle\caches\transforms-4\a4a64406a7fd3458b1c4c1477dc8ac83\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-runtime:2.5.2] C:\Users\aisha\.gradle\caches\transforms-4\c4069b9351905df511156635efc02018\transformed\room-runtime-2.5.2\AndroidManifest.xml:17:1-31:12
@@ -80,8 +80,8 @@ ADDED from D:\emosense\app\src\main\AndroidManifest.xml:7:5-60
 	android:name
 		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:7:19-57
 application
-ADDED from D:\emosense\app\src\main\AndroidManifest.xml:9:5-56:19
-INJECTED from D:\emosense\app\src\main\AndroidManifest.xml:9:5-56:19
+ADDED from D:\emosense\app\src\main\AndroidManifest.xml:9:5-65:19
+INJECTED from D:\emosense\app\src\main\AndroidManifest.xml:9:5-65:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\aisha\.gradle\caches\transforms-4\a4a64406a7fd3458b1c4c1477dc8ac83\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\aisha\.gradle\caches\transforms-4\a4a64406a7fd3458b1c4c1477dc8ac83\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.room:room-runtime:2.5.2] C:\Users\aisha\.gradle\caches\transforms-4\c4069b9351905df511156635efc02018\transformed\room-runtime-2.5.2\AndroidManifest.xml:23:5-29:19
@@ -126,76 +126,94 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ai
 		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:11:9-65
 	android:usesCleartextTraffic
 		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:18:9-44
-activity#com.example.emosense.view.forum.ForumActivity
+activity#com.example.emosense.view.forum.AddForumActivity
 ADDED from D:\emosense\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:21:13-53
-activity#com.example.emosense.view.flashcards.FlashcardsActivity
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:21:13-56
+activity#com.example.emosense.view.forum.AddForum
 ADDED from D:\emosense\app\src\main\AndroidManifest.xml:23:9-25:40
 	android:exported
 		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:24:13-63
-activity#com.example.emosense.view.predict.PredictActivity
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:24:13-48
+activity#com.example.emosense.view.forum.DetailForumActivity
 ADDED from D:\emosense\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:exported
 		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:27:13-57
-activity#com.example.emosense.view.news.NewsDetailActivity
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:27:13-59
+activity#com.example.emosense.view.forum.ForumActivity
 ADDED from D:\emosense\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
 		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:30:13-57
-activity#com.example.emosense.view.clinic.ClinicActivity
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:30:13-53
+activity#com.example.emosense.view.flashcards.FlashcardsActivity
 ADDED from D:\emosense\app\src\main\AndroidManifest.xml:32:9-34:40
 	android:exported
 		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:33:13-55
-activity#com.example.emosense.view.news.NewsActivity
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:33:13-63
+activity#com.example.emosense.view.predict.PredictActivity
 ADDED from D:\emosense\app\src\main\AndroidManifest.xml:35:9-37:40
 	android:exported
 		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:36:13-51
-activity#com.example.emosense.view.profile.ProfileActivity
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:36:13-57
+activity#com.example.emosense.view.news.NewsDetailActivity
 ADDED from D:\emosense\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
 		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
 		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:39:13-57
-activity#com.example.emosense.view.login.LoginActivity
+activity#com.example.emosense.view.clinic.ClinicActivity
 ADDED from D:\emosense\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
 		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:42:13-53
-activity#com.example.emosense.view.signup.SignUpActivity
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:42:13-55
+activity#com.example.emosense.view.news.NewsActivity
 ADDED from D:\emosense\app\src\main\AndroidManifest.xml:44:9-46:40
 	android:exported
 		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:45:13-55
-activity#com.example.emosense.view.main.MainActivity
-ADDED from D:\emosense\app\src\main\AndroidManifest.xml:47:9-55:20
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:45:13-51
+activity#com.example.emosense.view.profile.ProfileActivity
+ADDED from D:\emosense\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported
-		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:49:13-36
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:48:13-51
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:48:13-57
+activity#com.example.emosense.view.login.LoginActivity
+ADDED from D:\emosense\app\src\main\AndroidManifest.xml:50:9-52:40
+	android:exported
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:52:13-37
+	android:name
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:51:13-53
+activity#com.example.emosense.view.signup.SignUpActivity
+ADDED from D:\emosense\app\src\main\AndroidManifest.xml:53:9-55:40
+	android:exported
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:55:13-37
+	android:name
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:54:13-55
+activity#com.example.emosense.view.main.MainActivity
+ADDED from D:\emosense\app\src\main\AndroidManifest.xml:56:9-64:20
+	android:exported
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:58:13-36
+	android:name
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:57:13-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\emosense\app\src\main\AndroidManifest.xml:50:13-54:29
+ADDED from D:\emosense\app\src\main\AndroidManifest.xml:59:13-63:29
 action#android.intent.action.MAIN
-ADDED from D:\emosense\app\src\main\AndroidManifest.xml:51:17-69
+ADDED from D:\emosense\app\src\main\AndroidManifest.xml:60:17-69
 	android:name
-		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:51:25-66
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:60:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\emosense\app\src\main\AndroidManifest.xml:53:17-77
+ADDED from D:\emosense\app\src\main\AndroidManifest.xml:62:17-77
 	android:name
-		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:53:27-74
+		ADDED from D:\emosense\app\src\main\AndroidManifest.xml:62:27-74
 uses-sdk
 INJECTED from D:\emosense\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\emosense\app\src\main\AndroidManifest.xml

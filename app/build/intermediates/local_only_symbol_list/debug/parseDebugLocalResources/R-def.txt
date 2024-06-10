@@ -44,6 +44,7 @@ drawable ic_baseline_email_24
 drawable ic_baseline_lock_24
 drawable ic_baseline_person_24
 drawable ic_camera_filled
+drawable ic_comment
 drawable ic_forum_filled
 drawable ic_home_filled
 drawable ic_launcher_background
@@ -63,6 +64,7 @@ font inter_medium
 font inter_regular
 font poppins
 font poppins_regular
+id addButton
 id addressContainer
 id alreadyHaveAccountTextView
 id appTitle
@@ -75,6 +77,7 @@ id btnFlip3
 id btnLogout
 id buttonLayout
 id cameraButton
+id card
 id card1
 id card2
 id card3
@@ -92,6 +95,8 @@ id clinicAddress
 id clinicName
 id clinicPhone
 id detailsContainer
+id editBody
+id editTitle
 id emailEditText
 id emailEditTextLayout
 id emailTextView
@@ -112,6 +117,7 @@ id guidelineHorizontal
 id guidelineHorizontal2
 id headerCardView
 id imageView
+id imageView2
 id imageView3
 id informationalTextView
 id ivClinic
@@ -151,6 +157,7 @@ id signupTextView
 id suburbProvinceCity
 id textView
 id textView2
+id textView3
 id textView4
 id textView5
 id titleDaftarTextView
@@ -159,11 +166,14 @@ id tvDesc
 id tvMoreClinic
 id tvMoreNews
 id tvName
+id tvNumofComments
 id tvTime
 id tvTitle
 id tvWelcome
 id uploadButton
+layout activity_add_forum
 layout activity_clinic
+layout activity_detail_forum
 layout activity_flashcards
 layout activity_forum
 layout activity_login
@@ -175,6 +185,7 @@ layout activity_profile
 layout activity_sign_up
 layout item_clinic
 layout item_clinic_view_all
+layout item_comment
 layout item_forum
 layout item_news
 menu bottom_menu

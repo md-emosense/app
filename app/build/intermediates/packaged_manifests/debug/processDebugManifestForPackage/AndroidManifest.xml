@@ -33,6 +33,15 @@
         android:theme="@style/Theme.EmoSense"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.emosense.view.forum.AddForumActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.emosense.view.forum.AddForum"
+            android:exported="false" />
+        <activity
+            android:name="com.example.emosense.view.forum.DetailForumActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.emosense.view.forum.ForumActivity"
             android:exported="false" />
         <activity

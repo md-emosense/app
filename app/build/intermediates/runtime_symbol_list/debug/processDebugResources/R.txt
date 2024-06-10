@@ -3054,6 +3054,7 @@ int drawable ic_call_decline_low 0x7f0800a6
 int drawable ic_camera_filled 0x7f0800a7
 int drawable ic_clear_black_24 0x7f0800a8
 int drawable ic_clock_black_24dp 0x7f0800a9
+int drawable ic_comment 0x7f08010f
 int drawable ic_forum_filled 0x7f0800aa
 int drawable ic_home_filled 0x7f0800ab
 int drawable ic_keyboard_black_24dp 0x7f0800ac
@@ -3229,6 +3230,7 @@ int id action_text 0x7f0a0043
 int id actions 0x7f0a0044
 int id activity_chooser_view_content 0x7f0a0045
 int id add 0x7f0a0046
+int id addButton 0x7f0a025c
 int id addressContainer 0x7f0a0047
 int id alertTitle 0x7f0a0048
 int id aligned 0x7f0a0049
@@ -3272,6 +3274,7 @@ int id cache_measures 0x7f0a006e
 int id callMeasure 0x7f0a006f
 int id cameraButton 0x7f0a0070
 int id cancel_button 0x7f0a0071
+int id card 0x7f0a0258
 int id card1 0x7f0a0072
 int id card2 0x7f0a0073
 int id card3 0x7f0a0074
@@ -3358,6 +3361,8 @@ int id easeInOut 0x7f0a00c4
 int id easeOut 0x7f0a00c5
 int id east 0x7f0a00c6
 int id edge 0x7f0a00c7
+int id editBody 0x7f0a0260
+int id editTitle 0x7f0a0261
 int id edit_query 0x7f0a00c8
 int id edit_text_id 0x7f0a00c9
 int id elastic 0x7f0a00ca
@@ -3429,6 +3434,7 @@ int id ignore 0x7f0a010b
 int id ignoreRequest 0x7f0a010c
 int id image 0x7f0a010d
 int id imageView 0x7f0a010e
+int id imageView2 0x7f0a0259
 int id imageView3 0x7f0a010f
 int id immediateStop 0x7f0a0110
 int id included 0x7f0a0111
@@ -3695,6 +3701,7 @@ int id textStart 0x7f0a0214
 int id textTop 0x7f0a0215
 int id textView 0x7f0a0216
 int id textView2 0x7f0a0217
+int id textView3 0x7f0a025a
 int id textView4 0x7f0a0218
 int id textView5 0x7f0a0219
 int id text_input_end_icon 0x7f0a021a
@@ -3731,6 +3738,7 @@ int id tvDesc 0x7f0a0238
 int id tvMoreClinic 0x7f0a0239
 int id tvMoreNews 0x7f0a023a
 int id tvName 0x7f0a023b
+int id tvNumofComments 0x7f0a025b
 int id tvTime 0x7f0a0257
 int id tvTitle 0x7f0a023c
 int id tvWelcome 0x7f0a023d
@@ -3872,7 +3880,9 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0d0018
 int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
+int layout activity_add_forum 0x7f0d007b
 int layout activity_clinic 0x7f0d001c
+int layout activity_detail_forum 0x7f0d0079
 int layout activity_flashcards 0x7f0d001d
 int layout activity_forum 0x7f0d0077
 int layout activity_login 0x7f0d001e
@@ -3902,6 +3912,7 @@ int layout ime_base_split_test_activity 0x7f0d0035
 int layout ime_secondary_split_test_activity 0x7f0d0036
 int layout item_clinic 0x7f0d0037
 int layout item_clinic_view_all 0x7f0d0038
+int layout item_comment 0x7f0d007a
 int layout item_forum 0x7f0d0078
 int layout item_news 0x7f0d0039
 int layout m3_alert_dialog 0x7f0d003a

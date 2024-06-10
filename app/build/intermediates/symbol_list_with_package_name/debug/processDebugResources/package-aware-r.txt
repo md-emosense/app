@@ -3055,6 +3055,7 @@ drawable ic_call_decline_low
 drawable ic_camera_filled
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_comment
 drawable ic_forum_filled
 drawable ic_home_filled
 drawable ic_keyboard_black_24dp
@@ -3230,6 +3231,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addButton
 id addressContainer
 id alertTitle
 id aligned
@@ -3273,6 +3275,7 @@ id cache_measures
 id callMeasure
 id cameraButton
 id cancel_button
+id card
 id card1
 id card2
 id card3
@@ -3359,6 +3362,8 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editBody
+id editTitle
 id edit_query
 id edit_text_id
 id elastic
@@ -3430,6 +3435,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
 id imageView3
 id immediateStop
 id included
@@ -3696,6 +3702,7 @@ id textStart
 id textTop
 id textView
 id textView2
+id textView3
 id textView4
 id textView5
 id text_input_end_icon
@@ -3732,6 +3739,7 @@ id tvDesc
 id tvMoreClinic
 id tvMoreNews
 id tvName
+id tvNumofComments
 id tvTime
 id tvTitle
 id tvWelcome
@@ -3873,7 +3881,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_forum
 layout activity_clinic
+layout activity_detail_forum
 layout activity_flashcards
 layout activity_forum
 layout activity_login
@@ -3903,6 +3913,7 @@ layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_clinic
 layout item_clinic_view_all
+layout item_comment
 layout item_forum
 layout item_news
 layout m3_alert_dialog

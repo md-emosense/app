@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.emosense.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,6 +22,9 @@ import java.lang.String;
 public final class ActivityForumBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final FloatingActionButton addButton;
 
   @NonNull
   public final ImageButton backButton;
@@ -37,10 +41,12 @@ public final class ActivityForumBinding implements ViewBinding {
   @NonNull
   public final TextView textView2;
 
-  private ActivityForumBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton backButton,
+  private ActivityForumBinding(@NonNull ConstraintLayout rootView,
+      @NonNull FloatingActionButton addButton, @NonNull ImageButton backButton,
       @NonNull CardView headerCardView, @NonNull ConstraintLayout main,
       @NonNull RecyclerView rvNews, @NonNull TextView textView2) {
     this.rootView = rootView;
+    this.addButton = addButton;
     this.backButton = backButton;
     this.headerCardView = headerCardView;
     this.main = main;
@@ -75,6 +81,12 @@ public final class ActivityForumBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.addButton;
+      FloatingActionButton addButton = ViewBindings.findChildViewById(rootView, id);
+      if (addButton == null) {
+        break missingId;
+      }
+
       id = R.id.backButton;
       ImageButton backButton = ViewBindings.findChildViewById(rootView, id);
       if (backButton == null) {
@@ -101,8 +113,8 @@ public final class ActivityForumBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityForumBinding((ConstraintLayout) rootView, backButton, headerCardView, main,
-          rvNews, textView2);
+      return new ActivityForumBinding((ConstraintLayout) rootView, addButton, backButton,
+          headerCardView, main, rvNews, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

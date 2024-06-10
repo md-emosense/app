@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.emosense.data.database.UserRepository
 import com.example.emosense.di.Injection
+import com.example.emosense.view.forum.AddForumViewModel
 import com.example.emosense.view.forum.ForumViewModel
 import com.example.emosense.view.login.LoginViewModel
 import com.example.emosense.view.main.MainViewModel
@@ -22,6 +23,9 @@ class ViewModelFactory(private val repository: UserRepository) : ViewModelProvid
             }
             modelClass.isAssignableFrom(ForumViewModel::class.java) -> {
                 ForumViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(AddForumViewModel::class.java) -> {
+                AddForumViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
