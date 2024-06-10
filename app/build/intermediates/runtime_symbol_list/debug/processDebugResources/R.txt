@@ -3001,16 +3001,19 @@ int drawable avd_hide_password 0x7f080078
 int drawable avd_show_password 0x7f080079
 int drawable background_transparent 0x7f08007a
 int drawable banner 0x7f08007b
+int drawable baseline_add_photo_alternate_24 0x7f08010b
 int drawable baseline_arrow_forward_24 0x7f08007c
 int drawable baseline_calendar_month_24 0x7f08007d
 int drawable baseline_camera_alt_24 0x7f08007e
 int drawable baseline_expand_less_24 0x7f08007f
 int drawable baseline_expand_more_24 0x7f080080
+int drawable baseline_insert_photo_24 0x7f080104
 int drawable baseline_location_city_24 0x7f080081
 int drawable baseline_location_primary 0x7f080082
 int drawable baseline_logout_24 0x7f080083
 int drawable baseline_phone_24 0x7f080084
 int drawable baseline_post_add_24 0x7f080085
+int drawable baseline_rocket_launch_24 0x7f080105
 int drawable btn_checkbox_checked_mtrl 0x7f080086
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f080087
 int drawable btn_checkbox_unchecked_mtrl 0x7f080088
@@ -3024,6 +3027,10 @@ int drawable design_ic_visibility 0x7f08008f
 int drawable design_ic_visibility_off 0x7f080090
 int drawable design_password_eye 0x7f080091
 int drawable design_snackbar_background 0x7f080092
+int drawable forum1 0x7f080106
+int drawable forum_gray 0x7f080107
+int drawable home 0x7f080108
+int drawable home_gray 0x7f080109
 int drawable ic_arrow_back_black_24 0x7f080093
 int drawable ic_back 0x7f080094
 int drawable ic_baseline_email_24 0x7f080095
@@ -3134,6 +3141,7 @@ int drawable notification_template_icon_low_bg 0x7f0800fd
 int drawable notification_tile_bg 0x7f0800fe
 int drawable notify_panel_notification_icon_bg 0x7f0800ff
 int drawable profile 0x7f080100
+int drawable profile2 0x7f08010a
 int drawable test_level_drawable 0x7f080101
 int drawable tooltip_frame_dark 0x7f080102
 int drawable tooltip_frame_light 0x7f080103
@@ -3246,9 +3254,11 @@ int id bounceBoth 0x7f0a0065
 int id bounceEnd 0x7f0a0066
 int id bounceStart 0x7f0a0067
 int id btnLogout 0x7f0a023e
+int id buttonLayout 0x7f0a0240
 int id buttonPanel 0x7f0a0068
 int id cache_measures 0x7f0a0069
 int id callMeasure 0x7f0a006a
+int id cameraButton 0x7f0a0241
 int id cancel_button 0x7f0a006b
 int id cardView 0x7f0a006c
 int id carryVelocity 0x7f0a006d
@@ -3371,6 +3381,7 @@ int id forever 0x7f0a00e2
 int id fragment_container_view_tag 0x7f0a00e3
 int id frost 0x7f0a00e4
 int id fullscreen_header 0x7f0a00e5
+int id galleryButton 0x7f0a0242
 int id ghost_view 0x7f0a00e6
 int id ghost_view_holder 0x7f0a00e7
 int id glide_custom_view_target_tag 0x7f0a00e8
@@ -3548,9 +3559,12 @@ int id photoCard 0x7f0a0193
 int id pin 0x7f0a0194
 int id position 0x7f0a0195
 int id postLayout 0x7f0a0196
+int id predictButton 0x7f0a0243
 int id pressed 0x7f0a0197
+int id previewImageView 0x7f0a0244
 int id profileButton 0x7f0a0198
 int id progressBar 0x7f0a0199
+int id progressIndicator 0x7f0a0245
 int id progress_circular 0x7f0a019a
 int id progress_horizontal 0x7f0a019b
 int id radio 0x7f0a019c
@@ -3575,6 +3589,7 @@ int id scroll 0x7f0a01ae
 int id scrollIndicatorDown 0x7f0a01af
 int id scrollIndicatorUp 0x7f0a01b0
 int id scrollView 0x7f0a01b1
+int id scrollView2 0x7f0a0246
 int id scrollable 0x7f0a01b2
 int id search_badge 0x7f0a01b3
 int id search_bar 0x7f0a01b4
@@ -3697,6 +3712,7 @@ int id unchecked 0x7f0a0227
 int id uniform 0x7f0a0228
 int id unlabeled 0x7f0a0229
 int id up 0x7f0a022a
+int id uploadButton 0x7f0a0247
 int id useLogo 0x7f0a022b
 int id vertical_only 0x7f0a022c
 int id view_offset_helper 0x7f0a022d
@@ -3835,6 +3851,7 @@ int layout activity_login 0x7f0d001d
 int layout activity_main 0x7f0d001e
 int layout activity_news 0x7f0d001f
 int layout activity_news_detail 0x7f0d0020
+int layout activity_predict 0x7f0d0075
 int layout activity_profile 0x7f0d0021
 int layout activity_sign_up 0x7f0d0022
 int layout custom_dialog 0x7f0d0023

@@ -23,6 +23,7 @@ import com.example.emosense.adapter.ListNewsAdapter
 import com.example.emosense.data.response.ClinicItem
 import com.example.emosense.view.news.NewsActivity
 import com.example.emosense.view.news.NewsDetailActivity
+import com.example.emosense.view.predict.PredictActivity
 import com.example.emosense.view.profile.ProfileActivity
 import kotlinx.coroutines.launch
 
@@ -43,6 +44,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setupClinic()
+        setupView()
+        setupAction()
+        setNews()
+    }
+
+    private fun setupClinic() {
         layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         binding.rvClinic.layoutManager = layoutManager
 
@@ -55,10 +63,6 @@ class MainActivity : AppCompatActivity() {
                 finish()
             }
         }
-
-        setupView()
-        setupAction()
-        setNews()
 
         viewModel.getAllClinic()
 
@@ -98,6 +102,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.tvMoreClinic.setOnClickListener {
             val intent = Intent(this@MainActivity, ClinicActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.predictButton.setOnClickListener {
+            val intent = Intent(this@MainActivity, PredictActivity::class.java)
             startActivity(intent)
         }
     }

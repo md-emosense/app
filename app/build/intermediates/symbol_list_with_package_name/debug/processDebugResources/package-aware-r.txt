@@ -3002,16 +3002,19 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable background_transparent
 drawable banner
+drawable baseline_add_photo_alternate_24
 drawable baseline_arrow_forward_24
 drawable baseline_calendar_month_24
 drawable baseline_camera_alt_24
 drawable baseline_expand_less_24
 drawable baseline_expand_more_24
+drawable baseline_insert_photo_24
 drawable baseline_location_city_24
 drawable baseline_location_primary
 drawable baseline_logout_24
 drawable baseline_phone_24
 drawable baseline_post_add_24
+drawable baseline_rocket_launch_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3025,6 +3028,10 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable forum1
+drawable forum_gray
+drawable home
+drawable home_gray
 drawable ic_arrow_back_black_24
 drawable ic_back
 drawable ic_baseline_email_24
@@ -3135,6 +3142,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable profile
+drawable profile2
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3247,9 +3255,11 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnLogout
+id buttonLayout
 id buttonPanel
 id cache_measures
 id callMeasure
+id cameraButton
 id cancel_button
 id cardView
 id carryVelocity
@@ -3372,6 +3382,7 @@ id forever
 id fragment_container_view_tag
 id frost
 id fullscreen_header
+id galleryButton
 id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
@@ -3549,9 +3560,12 @@ id photoCard
 id pin
 id position
 id postLayout
+id predictButton
 id pressed
+id previewImageView
 id profileButton
 id progressBar
+id progressIndicator
 id progress_circular
 id progress_horizontal
 id radio
@@ -3576,6 +3590,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -3698,6 +3713,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id uploadButton
 id useLogo
 id vertical_only
 id view_offset_helper
@@ -3836,6 +3852,7 @@ layout activity_login
 layout activity_main
 layout activity_news
 layout activity_news_detail
+layout activity_predict
 layout activity_profile
 layout activity_sign_up
 layout custom_dialog

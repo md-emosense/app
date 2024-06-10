@@ -18,6 +18,7 @@ import androidx.viewbinding.ViewBindings;
 import com.example.emosense.R;
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -46,6 +47,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final ConstraintLayout main;
+
+  @NonNull
+  public final FloatingActionButton predictButton;
 
   @NonNull
   public final ImageButton profileButton;
@@ -80,10 +84,11 @@ public final class ActivityMainBinding implements ViewBinding {
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appTitle,
       @NonNull BottomAppBar bottomNavigation, @NonNull BottomNavigationView bottomNavigationView,
       @NonNull CardView headerCardView, @NonNull CardView imageView, @NonNull ImageView ivLogo,
-      @NonNull ConstraintLayout main, @NonNull ImageButton profileButton,
-      @NonNull RecyclerView rvClinic, @NonNull RecyclerView rvNews, @NonNull ScrollView scrollView,
-      @NonNull TextView textView4, @NonNull TextView textView5, @NonNull TextView tvMoreClinic,
-      @NonNull TextView tvMoreNews, @NonNull TextView tvName, @NonNull TextView tvWelcome) {
+      @NonNull ConstraintLayout main, @NonNull FloatingActionButton predictButton,
+      @NonNull ImageButton profileButton, @NonNull RecyclerView rvClinic,
+      @NonNull RecyclerView rvNews, @NonNull ScrollView scrollView, @NonNull TextView textView4,
+      @NonNull TextView textView5, @NonNull TextView tvMoreClinic, @NonNull TextView tvMoreNews,
+      @NonNull TextView tvName, @NonNull TextView tvWelcome) {
     this.rootView = rootView;
     this.appTitle = appTitle;
     this.bottomNavigation = bottomNavigation;
@@ -92,6 +97,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.imageView = imageView;
     this.ivLogo = ivLogo;
     this.main = main;
+    this.predictButton = predictButton;
     this.profileButton = profileButton;
     this.rvClinic = rvClinic;
     this.rvNews = rvNews;
@@ -173,6 +179,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.predictButton;
+      FloatingActionButton predictButton = ViewBindings.findChildViewById(rootView, id);
+      if (predictButton == null) {
+        break missingId;
+      }
+
       id = R.id.profileButton;
       ImageButton profileButton = ViewBindings.findChildViewById(rootView, id);
       if (profileButton == null) {
@@ -234,8 +246,9 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, appTitle, bottomNavigation,
-          bottomNavigationView, headerCardView, imageView, ivLogo, main, profileButton, rvClinic,
-          rvNews, scrollView, textView4, textView5, tvMoreClinic, tvMoreNews, tvName, tvWelcome);
+          bottomNavigationView, headerCardView, imageView, ivLogo, main, predictButton,
+          profileButton, rvClinic, rvNews, scrollView, textView4, textView5, tvMoreClinic,
+          tvMoreNews, tvName, tvWelcome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
