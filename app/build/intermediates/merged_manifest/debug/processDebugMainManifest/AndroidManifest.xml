@@ -33,6 +33,9 @@
         android:theme="@style/Theme.EmoSense"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.emosense.view.flashcards.FlashcardsActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.emosense.view.predict.PredictActivity"
             android:exported="false" />
         <activity

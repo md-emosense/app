@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_add_photo_alternate_24.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/baseline_add_photo_alternate_24.xml"
+    },
+    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_insert_photo_24.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/baseline_insert_photo_24.xml"
     },
@@ -52,6 +56,14 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/xml/backup_rules.xml"
     },
     {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/anim_flip_to_back.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/anim/flip_to_back.xml"
+    },
+    {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_flip_24.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/baseline_flip_24.xml"
+    },
+    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_image_card_1.jpeg.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/image_card_1.jpeg"
     },
@@ -76,10 +88,6 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/item_news.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-43:/layout_activity_predict.xml.flat",
-        "source": "com.example.emosense.app-main-45:/layout/activity_predict.xml"
-    },
-    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_expand_more_24.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/baseline_expand_more_24.xml"
     },
@@ -98,6 +106,10 @@
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_post_add_24.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/baseline_post_add_24.xml"
+    },
+    {
+        "merged": "com.example.emosense.app-debug-43:/layout_activity_flashcards.xml.flat",
+        "source": "com.example.emosense.app-main-45:/layout/activity_flashcards.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_ic_baseline_email_24.xml.flat",
@@ -122,6 +134,10 @@
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_banner.jpg.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/banner.jpg"
+    },
+    {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/animator_flip_to_back.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/animator/flip_to_back.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_arrow_forward_24.xml.flat",
@@ -184,12 +200,12 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/activity_login.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-43:/drawable_baseline_add_photo_alternate_24.xml.flat",
-        "source": "com.example.emosense.app-main-45:/drawable/baseline_add_photo_alternate_24.xml"
-    },
-    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/animator_flip_to_front.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/animator/flip_to_front.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_profile.xml.flat",
@@ -256,6 +272,10 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/xml/data_extraction_rules.xml"
     },
     {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_play_circle_24.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/baseline_play_circle_24.xml"
+    },
+    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_baseline_expand_less_24.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/drawable/baseline_expand_less_24.xml"
     },
@@ -274,6 +294,10 @@
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/layout_item_clinic_view_all.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/item_clinic_view_all.xml"
+    },
+    {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/layout_activity_flashcards.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-45:/layout/activity_flashcards.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-43:/drawable_ic_home_filled.xml.flat",

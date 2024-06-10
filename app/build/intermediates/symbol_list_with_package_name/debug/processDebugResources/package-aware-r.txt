@@ -27,6 +27,7 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim flip_to_back
 anim fragment_fast_out_extra_slow_in
 anim linear_indeterminate_line1_head_interpolator
 anim linear_indeterminate_line1_tail_interpolator
@@ -46,6 +47,8 @@ anim mtrl_card_lowers_interpolator
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
+animator flip_to_back
+animator flip_to_front
 animator fragment_close_enter
 animator fragment_close_exit
 animator fragment_fade_enter
@@ -3008,11 +3011,13 @@ drawable baseline_calendar_month_24
 drawable baseline_camera_alt_24
 drawable baseline_expand_less_24
 drawable baseline_expand_more_24
+drawable baseline_flip_24
 drawable baseline_insert_photo_24
 drawable baseline_location_city_24
 drawable baseline_location_primary
 drawable baseline_logout_24
 drawable baseline_phone_24
+drawable baseline_play_circle_24
 drawable baseline_post_add_24
 drawable baseline_rocket_launch_24
 drawable btn_checkbox_checked_mtrl
@@ -3254,6 +3259,9 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnFlip
+id btnFlip2
+id btnFlip3
 id btnLogout
 id buttonLayout
 id buttonPanel
@@ -3261,6 +3269,15 @@ id cache_measures
 id callMeasure
 id cameraButton
 id cancel_button
+id card1
+id card2
+id card3
+id cardBack1
+id cardBack2
+id cardBack3
+id cardFront1
+id cardFront2
+id cardFront3
 id cardView
 id carryVelocity
 id center
@@ -3558,6 +3575,9 @@ id percent
 id phoneContainer
 id photoCard
 id pin
+id playMarah
+id playSedih
+id playSenang
 id position
 id postLayout
 id predictButton
@@ -3848,6 +3868,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_clinic
+layout activity_flashcards
 layout activity_login
 layout activity_main
 layout activity_news

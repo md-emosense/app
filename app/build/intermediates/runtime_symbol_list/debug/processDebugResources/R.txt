@@ -26,6 +26,7 @@ int anim design_bottom_sheet_slide_in 0x7f010018
 int anim design_bottom_sheet_slide_out 0x7f010019
 int anim design_snackbar_in 0x7f01001a
 int anim design_snackbar_out 0x7f01001b
+int anim flip_to_back 0x7f01002c
 int anim fragment_fast_out_extra_slow_in 0x7f01001c
 int anim linear_indeterminate_line1_head_interpolator 0x7f01001d
 int anim linear_indeterminate_line1_tail_interpolator 0x7f01001e
@@ -45,6 +46,8 @@ int anim mtrl_card_lowers_interpolator 0x7f01002b
 int animator design_appbar_state_list_animator 0x7f020000
 int animator design_fab_hide_motion_spec 0x7f020001
 int animator design_fab_show_motion_spec 0x7f020002
+int animator flip_to_back 0x7f020022
+int animator flip_to_front 0x7f020023
 int animator fragment_close_enter 0x7f020003
 int animator fragment_close_exit 0x7f020004
 int animator fragment_fade_enter 0x7f020005
@@ -3007,11 +3010,13 @@ int drawable baseline_calendar_month_24 0x7f08007d
 int drawable baseline_camera_alt_24 0x7f08007e
 int drawable baseline_expand_less_24 0x7f08007f
 int drawable baseline_expand_more_24 0x7f080080
+int drawable baseline_flip_24 0x7f08010d
 int drawable baseline_insert_photo_24 0x7f080104
 int drawable baseline_location_city_24 0x7f080081
 int drawable baseline_location_primary 0x7f080082
 int drawable baseline_logout_24 0x7f080083
 int drawable baseline_phone_24 0x7f080084
+int drawable baseline_play_circle_24 0x7f08010c
 int drawable baseline_post_add_24 0x7f080085
 int drawable baseline_rocket_launch_24 0x7f080105
 int drawable btn_checkbox_checked_mtrl 0x7f080086
@@ -3253,6 +3258,9 @@ int id bounce 0x7f0a0064
 int id bounceBoth 0x7f0a0065
 int id bounceEnd 0x7f0a0066
 int id bounceStart 0x7f0a0067
+int id btnFlip 0x7f0a0250
+int id btnFlip2 0x7f0a0251
+int id btnFlip3 0x7f0a0252
 int id btnLogout 0x7f0a023e
 int id buttonLayout 0x7f0a0240
 int id buttonPanel 0x7f0a0068
@@ -3260,6 +3268,15 @@ int id cache_measures 0x7f0a0069
 int id callMeasure 0x7f0a006a
 int id cameraButton 0x7f0a0241
 int id cancel_button 0x7f0a006b
+int id card1 0x7f0a024b
+int id card2 0x7f0a024c
+int id card3 0x7f0a024d
+int id cardBack1 0x7f0a025a
+int id cardBack2 0x7f0a0253
+int id cardBack3 0x7f0a0254
+int id cardFront1 0x7f0a025b
+int id cardFront2 0x7f0a0255
+int id cardFront3 0x7f0a0256
 int id cardView 0x7f0a006c
 int id carryVelocity 0x7f0a006d
 int id center 0x7f0a006e
@@ -3557,6 +3574,9 @@ int id percent 0x7f0a0191
 int id phoneContainer 0x7f0a0192
 int id photoCard 0x7f0a0193
 int id pin 0x7f0a0194
+int id playMarah 0x7f0a0257
+int id playSedih 0x7f0a0258
+int id playSenang 0x7f0a0259
 int id position 0x7f0a0195
 int id postLayout 0x7f0a0196
 int id predictButton 0x7f0a0243
@@ -3847,6 +3867,7 @@ int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
 int layout activity_clinic 0x7f0d001c
+int layout activity_flashcards 0x7f0d0076
 int layout activity_login 0x7f0d001d
 int layout activity_main 0x7f0d001e
 int layout activity_news 0x7f0d001f
