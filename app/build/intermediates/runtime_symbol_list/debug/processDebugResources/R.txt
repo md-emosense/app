@@ -298,6 +298,10 @@ int attr circularflow_defaultAngle 0x7f0400d5
 int attr circularflow_defaultRadius 0x7f0400d6
 int attr circularflow_radiusInDP 0x7f0400d7
 int attr circularflow_viewCenter 0x7f0400d8
+int attr civ_border_color 0x7f0404e0
+int attr civ_border_overlay 0x7f0404e1
+int attr civ_border_width 0x7f0404e2
+int attr civ_circle_background_color 0x7f0404e3
 int attr clearsTag 0x7f0400d9
 int attr clickAction 0x7f0400da
 int attr clockFaceBackgroundColor 0x7f0400db
@@ -3035,6 +3039,7 @@ int drawable forum1 0x7f080098
 int drawable forum_gray 0x7f080099
 int drawable home 0x7f08009a
 int drawable home_gray 0x7f08009b
+int drawable ic_add 0x7f08010e
 int drawable ic_arrow_back_black_24 0x7f08009c
 int drawable ic_back 0x7f08009d
 int drawable ic_baseline_email_24 0x7f08009e
@@ -3437,6 +3442,7 @@ int id item_touch_helper_previous_elevation 0x7f0a0118
 int id ivClinic 0x7f0a0119
 int id ivLogo 0x7f0a011a
 int id ivNews 0x7f0a011b
+int id ivProfile 0x7f0a0256
 int id jumpToEnd 0x7f0a011c
 int id jumpToStart 0x7f0a011d
 int id labeled 0x7f0a011e
@@ -3725,6 +3731,7 @@ int id tvDesc 0x7f0a0238
 int id tvMoreClinic 0x7f0a0239
 int id tvMoreNews 0x7f0a023a
 int id tvName 0x7f0a023b
+int id tvTime 0x7f0a0257
 int id tvTitle 0x7f0a023c
 int id tvWelcome 0x7f0a023d
 int id unchecked 0x7f0a023e
@@ -3895,6 +3902,7 @@ int layout ime_base_split_test_activity 0x7f0d0035
 int layout ime_secondary_split_test_activity 0x7f0d0036
 int layout item_clinic 0x7f0d0037
 int layout item_clinic_view_all 0x7f0d0038
+int layout item_forum 0x7f0d0078
 int layout item_news 0x7f0d0039
 int layout m3_alert_dialog 0x7f0d003a
 int layout m3_alert_dialog_actions 0x7f0d003b
@@ -5706,6 +5714,11 @@ int styleable ChipGroup_chipSpacingVertical 3
 int styleable ChipGroup_selectionRequired 4
 int styleable ChipGroup_singleLine 5
 int styleable ChipGroup_singleSelection 6
+int[] styleable CircleImageView { 0x7f0404e0, 0x7f0404e1, 0x7f0404e2, 0x7f0404e3 }
+int styleable CircleImageView_civ_border_color 0
+int styleable CircleImageView_civ_border_overlay 1
+int styleable CircleImageView_civ_border_width 2
+int styleable CircleImageView_civ_circle_background_color 3
 int[] styleable CircularProgressIndicator { 0x7f040238, 0x7f04023a, 0x7f04023b }
 int styleable CircularProgressIndicator_indicatorDirectionCircular 0
 int styleable CircularProgressIndicator_indicatorInset 1

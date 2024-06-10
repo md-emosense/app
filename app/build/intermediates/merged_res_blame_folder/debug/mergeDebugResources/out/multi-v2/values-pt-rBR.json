@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.emosense.app-mergeDebugResources-41:/values-pt-rBR/values-pt-rBR.xml",
+            "outputFile": "com.example.emosense.app-mergeDebugResources-42:/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
                     "source": "C:\\Users\\aisha\\.gradle\\caches\\transforms-4\\8f01ac1317ec8da5aa32fbef68c91075\\transformed\\core-1.13.1\\res\\values-pt-rBR\\values-pt-rBR.xml",

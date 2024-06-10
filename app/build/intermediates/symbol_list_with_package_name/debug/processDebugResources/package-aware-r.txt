@@ -299,6 +299,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr clockFaceBackgroundColor
@@ -3036,6 +3040,7 @@ drawable forum1
 drawable forum_gray
 drawable home
 drawable home_gray
+drawable ic_add
 drawable ic_arrow_back_black_24
 drawable ic_back
 drawable ic_baseline_email_24
@@ -3438,6 +3443,7 @@ id item_touch_helper_previous_elevation
 id ivClinic
 id ivLogo
 id ivNews
+id ivProfile
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3726,6 +3732,7 @@ id tvDesc
 id tvMoreClinic
 id tvMoreNews
 id tvName
+id tvTime
 id tvTitle
 id tvWelcome
 id unchecked
@@ -3896,6 +3903,7 @@ layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_clinic
 layout item_clinic_view_all
+layout item_forum
 layout item_news
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -5305,6 +5313,7 @@ styleable Carousel carousel_alignment carousel_backwardTransition carousel_empty
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize

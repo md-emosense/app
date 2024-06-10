@@ -38,6 +38,7 @@ drawable forum1
 drawable forum_gray
 drawable home
 drawable home_gray
+drawable ic_add
 drawable ic_back
 drawable ic_baseline_email_24
 drawable ic_baseline_lock_24
@@ -116,6 +117,7 @@ id informationalTextView
 id ivClinic
 id ivLogo
 id ivNews
+id ivProfile
 id loginButton
 id loginTextView
 id main
@@ -157,6 +159,7 @@ id tvDesc
 id tvMoreClinic
 id tvMoreNews
 id tvName
+id tvTime
 id tvTitle
 id tvWelcome
 id uploadButton
@@ -172,6 +175,7 @@ layout activity_profile
 layout activity_sign_up
 layout item_clinic
 layout item_clinic_view_all
+layout item_forum
 layout item_news
 menu bottom_menu
 mipmap ic_launcher
