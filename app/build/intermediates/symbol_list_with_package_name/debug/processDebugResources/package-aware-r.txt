@@ -27,7 +27,6 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
-anim flip_to_back
 anim fragment_fast_out_extra_slow_in
 anim linear_indeterminate_line1_head_interpolator
 anim linear_indeterminate_line1_tail_interpolator
@@ -3869,6 +3868,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_clinic
 layout activity_flashcards
+layout activity_forum
 layout activity_login
 layout activity_main
 layout activity_news

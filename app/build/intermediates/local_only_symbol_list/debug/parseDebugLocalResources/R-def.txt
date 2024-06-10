@@ -1,6 +1,5 @@
 R_DEF: Internal format may change without notice
 local
-anim flip_to_back
 animator flip_to_back
 animator flip_to_front
 array data_description
@@ -163,6 +162,7 @@ id tvWelcome
 id uploadButton
 layout activity_clinic
 layout activity_flashcards
+layout activity_forum
 layout activity_login
 layout activity_main
 layout activity_news
