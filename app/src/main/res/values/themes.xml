@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.EmoSense" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:fontFamily">@font/poppins</item>
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="colorPrimary">@color/primary</item>
