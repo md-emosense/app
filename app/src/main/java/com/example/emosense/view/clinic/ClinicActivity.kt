@@ -51,6 +51,10 @@ class ClinicActivity : AppCompatActivity() {
         }
 
         setupView()
+
+        binding.backButton.setOnClickListener {
+            finish()
+        }
     }
 
     private fun setClinicData(clinicData: List<ClinicItem>) {

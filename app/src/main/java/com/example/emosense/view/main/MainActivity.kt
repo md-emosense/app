@@ -24,6 +24,7 @@ import com.example.emosense.view.login.LoginActivity
 import com.example.emosense.view.news.NewsActivity
 import com.example.emosense.view.news.NewsDetailActivity
 import com.example.emosense.view.predict.PredictActivity
+import com.example.emosense.view.flashcards.FlashcardsActivity
 import com.example.emosense.view.profile.ProfileActivity
 
 

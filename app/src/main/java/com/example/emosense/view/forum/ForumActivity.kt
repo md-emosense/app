@@ -3,6 +3,7 @@ package com.example.emosense.view.forum
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.activity.enableEdgeToEdge
@@ -15,6 +16,7 @@ import com.example.emosense.databinding.ActivityForumBinding
 import com.example.emosense.databinding.ActivityMainBinding
 import com.example.emosense.view.ViewModelFactory
 import com.example.emosense.view.clinic.ClinicActivity
+import com.example.emosense.view.main.MainActivity
 import com.example.emosense.view.main.MainViewModel
 import com.example.emosense.view.news.NewsActivity
 import com.example.emosense.view.predict.PredictActivity
@@ -35,6 +37,7 @@ class ForumActivity : AppCompatActivity() {
 
         setupView()
         setupAction()
+
     }
 
     private fun setupView() {

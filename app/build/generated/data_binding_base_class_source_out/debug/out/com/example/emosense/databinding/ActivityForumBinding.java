@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.emosense.R;
+import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -30,10 +32,19 @@ public final class ActivityForumBinding implements ViewBinding {
   public final ImageButton backButton;
 
   @NonNull
+  public final BottomAppBar bottomNavigation;
+
+  @NonNull
+  public final BottomNavigationView bottomNavigationView;
+
+  @NonNull
   public final CardView headerCardView;
 
   @NonNull
   public final ConstraintLayout main;
+
+  @NonNull
+  public final FloatingActionButton predictButton;
 
   @NonNull
   public final RecyclerView rvNews;
@@ -43,13 +54,18 @@ public final class ActivityForumBinding implements ViewBinding {
 
   private ActivityForumBinding(@NonNull ConstraintLayout rootView,
       @NonNull FloatingActionButton addButton, @NonNull ImageButton backButton,
+      @NonNull BottomAppBar bottomNavigation, @NonNull BottomNavigationView bottomNavigationView,
       @NonNull CardView headerCardView, @NonNull ConstraintLayout main,
-      @NonNull RecyclerView rvNews, @NonNull TextView textView2) {
+      @NonNull FloatingActionButton predictButton, @NonNull RecyclerView rvNews,
+      @NonNull TextView textView2) {
     this.rootView = rootView;
     this.addButton = addButton;
     this.backButton = backButton;
+    this.bottomNavigation = bottomNavigation;
+    this.bottomNavigationView = bottomNavigationView;
     this.headerCardView = headerCardView;
     this.main = main;
+    this.predictButton = predictButton;
     this.rvNews = rvNews;
     this.textView2 = textView2;
   }
@@ -93,6 +109,18 @@ public final class ActivityForumBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.bottom_navigation;
+      BottomAppBar bottomNavigation = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavigation == null) {
+        break missingId;
+      }
+
+      id = R.id.bottomNavigationView;
+      BottomNavigationView bottomNavigationView = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavigationView == null) {
+        break missingId;
+      }
+
       id = R.id.headerCardView;
       CardView headerCardView = ViewBindings.findChildViewById(rootView, id);
       if (headerCardView == null) {
@@ -100,6 +128,12 @@ public final class ActivityForumBinding implements ViewBinding {
       }
 
       ConstraintLayout main = (ConstraintLayout) rootView;
+
+      id = R.id.predictButton;
+      FloatingActionButton predictButton = ViewBindings.findChildViewById(rootView, id);
+      if (predictButton == null) {
+        break missingId;
+      }
 
       id = R.id.rvNews;
       RecyclerView rvNews = ViewBindings.findChildViewById(rootView, id);
@@ -114,7 +148,8 @@ public final class ActivityForumBinding implements ViewBinding {
       }
 
       return new ActivityForumBinding((ConstraintLayout) rootView, addButton, backButton,
-          headerCardView, main, rvNews, textView2);
+          bottomNavigation, bottomNavigationView, headerCardView, main, predictButton, rvNews,
+          textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -34,6 +34,10 @@ class PredictActivity : AppCompatActivity() {
         binding.cameraButton.setOnClickListener { startCamera() }
 
         setupView()
+
+        binding.backButton.setOnClickListener {
+            finish()
+        }
     }
 
     private fun setupView() {
