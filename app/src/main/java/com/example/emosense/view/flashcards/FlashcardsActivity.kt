@@ -3,16 +3,22 @@ package com.example.emosense.view.flashcards
 import android.animation.Animator
 import android.animation.AnimatorInflater
 import android.animation.AnimatorListenerAdapter
+import android.media.AudioManager
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.emosense.R
 
 import com.example.emosense.databinding.ActivityFlashcardsBinding
+import okio.IOException
 
 class FlashcardsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFlashcardsBinding
+
+    var mediaPlayer : MediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +37,33 @@ class FlashcardsActivity : AppCompatActivity() {
         binding.btnFlip3.setOnClickListener {
             flipCard(binding.card3, R.id.cardFront3, R.id.cardBack3)
         }
+
+        binding.playSenang.setOnClickListener {
+            playAudio("https://storage.googleapis.com/emosense-bucket/audio-mp3/senang.mp3", "senang")
+        }
+
+        binding.playSedih.setOnClickListener {
+            playAudio("https://storage.googleapis.com/emosense-bucket/audio-mp3/sedih.mp3", "sedih")
+        }
+
+        binding.playMarah.setOnClickListener {
+            playAudio("https://storage.googleapis.com/emosense-bucket/audio-mp3/marah.mp3", "marah")
+        }
+    }
+
+    private fun playAudio(audioUrl: String, type: String) {
+        mediaPlayer = MediaPlayer()
+        mediaPlayer!!.setAudioStreamType(AudioManager.STREAM_MUSIC)
+        try {
+            mediaPlayer!!.setDataSource(audioUrl)
+            mediaPlayer!!.prepare()
+            mediaPlayer!!.start()
+
+            Toast.makeText(this, "Kamu sedang mendengar audio $type", Toast.LENGTH_LONG).show()
+        } catch (e : IOException) {
+            e.printStackTrace()
+        }
+
     }
 
     private fun flipCard(card: View, frontId: Int, backId: Int) {
