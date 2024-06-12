@@ -4,6 +4,7 @@ package com.example.emosense.data.api
 import com.example.emosense.data.request.UserRequest
 import com.example.emosense.data.response.ListClinicResponse
 import com.example.emosense.data.response.LoginResponse
+import com.example.emosense.data.response.PredictResponse
 import com.example.emosense.data.response.RegisterResponse
 import com.example.emosense.data.response.UserResponse
 import okhttp3.MultipartBody
@@ -30,11 +31,11 @@ interface ApiService {
     @GET("clinic")
     fun getClinic(): Call<ListClinicResponse>
 
-//    @Multipart
-//    @POST("predict")
-//    fun predict(
-//        @Part("id") id: RequestBody,
-//        @Part file: MultipartBody.Part,
-//    ): Call<FileUploadResponse>
+    @Multipart
+    @POST("predict")
+    fun predict(
+        @Part("user_id") id: RequestBody,
+        @Part file: MultipartBody.Part,
+    ): Call<PredictResponse>
 
 }

@@ -18,6 +18,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.example.emosense.R
+import com.example.emosense.data.response.PredictResponse
 import com.example.emosense.databinding.ActivityPredictBinding
 import com.example.emosense.utils.getImageUri
 import com.example.emosense.utils.reduceFileImage
@@ -29,6 +30,7 @@ import kotlinx.coroutines.launch
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.asRequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
 import retrofit2.HttpException
 
 class PredictActivity : AppCompatActivity() {
@@ -52,6 +54,10 @@ class PredictActivity : AppCompatActivity() {
 
         binding.backButton.setOnClickListener {
             finish()
+        }
+
+        viewModel.getSession().observe(this) { user ->
+            binding.uploadButton.setOnClickListener { uploadImage(user.id) }
         }
     }
 
@@ -115,36 +121,36 @@ class PredictActivity : AppCompatActivity() {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
-//    private fun uploadImage(token: String) {
-//        currentImageUri?.let { uri ->
-//            val imageFile = uriToFile(uri, this).reduceFileImage()
-//            Log.d("Image File", "showImage: ${imageFile.path}")
-//
-//            val requestBody = description.toRequestBody("text/plain".toMediaType())
-//            val requestImageFile = imageFile.asRequestBody("image/jpeg".toMediaType())
-//            val multipartBody = MultipartBody.Part.createFormData(
-//                "photo",
-//                imageFile.name,
-//                requestImageFile
-//            )
-//
-//            lifecycleScope.launch {
-//                try {
-//                    viewModel.predict(requestBody, multipartBody)
-//                    viewModel.storyResponse.observe(this@PredictActivity) {
-//                        if(!it.error){
-//                            val intent = Intent(this@PredictActivity, ResultActivity::class.java)
-//                            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-//                            startActivity(intent)
-//                        }
-//                    }
-//                } catch (e: HttpException) {
-//                    val errorBody = e.response()?.errorBody()?.string()
-//                    val errorResponse = Gson().fromJson(errorBody, FileUploadResponse::class.java)
-//                    showToast(errorResponse.message)
-//                }
-//            }
-//
-//        } ?: showToast(getString(R.string.empty_image_warning))
-//    }
+    private fun uploadImage(id: Int) {
+        currentImageUri?.let { uri ->
+            val imageFile = uriToFile(uri, this).reduceFileImage()
+            Log.d("Image File", "showImage: ${imageFile.path}")
+
+            val requestBody = id.toString().toRequestBody("text/plain".toMediaType())
+            val requestImageFile = imageFile.asRequestBody("image/jpeg".toMediaType())
+            val multipartBody = MultipartBody.Part.createFormData(
+                "image",
+                imageFile.name,
+                requestImageFile
+            )
+
+            lifecycleScope.launch {
+                try {
+                    viewModel.predict(multipartBody, requestBody)
+                    viewModel.predictResponse.observe(this@PredictActivity) {
+                        if (it.status == "success") {
+                            val intent = Intent(this@PredictActivity, ResultActivity::class.java)
+                            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                            startActivity(intent)
+                        }
+                    }
+                } catch (e: HttpException) {
+                    val errorBody = e.response()?.errorBody()?.string()
+                    val errorResponse = Gson().fromJson(errorBody, PredictResponse::class.java)
+                    showToast(errorResponse.message)
+                }
+            }
+
+        } ?: showToast(getString(R.string.empty_image_warning))
+    }
 }

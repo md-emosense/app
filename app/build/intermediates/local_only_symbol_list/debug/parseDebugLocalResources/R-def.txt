@@ -191,6 +191,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
 string email
+string empty_image_warning
 string family_adhd_description
 string family_dob
 string family_name
