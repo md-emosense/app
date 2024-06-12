@@ -26,9 +26,6 @@
             android:name=".view.forum.AddForumActivity"
             android:exported="false" />
         <activity
-            android:name=".view.forum.AddForum"
-            android:exported="false" />
-        <activity
             android:name=".view.forum.DetailForumActivity"
             android:exported="false" />
         <activity

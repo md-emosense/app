@@ -4,8 +4,7 @@ import android.animation.Animator
 import android.animation.AnimatorInflater
 import android.animation.AnimatorListenerAdapter
 import android.annotation.SuppressLint
-import android.content.Intent
-import android.media.AudioManager
+import android.media.AudioAttributes
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.MotionEvent
@@ -14,11 +13,9 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.emosense.R
-
 import com.example.emosense.databinding.ActivityFlashcardsBinding
-import com.example.emosense.view.clinic.ClinicActivity
-import com.example.emosense.view.main.MainActivity
 import okio.IOException
+
 
 class FlashcardsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFlashcardsBinding
@@ -103,7 +100,11 @@ class FlashcardsActivity : AppCompatActivity() {
 
     private fun playAudio(audioUrl: String, type: String) {
         mediaPlayer = MediaPlayer()
-        mediaPlayer!!.setAudioStreamType(AudioManager.STREAM_MUSIC)
+        mediaPlayer!!.setAudioAttributes(
+            AudioAttributes.Builder()
+                .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                .build()
+        );
         try {
             mediaPlayer!!.setDataSource(audioUrl)
             mediaPlayer!!.prepare()

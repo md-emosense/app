@@ -41,9 +41,6 @@
             android:name="com.example.emosense.view.forum.AddForumActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.emosense.view.forum.AddForum"
-            android:exported="false" />
-        <activity
             android:name="com.example.emosense.view.forum.DetailForumActivity"
             android:exported="false" />
         <activity
