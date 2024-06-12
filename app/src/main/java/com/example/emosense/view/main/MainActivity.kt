@@ -63,6 +63,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, LoginActivity::class.java))
                 finish()
             }
+            binding.tvName.text = user.name
         }
 
         viewModel.getAllClinic()
@@ -108,6 +109,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.predictButton.setOnClickListener {
             val intent = Intent(this@MainActivity, PredictActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.imageView.setOnClickListener {
+            val intent = Intent(this@MainActivity, FlashcardsActivity::class.java)
             startActivity(intent)
         }
 

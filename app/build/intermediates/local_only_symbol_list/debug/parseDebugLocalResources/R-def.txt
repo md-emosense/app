@@ -12,6 +12,7 @@ color primary
 color text_primary
 color white
 color white_primary
+drawable angry_icon
 drawable background_transparent
 drawable banner
 drawable baseline_add_photo_alternate_24
@@ -30,6 +31,7 @@ drawable baseline_phone_24
 drawable baseline_play_circle_24
 drawable baseline_post_add_24
 drawable baseline_rocket_launch_24
+drawable disgust_icon
 drawable forum1
 drawable forum_gray
 drawable happy_icon
@@ -55,8 +57,12 @@ drawable image_news_3
 drawable image_news_4
 drawable image_news_5
 drawable logo_landscape
+drawable neutral
 drawable profile
 drawable profile2
+drawable sad_icon
+drawable scared_icon
+drawable surprised_icon
 font inter_medium
 font inter_regular
 font poppins

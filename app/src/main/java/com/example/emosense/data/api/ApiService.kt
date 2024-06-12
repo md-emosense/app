@@ -34,7 +34,7 @@ interface ApiService {
     @Multipart
     @POST("predict")
     fun predict(
-        @Part("user_id") id: RequestBody,
+        @Part("userId") id: RequestBody,
         @Part file: MultipartBody.Part,
     ): Call<PredictResponse>
 

@@ -20,7 +20,7 @@ data class Data(
 	val createdAt: String? = null,
 
 	@field:SerializedName("confidenceScore")
-	val confidenceScore: Int? = null,
+	val confidenceScore: Double? = null,
 
 	@field:SerializedName("suggestion")
 	val suggestion: String? = null,

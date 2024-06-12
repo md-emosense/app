@@ -124,8 +124,6 @@ class PredictActivity : AppCompatActivity() {
     private fun uploadImage(id: Int) {
         currentImageUri?.let { uri ->
             val imageFile = uriToFile(uri, this).reduceFileImage()
-            Log.d("Image File", "showImage: ${imageFile.path}")
-
             val requestBody = id.toString().toRequestBody("text/plain".toMediaType())
             val requestImageFile = imageFile.asRequestBody("image/jpeg".toMediaType())
             val multipartBody = MultipartBody.Part.createFormData(
@@ -137,20 +135,29 @@ class PredictActivity : AppCompatActivity() {
             lifecycleScope.launch {
                 try {
                     viewModel.predict(multipartBody, requestBody)
-                    viewModel.predictResponse.observe(this@PredictActivity) {
-                        if (it.status == "success") {
+                    viewModel.predictResponse.observe(this@PredictActivity) { response ->
+                        Log.d("Image File", "Response received: $response")
+                        if (response.status == "success") {
+                            Log.d("Image File", "Success response received")
                             val intent = Intent(this@PredictActivity, ResultActivity::class.java)
+                            intent.putExtra(ResultActivity.EXTRA_IMAGE, uri.toString())
+                            intent.putExtra(ResultActivity.EXTRA_RESPONSE, Gson().toJson(response))
                             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                             startActivity(intent)
+                        } else {
+                            Log.d("Image File", "Received response, but status is not 'success'")
                         }
+
                     }
+                    Log.d("Image File", "masuk sini?")
+
                 } catch (e: HttpException) {
                     val errorBody = e.response()?.errorBody()?.string()
                     val errorResponse = Gson().fromJson(errorBody, PredictResponse::class.java)
                     showToast(errorResponse.message)
                 }
             }
-
         } ?: showToast(getString(R.string.empty_image_warning))
     }
+
 }

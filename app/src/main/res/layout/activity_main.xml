@@ -10,7 +10,6 @@
         android:id="@+id/headerCardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="20dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -85,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
-                android:text="Aisha"
+                android:text="User"
                 android:fontFamily="@font/poppins"
                 android:textColor="@color/primary"
                 android:textSize="20sp"
@@ -99,17 +98,51 @@
                 android:layout_height="150dp"
                 android:layout_margin="16dp"
                 android:padding="16dp"
+                android:background="@color/primary"
                 app:cardCornerRadius="16dp"
+                app:cardElevation="40dp"
                 app:layout_constraintBottom_toTopOf="@+id/textView4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvWelcome">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/banner" />
+                    android:background="@color/primary"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginStart="20dp"
+                        android:text="Goals harian hari ini:"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Latihan mengucapkan emosi"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginTop="0dp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/baseline_arrow_forward_24"
+                    app:tint="@color/white" />
+
             </androidx.cardview.widget.CardView>
 
             <TextView
@@ -117,7 +150,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="40dp"
                 android:text="Rekomendasi Klinik"
                 android:textColor="@color/primary"
                 android:textSize="16sp"
@@ -131,6 +164,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginTop="40dp"
+
                 android:text="Lihat lainnya"
                 android:textColor="@color/light_gray"
                 android:fontFamily="@font/poppins"

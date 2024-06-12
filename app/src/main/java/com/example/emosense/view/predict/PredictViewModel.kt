@@ -1,5 +1,6 @@
 package com.example.emosense.view.predict
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -45,16 +46,20 @@ class PredictViewModel(private val repository: UserRepository) : ViewModel() {
                     if (responseBody != null) {
                         _message.value = responseBody.message
                         _predictResponse.value = responseBody!!
+                        Log.d("PredictViewModel", "Predict response received1: $responseBody")
                     }
+                    Log.d("PredictViewModel", "Predict response received2: $responseBody")
                 } else {
                     _message.value = response.message()
-
+                    Log.e("PredictViewModel", "Prediction request failed: ${response.message()}")
                 }
             }
 
             override fun onFailure(call: Call<PredictResponse>, t: Throwable) {
                 _isLoading.value = false
                 _message.value = t.message
+                Log.e("PredictViewModel", "Prediction request failed: ${t.message}")
+
             }
         })
     }

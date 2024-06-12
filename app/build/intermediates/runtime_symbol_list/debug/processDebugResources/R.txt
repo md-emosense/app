@@ -2998,6 +2998,7 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x7f080074
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f080075
 int drawable abc_textfield_search_material 0x7f080076
 int drawable abc_vector_test 0x7f080077
+int drawable angry_icon 0x7f080112
 int drawable avd_hide_password 0x7f080078
 int drawable avd_show_password 0x7f080079
 int drawable background_transparent 0x7f08007a
@@ -3031,6 +3032,7 @@ int drawable design_ic_visibility 0x7f080095
 int drawable design_ic_visibility_off 0x7f080096
 int drawable design_password_eye 0x7f080097
 int drawable design_snackbar_background 0x7f080098
+int drawable disgust_icon 0x7f080113
 int drawable forum1 0x7f080099
 int drawable forum_gray 0x7f08009a
 int drawable happy_icon 0x7f08009b
@@ -3134,6 +3136,7 @@ int drawable mtrl_switch_track 0x7f0800fc
 int drawable mtrl_switch_track_decoration 0x7f0800fd
 int drawable mtrl_tabs_default_indicator 0x7f0800fe
 int drawable navigation_empty_icon 0x7f0800ff
+int drawable neutral 0x7f080114
 int drawable notification_action_background 0x7f080100
 int drawable notification_bg 0x7f080101
 int drawable notification_bg_low 0x7f080102
@@ -3149,6 +3152,9 @@ int drawable notification_tile_bg 0x7f08010b
 int drawable notify_panel_notification_icon_bg 0x7f08010c
 int drawable profile 0x7f08010d
 int drawable profile2 0x7f08010e
+int drawable sad_icon 0x7f080115
+int drawable scared_icon 0x7f080116
+int drawable surprised_icon 0x7f080117
 int drawable test_level_drawable 0x7f08010f
 int drawable tooltip_frame_dark 0x7f080110
 int drawable tooltip_frame_light 0x7f080111

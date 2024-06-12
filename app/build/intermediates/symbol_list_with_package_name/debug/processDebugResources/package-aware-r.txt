@@ -2999,6 +2999,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable angry_icon
 drawable avd_hide_password
 drawable avd_show_password
 drawable background_transparent
@@ -3032,6 +3033,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable disgust_icon
 drawable forum1
 drawable forum_gray
 drawable happy_icon
@@ -3135,6 +3137,7 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable neutral
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3150,6 +3153,9 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable profile
 drawable profile2
+drawable sad_icon
+drawable scared_icon
+drawable surprised_icon
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
