@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
 
         viewModel.loginResponse.observe(this) {
             if (it != null) {
-                viewModel.saveSession(UserModel(it.result?.get(0)?.name ?: "", "", isLogin = true))
+                viewModel.saveSession(UserModel(it.result?.get(0)?.name ?: "", it.result?.get(0)?.id ?: -1, isLogin = true))
             }
         }
 
@@ -83,7 +83,7 @@ class LoginActivity : AppCompatActivity() {
             val email = binding.emailEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
 
-            viewModel.login(email, password, "")
+            viewModel.login(email, password)
         }
 
         binding.signupLinkTextView.setOnClickListener {

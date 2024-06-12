@@ -35,6 +35,9 @@
         android:theme="@style/Theme.EmoSense"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.emosense.view.predict.ResultActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.emosense.view.forum.AddForumActivity"
             android:exported="false" />
         <activity

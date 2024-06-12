@@ -3034,6 +3034,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable forum1
 drawable forum_gray
+drawable happy_icon
 drawable home
 drawable home_gray
 drawable ic_add
@@ -3888,6 +3889,7 @@ layout activity_news
 layout activity_news_detail
 layout activity_predict
 layout activity_profile
+layout activity_result
 layout activity_sign_up
 layout custom_dialog
 layout design_bottom_navigation_item

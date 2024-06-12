@@ -30,7 +30,7 @@ class LoginViewModel(private val repository: UserRepository) : ViewModel() {
         }
     }
 
-    fun login(email: String, password: String, token: String) {
+    fun login(email: String, password: String) {
         _isLoading.value = true
         val request = UserRequest(email, password)
         val api = ApiConfig.getApiService().login(request)

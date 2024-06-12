@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.predictButton.setOnClickListener {
-            val intent = Intent(this@MainActivity, FlashcardsActivity::class.java)
+            val intent = Intent(this@MainActivity, PredictActivity::class.java)
             startActivity(intent)
         }
 
