@@ -153,6 +153,7 @@ id profileButton
 id progressBar
 id progressIndicator
 id rvClinic
+id rvForum
 id rvNews
 id scrollView
 id scrollView2

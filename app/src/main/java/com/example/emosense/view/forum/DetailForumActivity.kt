@@ -38,6 +38,11 @@ class DetailForumActivity : AppCompatActivity() {
     }
 
     private fun setupAction() {
-
+        val forumId = intent.getIntExtra(EXTRA_ID, -1)
     }
+
+    companion object {
+        const val EXTRA_ID = "extra_id"
+    }
+
 }

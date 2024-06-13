@@ -3616,6 +3616,7 @@ int id right_side 0x7f0a01bf
 int id rounded 0x7f0a01c0
 int id row_index_key 0x7f0a01c1
 int id rvClinic 0x7f0a01c2
+int id rvForum 0x7f0a026d
 int id rvNews 0x7f0a01c3
 int id save_non_transition_alpha 0x7f0a01c4
 int id save_overlay_view 0x7f0a01c5

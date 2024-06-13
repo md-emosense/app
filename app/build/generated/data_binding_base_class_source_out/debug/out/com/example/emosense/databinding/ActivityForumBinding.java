@@ -47,7 +47,7 @@ public final class ActivityForumBinding implements ViewBinding {
   public final FloatingActionButton predictButton;
 
   @NonNull
-  public final RecyclerView rvNews;
+  public final RecyclerView rvForum;
 
   @NonNull
   public final TextView textView2;
@@ -56,7 +56,7 @@ public final class ActivityForumBinding implements ViewBinding {
       @NonNull FloatingActionButton addButton, @NonNull ImageButton backButton,
       @NonNull BottomAppBar bottomNavigation, @NonNull BottomNavigationView bottomNavigationView,
       @NonNull CardView headerCardView, @NonNull ConstraintLayout main,
-      @NonNull FloatingActionButton predictButton, @NonNull RecyclerView rvNews,
+      @NonNull FloatingActionButton predictButton, @NonNull RecyclerView rvForum,
       @NonNull TextView textView2) {
     this.rootView = rootView;
     this.addButton = addButton;
@@ -66,7 +66,7 @@ public final class ActivityForumBinding implements ViewBinding {
     this.headerCardView = headerCardView;
     this.main = main;
     this.predictButton = predictButton;
-    this.rvNews = rvNews;
+    this.rvForum = rvForum;
     this.textView2 = textView2;
   }
 
@@ -135,9 +135,9 @@ public final class ActivityForumBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.rvNews;
-      RecyclerView rvNews = ViewBindings.findChildViewById(rootView, id);
-      if (rvNews == null) {
+      id = R.id.rvForum;
+      RecyclerView rvForum = ViewBindings.findChildViewById(rootView, id);
+      if (rvForum == null) {
         break missingId;
       }
 
@@ -148,7 +148,7 @@ public final class ActivityForumBinding implements ViewBinding {
       }
 
       return new ActivityForumBinding((ConstraintLayout) rootView, addButton, backButton,
-          bottomNavigation, bottomNavigationView, headerCardView, main, predictButton, rvNews,
+          bottomNavigation, bottomNavigationView, headerCardView, main, predictButton, rvForum,
           textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);

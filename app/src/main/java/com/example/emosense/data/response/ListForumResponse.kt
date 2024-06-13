@@ -5,13 +5,13 @@ import com.google.gson.annotations.SerializedName
 data class ListForumResponse(
 
 	@field:SerializedName("data")
-	val data: List<DataItem?>? = null,
+	val data: List<ForumItem?>? = null,
 
 	@field:SerializedName("status")
 	val status: String? = null
 )
 
-data class DataItem(
+data class ForumItem(
 
 	@field:SerializedName("createdAt")
 	val createdAt: String? = null,
