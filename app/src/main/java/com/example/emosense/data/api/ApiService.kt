@@ -2,6 +2,7 @@ package com.example.emosense.data.api
 
 
 import com.example.emosense.data.request.ReplyRequest
+import com.example.emosense.data.request.UpdateProfileRequest
 import com.example.emosense.data.request.UserRequest
 import com.example.emosense.data.response.DetailForumResponse
 import com.example.emosense.data.response.ListClinicResponse
@@ -10,6 +11,7 @@ import com.example.emosense.data.response.LoginResponse
 import com.example.emosense.data.response.PredictResponse
 import com.example.emosense.data.response.RegisterResponse
 import com.example.emosense.data.response.ReplyResponse
+import com.example.emosense.data.response.UpdateProfileResponse
 import com.example.emosense.data.response.UserResponse
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
@@ -48,6 +50,11 @@ interface ApiService {
     fun uploadReply(
         @Body replyRequest: ReplyRequest
     ): Call<ReplyResponse>
+
+    @POST("profile/update")
+    fun updateProfile(
+        @Body requestBody: UpdateProfileRequest
+    ): Call<UpdateProfileResponse>
 
     @Multipart
     @POST("predict")
