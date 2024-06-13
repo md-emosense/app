@@ -4,14 +4,15 @@ package com.example.emosense.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.emosense.R;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,19 +22,31 @@ public final class ActivityProfileBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnLogout;
+  public final CardView cardView;
+
+  @NonNull
+  public final CardView cardView2;
+
+  @NonNull
+  public final CircleImageView circleImageView;
 
   @NonNull
   public final ConstraintLayout main;
 
   @NonNull
-  public final TextView tvAdhdDesc;
+  public final TextView tvAbout;
 
   @NonNull
-  public final TextView tvChildBirthday;
+  public final TextView tvCall;
 
   @NonNull
-  public final TextView tvChildName;
+  public final TextView tvChangePassword;
+
+  @NonNull
+  public final TextView tvChildData;
+
+  @NonNull
+  public final TextView tvEditProfile;
 
   @NonNull
   public final TextView tvEmail;
@@ -41,18 +54,28 @@ public final class ActivityProfileBinding implements ViewBinding {
   @NonNull
   public final TextView tvFullName;
 
-  private ActivityProfileBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnLogout,
-      @NonNull ConstraintLayout main, @NonNull TextView tvAdhdDesc,
-      @NonNull TextView tvChildBirthday, @NonNull TextView tvChildName, @NonNull TextView tvEmail,
-      @NonNull TextView tvFullName) {
+  @NonNull
+  public final TextView tvLogout;
+
+  private ActivityProfileBinding(@NonNull ConstraintLayout rootView, @NonNull CardView cardView,
+      @NonNull CardView cardView2, @NonNull CircleImageView circleImageView,
+      @NonNull ConstraintLayout main, @NonNull TextView tvAbout, @NonNull TextView tvCall,
+      @NonNull TextView tvChangePassword, @NonNull TextView tvChildData,
+      @NonNull TextView tvEditProfile, @NonNull TextView tvEmail, @NonNull TextView tvFullName,
+      @NonNull TextView tvLogout) {
     this.rootView = rootView;
-    this.btnLogout = btnLogout;
+    this.cardView = cardView;
+    this.cardView2 = cardView2;
+    this.circleImageView = circleImageView;
     this.main = main;
-    this.tvAdhdDesc = tvAdhdDesc;
-    this.tvChildBirthday = tvChildBirthday;
-    this.tvChildName = tvChildName;
+    this.tvAbout = tvAbout;
+    this.tvCall = tvCall;
+    this.tvChangePassword = tvChangePassword;
+    this.tvChildData = tvChildData;
+    this.tvEditProfile = tvEditProfile;
     this.tvEmail = tvEmail;
     this.tvFullName = tvFullName;
+    this.tvLogout = tvLogout;
   }
 
   @Override
@@ -82,29 +105,53 @@ public final class ActivityProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnLogout;
-      Button btnLogout = ViewBindings.findChildViewById(rootView, id);
-      if (btnLogout == null) {
+      id = R.id.cardView;
+      CardView cardView = ViewBindings.findChildViewById(rootView, id);
+      if (cardView == null) {
+        break missingId;
+      }
+
+      id = R.id.cardView2;
+      CardView cardView2 = ViewBindings.findChildViewById(rootView, id);
+      if (cardView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.circleImageView;
+      CircleImageView circleImageView = ViewBindings.findChildViewById(rootView, id);
+      if (circleImageView == null) {
         break missingId;
       }
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.tvAdhdDesc;
-      TextView tvAdhdDesc = ViewBindings.findChildViewById(rootView, id);
-      if (tvAdhdDesc == null) {
+      id = R.id.tvAbout;
+      TextView tvAbout = ViewBindings.findChildViewById(rootView, id);
+      if (tvAbout == null) {
         break missingId;
       }
 
-      id = R.id.tvChildBirthday;
-      TextView tvChildBirthday = ViewBindings.findChildViewById(rootView, id);
-      if (tvChildBirthday == null) {
+      id = R.id.tvCall;
+      TextView tvCall = ViewBindings.findChildViewById(rootView, id);
+      if (tvCall == null) {
         break missingId;
       }
 
-      id = R.id.tvChildName;
-      TextView tvChildName = ViewBindings.findChildViewById(rootView, id);
-      if (tvChildName == null) {
+      id = R.id.tvChangePassword;
+      TextView tvChangePassword = ViewBindings.findChildViewById(rootView, id);
+      if (tvChangePassword == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChildData;
+      TextView tvChildData = ViewBindings.findChildViewById(rootView, id);
+      if (tvChildData == null) {
+        break missingId;
+      }
+
+      id = R.id.tvEditProfile;
+      TextView tvEditProfile = ViewBindings.findChildViewById(rootView, id);
+      if (tvEditProfile == null) {
         break missingId;
       }
 
@@ -120,8 +167,15 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProfileBinding((ConstraintLayout) rootView, btnLogout, main, tvAdhdDesc,
-          tvChildBirthday, tvChildName, tvEmail, tvFullName);
+      id = R.id.tvLogout;
+      TextView tvLogout = ViewBindings.findChildViewById(rootView, id);
+      if (tvLogout == null) {
+        break missingId;
+      }
+
+      return new ActivityProfileBinding((ConstraintLayout) rootView, cardView, cardView2,
+          circleImageView, main, tvAbout, tvCall, tvChangePassword, tvChildData, tvEditProfile,
+          tvEmail, tvFullName, tvLogout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

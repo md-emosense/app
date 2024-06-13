@@ -3056,6 +3056,7 @@ drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_comment
 drawable ic_forum_filled
+drawable ic_forward_arrow
 drawable ic_home_filled
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -3159,6 +3160,7 @@ drawable surprised_icon
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable underline
 font inter_medium
 font inter_regular
 font poppins
@@ -3271,7 +3273,6 @@ id bounceStart
 id btnFlip
 id btnFlip2
 id btnFlip3
-id btnLogout
 id buttonLayout
 id buttonPanel
 id cache_measures
@@ -3289,6 +3290,7 @@ id cardFront1
 id cardFront2
 id cardFront3
 id cardView
+id cardView2
 id carryVelocity
 id center
 id centerCrop
@@ -3301,6 +3303,7 @@ id chains
 id checkbox
 id checked
 id chronometer
+id circleImageView
 id circle_center
 id cityContainer
 id cityProvince
@@ -3737,12 +3740,15 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tvAdhdDesc
-id tvChildBirthday
-id tvChildName
+id tvAbout
+id tvCall
+id tvChangePassword
+id tvChildData
 id tvDesc
+id tvEditProfile
 id tvEmail
 id tvFullName
+id tvLogout
 id tvMoreClinic
 id tvMoreNews
 id tvName

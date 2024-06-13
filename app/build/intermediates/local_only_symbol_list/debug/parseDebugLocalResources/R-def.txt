@@ -45,6 +45,7 @@ drawable ic_baseline_person_24
 drawable ic_camera_filled
 drawable ic_comment
 drawable ic_forum_filled
+drawable ic_forward_arrow
 drawable ic_home_filled
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -63,6 +64,7 @@ drawable profile2
 drawable sad_icon
 drawable scared_icon
 drawable surprised_icon
+drawable underline
 font inter_medium
 font inter_regular
 font poppins
@@ -77,7 +79,6 @@ id bottom_navigation
 id btnFlip
 id btnFlip2
 id btnFlip3
-id btnLogout
 id buttonLayout
 id cameraButton
 id card
@@ -91,6 +92,8 @@ id cardFront1
 id cardFront2
 id cardFront3
 id cardView
+id cardView2
+id circleImageView
 id cityContainer
 id cityProvince
 id cityprovince
@@ -164,12 +167,15 @@ id textView4
 id textView5
 id titleDaftarTextView
 id titleTextView
-id tvAdhdDesc
-id tvChildBirthday
-id tvChildName
+id tvAbout
+id tvCall
+id tvChangePassword
+id tvChildData
 id tvDesc
+id tvEditProfile
 id tvEmail
 id tvFullName
+id tvLogout
 id tvMoreClinic
 id tvMoreNews
 id tvName

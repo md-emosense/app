@@ -3,6 +3,7 @@ package com.example.emosense.view.profile
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.emosense.databinding.ActivityProfileBinding
 import com.example.emosense.view.ViewModelFactory
@@ -20,7 +21,6 @@ class ProfileActivity : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Observasi session untuk memeriksa login
         viewModel.getSession().observe(this) { user ->
             if (!user.isLogin) {
                 startActivity(Intent(this, LoginActivity::class.java))
@@ -30,8 +30,16 @@ class ProfileActivity : AppCompatActivity() {
             }
         }
 
-        binding.btnLogout.setOnClickListener {
-            viewModel.logout()
+        binding.tvLogout.setOnClickListener {
+            AlertDialog.Builder(this)
+                .setTitle("Logout")
+                .setMessage("Apakah Anda yakin ingin keluar?")
+                .setPositiveButton("Ya") { _, _ ->
+                    viewModel.logout()
+                }
+                .setNegativeButton("Tidak") { _, _ ->
+                }
+                .show()
         }
     }
 
@@ -42,9 +50,9 @@ class ProfileActivity : AppCompatActivity() {
             profile?.let {
                 binding.tvFullName.text = it.fullName
                 binding.tvEmail.text = it.email
-                binding.tvChildName.text = it.childName
-                binding.tvChildBirthday.text = it.childBirthday
-                binding.tvAdhdDesc.text = it.adhdDesc
+//                binding.tvChildName.text = it.childName
+//                binding.tvChildBirthday.text = it.childBirthday
+//                binding.tvAdhdDesc.text = it.adhdDesc
             }
         }
     }

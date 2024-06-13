@@ -3055,6 +3055,7 @@ int drawable ic_clear_black_24 0x7f0800ad
 int drawable ic_clock_black_24dp 0x7f0800ae
 int drawable ic_comment 0x7f0800af
 int drawable ic_forum_filled 0x7f0800b0
+int drawable ic_forward_arrow 0x7f080118
 int drawable ic_home_filled 0x7f0800b1
 int drawable ic_keyboard_black_24dp 0x7f0800b2
 int drawable ic_launcher_background 0x7f0800b3
@@ -3158,6 +3159,7 @@ int drawable surprised_icon 0x7f080114
 int drawable test_level_drawable 0x7f080115
 int drawable tooltip_frame_dark 0x7f080116
 int drawable tooltip_frame_light 0x7f080117
+int drawable underline 0x7f080119
 int font inter_medium 0x7f090000
 int font inter_regular 0x7f090001
 int font poppins 0x7f090002
@@ -3270,7 +3272,6 @@ int id bounceStart 0x7f0a0068
 int id btnFlip 0x7f0a0069
 int id btnFlip2 0x7f0a006a
 int id btnFlip3 0x7f0a006b
-int id btnLogout 0x7f0a006c
 int id buttonLayout 0x7f0a006d
 int id buttonPanel 0x7f0a006e
 int id cache_measures 0x7f0a006f
@@ -3288,6 +3289,7 @@ int id cardFront1 0x7f0a007a
 int id cardFront2 0x7f0a007b
 int id cardFront3 0x7f0a007c
 int id cardView 0x7f0a007d
+int id cardView2 0x7f0a0268
 int id carryVelocity 0x7f0a007e
 int id center 0x7f0a007f
 int id centerCrop 0x7f0a0080
@@ -3300,6 +3302,7 @@ int id chains 0x7f0a0086
 int id checkbox 0x7f0a0087
 int id checked 0x7f0a0088
 int id chronometer 0x7f0a0089
+int id circleImageView 0x7f0a0264
 int id circle_center 0x7f0a008a
 int id cityContainer 0x7f0a008b
 int id cityProvince 0x7f0a008c
@@ -3736,12 +3739,15 @@ int id transition_position 0x7f0a023b
 int id transition_scene_layoutid_cache 0x7f0a023c
 int id transition_transform 0x7f0a023d
 int id triangle 0x7f0a023e
-int id tvAdhdDesc 0x7f0a025f
-int id tvChildBirthday 0x7f0a0260
-int id tvChildName 0x7f0a0261
+int id tvAbout 0x7f0a0269
+int id tvCall 0x7f0a026a
+int id tvChangePassword 0x7f0a026b
+int id tvChildData 0x7f0a026c
 int id tvDesc 0x7f0a023f
+int id tvEditProfile 0x7f0a0265
 int id tvEmail 0x7f0a0262
 int id tvFullName 0x7f0a0263
+int id tvLogout 0x7f0a0266
 int id tvMoreClinic 0x7f0a0240
 int id tvMoreNews 0x7f0a0241
 int id tvName 0x7f0a0242
