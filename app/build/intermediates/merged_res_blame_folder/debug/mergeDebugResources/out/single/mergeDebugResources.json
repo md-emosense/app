@@ -1,362 +1,366 @@
 [
     {
-        "merged": "com.example.emosense.app-debug-44:/font_poppins.xml.flat",
-        "source": "com.example.emosense.app-main-46:/font/poppins.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_image_news_1.jpg.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\image_news_1.jpg"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_insert_photo_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_insert_photo_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\ic_add.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_background_transparent.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/background_transparent.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_predict.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_predict.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_post_add_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_post_add_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_info_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_info_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_happy_icon.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\happy_icon.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.emosense.app-main-46:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_profile.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\profile.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_scared_icon.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/scared_icon.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\font_inter_regular.ttf.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\font\\inter_regular.ttf"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_ic_baseline_email_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/ic_baseline_email_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_info_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_info_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_sign_up.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_sign_up.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\ic_person.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_angry_icon.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/angry_icon.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_forum.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_forum.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_image_news_2.jpg.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/image_news_2.jpg"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\animator_flip_to_back.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\animator\\flip_to_back.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_expand_more_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_expand_more_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\ic_baseline_person_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_camera_alt_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_camera_alt_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_forum.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_forum.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_phone_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_phone_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_result.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_result.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_sad_icon.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/sad_icon.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_logout_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_logout_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_arrow_forward_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_arrow_forward_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_forum_gray.png.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/forum_gray.png"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_item_forum.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\item_forum.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_post_add_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_post_add_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_sign_up.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_ic_comment.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/ic_comment.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_home_gray.png.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/home_gray.png"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_news_detail.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_news_detail.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_ic_location.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\ic_location.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.emosense.app-main-46:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_image_news_4.jpg.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\image_news_4.jpg"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_image_news_3.jpg.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/image_news_3.jpg"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_background_transparent.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\background_transparent.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_ic_camera_filled.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/ic_camera_filled.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_news.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_news.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_item_news.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/item_news.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/font_poppins_regular.ttf.flat",
-        "source": "com.example.emosense.app-main-46:/font/poppins_regular.ttf"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_ic_baseline_email_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\ic_baseline_email_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.emosense.app-main-46:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_arrow_forward_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_arrow_forward_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_ic_home_filled.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/ic_home_filled.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_ic_comment.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\ic_comment.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/menu_bottom_menu.xml.flat",
-        "source": "com.example.emosense.app-main-46:/menu/bottom_menu.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_item_comment.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\item_comment.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_news_detail.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_news_detail.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_home_gray.png.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\home_gray.png"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/xml_backup_rules.xml.flat",
-        "source": "com.example.emosense.app-main-46:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_calendar_month_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_calendar_month_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.emosense.app-main-46:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_ic_back.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\ic_back.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_forum1.png.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/forum1.png"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_phone_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_phone_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_surprised_icon.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/surprised_icon.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_ic_baseline_lock_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/ic_baseline_lock_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_disgust_icon.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\disgust_icon.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_expand_less_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_expand_less_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_detail_forum.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_detail_forum.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_play_circle_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_play_circle_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_profile2.png.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\profile2.png"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_news.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_news.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_angry_icon.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\angry_icon.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_logo_landscape.png.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/logo_landscape.png"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_banner.jpg.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/banner.jpg"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_scared_icon.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\scared_icon.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.emosense.app-main-46:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_image_card_1.jpeg.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\image_card_1.jpeg"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/animator_flip_to_front.xml.flat",
-        "source": "com.example.emosense.app-main-46:/animator/flip_to_front.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\animator_flip_to_front.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\animator\\flip_to_front.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_ic_location.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/ic_location.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_image_card_1.jpeg.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/image_card_1.jpeg"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_location_city_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_location_city_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_happy_icon.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/happy_icon.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\font_poppins_regular.ttf.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\font\\poppins_regular.ttf"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_ic_add.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/ic_add.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_image_news_3.jpg.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\image_news_3.jpg"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_calendar_month_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_calendar_month_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_detail_forum.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_detail_forum.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_profile.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/profile.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_login.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_login.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_flashcards.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_flashcards.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.emosense.app-main-46:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_camera_alt_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_camera_alt_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_item_clinic.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/item_clinic.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_sad_icon.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\sad_icon.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/font_inter_medium.ttf.flat",
-        "source": "com.example.emosense.app-main-46:/font/inter_medium.ttf"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_surprised_icon.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\surprised_icon.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.emosense.app-main-46:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_expand_more_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_expand_more_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_ic_person.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/ic_person.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_flip_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_flip_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/font_inter_regular.ttf.flat",
-        "source": "com.example.emosense.app-main-46:/font/inter_regular.ttf"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_clinic.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_clinic.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_ic_forum_filled.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/ic_forum_filled.xml"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_logout_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_logout_24.xml"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_rocket_launch_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_rocket_launch_24.xml"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-44:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.emosense.app-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-44:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.emosense.app-main-46:/mipmap-xxxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-44:/animator_flip_to_back.xml.flat",
-        "source": "com.example.emosense.app-main-46:/animator/flip_to_back.xml"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-44:/drawable_ic_back.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/ic_back.xml"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-44:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.emosense.app-main-46:/mipmap-mdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-44:/layout_item_forum.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/item_forum.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_item_news.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\item_news.xml"
     },
     {
         "merged": "com.example.emosense.app-debug-44:/layout_activity_profile.xml.flat",
         "source": "com.example.emosense.app-main-46:/layout/activity_profile.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_item_comment.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/item_comment.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_rocket_launch_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_rocket_launch_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_image_news_4.jpg.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/image_news_4.jpg"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_insert_photo_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_insert_photo_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_neutral.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/neutral.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_add_photo_alternate_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_add_photo_alternate_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_add_forum.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_add_forum.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_image_news_1.jpg.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/image_news_1.jpg"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_ic_forum_filled.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\ic_forum_filled.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.emosense.app-main-46:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_image_news_2.jpg.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\image_news_2.jpg"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_add_forum.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_add_forum.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\font_inter_medium.ttf.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\font\\inter_medium.ttf"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_profile2.png.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/profile2.png"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.emosense.app-main-46:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_predict.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_predict.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.emosense.app-main-46:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_flashcards.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_flashcards.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_home.png.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/home.png"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\font_poppins.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\font\\poppins.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_result.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_result.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_ic_baseline_lock_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\ic_baseline_lock_24.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_flip_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_flip_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_location_primary.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_location_primary.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_ic_camera_filled.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\ic_camera_filled.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_main.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_main.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_neutral.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\neutral.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_baseline_location_city_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/baseline_location_city_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_forum1.png.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\forum1.png"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_clinic.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_clinic.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_item_clinic_view_all.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\item_clinic_view_all.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_ic_baseline_person_24.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/ic_baseline_person_24.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\menu_bottom_menu.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\menu\\bottom_menu.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_item_clinic_view_all.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/item_clinic_view_all.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_profile.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_image_news_5.jpg.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/image_news_5.jpg"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_home.png.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\home.png"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/drawable_disgust_icon.xml.flat",
-        "source": "com.example.emosense.app-main-46:/drawable/disgust_icon.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_location_primary.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_location_primary.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_item_clinic.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\item_clinic.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_forum_gray.png.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\forum_gray.png"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_image_news_5.jpg.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\image_news_5.jpg"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_play_circle_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_play_circle_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_logo_landscape.png.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\logo_landscape.png"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_expand_less_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_expand_less_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_banner.jpg.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\banner.jpg"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_add_photo_alternate_24.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_add_photo_alternate_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_ic_home_filled.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\ic_home_filled.xml"
     }
 ]

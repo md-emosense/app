@@ -3702,7 +3702,6 @@ int id textSpacerNoButtons 0x7f0a0218
 int id textSpacerNoTitle 0x7f0a0219
 int id textStart 0x7f0a021a
 int id textTop 0x7f0a021b
-int id textView 0x7f0a021c
 int id textView2 0x7f0a021d
 int id textView3 0x7f0a021e
 int id textView4 0x7f0a021f
@@ -3737,7 +3736,12 @@ int id transition_position 0x7f0a023b
 int id transition_scene_layoutid_cache 0x7f0a023c
 int id transition_transform 0x7f0a023d
 int id triangle 0x7f0a023e
+int id tvAdhdDesc 0x7f0a025f
+int id tvChildBirthday 0x7f0a0260
+int id tvChildName 0x7f0a0261
 int id tvDesc 0x7f0a023f
+int id tvEmail 0x7f0a0262
+int id tvFullName 0x7f0a0263
 int id tvMoreClinic 0x7f0a0240
 int id tvMoreNews 0x7f0a0241
 int id tvName 0x7f0a0242

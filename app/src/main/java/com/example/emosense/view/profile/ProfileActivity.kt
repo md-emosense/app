@@ -2,14 +2,8 @@ package com.example.emosense.view.profile
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.emosense.R
-import com.example.emosense.databinding.ActivityLoginBinding
-import com.example.emosense.databinding.ActivityMainBinding
 import com.example.emosense.databinding.ActivityProfileBinding
 import com.example.emosense.view.ViewModelFactory
 import com.example.emosense.view.login.LoginActivity
@@ -26,15 +20,32 @@ class ProfileActivity : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Observasi session untuk memeriksa login
         viewModel.getSession().observe(this) { user ->
             if (!user.isLogin) {
                 startActivity(Intent(this, LoginActivity::class.java))
                 finish()
+            } else {
+                setupProfile(user.id)
             }
         }
 
         binding.btnLogout.setOnClickListener {
             viewModel.logout()
+        }
+    }
+
+    private fun setupProfile(userId: Int) {
+        viewModel.getProfile(userId)
+
+        viewModel.profileResponse.observe(this) { profile ->
+            profile?.let {
+                binding.tvFullName.text = it.fullName
+                binding.tvEmail.text = it.email
+                binding.tvChildName.text = it.childName
+                binding.tvChildBirthday.text = it.childBirthday
+                binding.tvAdhdDesc.text = it.adhdDesc
+            }
         }
     }
 }

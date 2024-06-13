@@ -9,6 +9,7 @@ import com.example.emosense.data.response.ListClinicResponse
 import com.example.emosense.data.response.ListForumResponse
 import com.example.emosense.data.response.LoginResponse
 import com.example.emosense.data.response.PredictResponse
+import com.example.emosense.data.response.ProfileResponse
 import com.example.emosense.data.response.RegisterResponse
 import com.example.emosense.data.response.ReplyResponse
 import com.example.emosense.data.response.UpdateProfileResponse
@@ -34,6 +35,11 @@ interface ApiService {
 
     @POST("/login")
     fun login(@Body request: UserRequest): Call<LoginResponse>
+
+    @GET("profile/{id}")
+    fun getProfile(
+        @Path("id") id: Int
+    ): Call<ProfileResponse>
 
     @GET("clinic")
     fun getClinic(): Call<ListClinicResponse>

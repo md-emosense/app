@@ -27,14 +27,32 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final TextView textView;
+  public final TextView tvAdhdDesc;
+
+  @NonNull
+  public final TextView tvChildBirthday;
+
+  @NonNull
+  public final TextView tvChildName;
+
+  @NonNull
+  public final TextView tvEmail;
+
+  @NonNull
+  public final TextView tvFullName;
 
   private ActivityProfileBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnLogout,
-      @NonNull ConstraintLayout main, @NonNull TextView textView) {
+      @NonNull ConstraintLayout main, @NonNull TextView tvAdhdDesc,
+      @NonNull TextView tvChildBirthday, @NonNull TextView tvChildName, @NonNull TextView tvEmail,
+      @NonNull TextView tvFullName) {
     this.rootView = rootView;
     this.btnLogout = btnLogout;
     this.main = main;
-    this.textView = textView;
+    this.tvAdhdDesc = tvAdhdDesc;
+    this.tvChildBirthday = tvChildBirthday;
+    this.tvChildName = tvChildName;
+    this.tvEmail = tvEmail;
+    this.tvFullName = tvFullName;
   }
 
   @Override
@@ -72,13 +90,38 @@ public final class ActivityProfileBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
+      id = R.id.tvAdhdDesc;
+      TextView tvAdhdDesc = ViewBindings.findChildViewById(rootView, id);
+      if (tvAdhdDesc == null) {
         break missingId;
       }
 
-      return new ActivityProfileBinding((ConstraintLayout) rootView, btnLogout, main, textView);
+      id = R.id.tvChildBirthday;
+      TextView tvChildBirthday = ViewBindings.findChildViewById(rootView, id);
+      if (tvChildBirthday == null) {
+        break missingId;
+      }
+
+      id = R.id.tvChildName;
+      TextView tvChildName = ViewBindings.findChildViewById(rootView, id);
+      if (tvChildName == null) {
+        break missingId;
+      }
+
+      id = R.id.tvEmail;
+      TextView tvEmail = ViewBindings.findChildViewById(rootView, id);
+      if (tvEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.tvFullName;
+      TextView tvFullName = ViewBindings.findChildViewById(rootView, id);
+      if (tvFullName == null) {
+        break missingId;
+      }
+
+      return new ActivityProfileBinding((ConstraintLayout) rootView, btnLogout, main, tvAdhdDesc,
+          tvChildBirthday, tvChildName, tvEmail, tvFullName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
