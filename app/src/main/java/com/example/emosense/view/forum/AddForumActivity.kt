@@ -10,6 +10,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.emosense.databinding.ActivityAddForumBinding
 import com.example.emosense.view.ViewModelFactory
+import com.example.emosense.view.login.LoginActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class AddForumActivity : AppCompatActivity() {
@@ -50,6 +51,9 @@ class AddForumActivity : AppCompatActivity() {
                 title.isEmpty() -> showInputErrorDialog("Judul tidak boleh kosong.")
                 body.isEmpty() -> showInputErrorDialog("Isi tidak boleh kosong.")
                 else -> {
+                    viewModel.getSession().observe(this) { user ->
+                        viewModel.postForum(user.id,title,body)
+                    }
                     Toast.makeText(this, "Forum terkirim!", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this@AddForumActivity, ForumActivity::class.java)
                     startActivity(intent)

@@ -1,6 +1,7 @@
 package com.example.emosense.data.api
 
 
+import com.example.emosense.data.request.AddForumRequest
 import com.example.emosense.data.request.ReplyRequest
 import com.example.emosense.data.request.UpdateProfileRequest
 import com.example.emosense.data.request.UserRequest
@@ -14,6 +15,7 @@ import com.example.emosense.data.response.RegisterResponse
 import com.example.emosense.data.response.ReplyResponse
 import com.example.emosense.data.response.SpeechResponse
 import com.example.emosense.data.response.UpdateProfileResponse
+import com.example.emosense.data.response.UploadForumResponse
 import com.example.emosense.data.response.UserResponse
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
@@ -55,6 +57,11 @@ interface ApiService {
     fun getForumDetail(
         @Path("id") id: Int
     ): Call<DetailForumResponse>
+
+    @POST("forum/upload")
+    fun uploadForum(
+        @Body forumRequest: AddForumRequest
+    ): Call<UploadForumResponse>
 
     @POST("reply/upload")
     fun uploadReply(

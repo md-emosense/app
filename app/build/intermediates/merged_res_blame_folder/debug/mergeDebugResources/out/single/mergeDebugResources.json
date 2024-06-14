@@ -24,6 +24,10 @@
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\animator\\flip_to_back.xml"
     },
     {
+        "merged": "com.example.emosense.app-debug-44:/layout_activity_forum.xml.flat",
+        "source": "com.example.emosense.app-main-46:/layout/activity_forum.xml"
+    },
+    {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_result.xml.flat",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_result.xml"
     },
@@ -136,12 +140,12 @@
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\item_clinic_view_all.xml"
     },
     {
-        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_home.png.flat",
-        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\home.png"
-    },
-    {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\layout_activity_splash.xml.flat",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_home.png.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\home.png"
     },
     {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_forum_gray.png.flat",
@@ -156,12 +160,12 @@
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\logo_landscape.png"
     },
     {
-        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_banner.jpg.flat",
-        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\banner.jpg"
-    },
-    {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_banner.jpg.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\banner.jpg"
     },
     {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_add_photo_alternate_24.xml.flat",
@@ -246,10 +250,6 @@
     {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_calendar_month_24.xml.flat",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-46:\\drawable\\baseline_calendar_month_24.xml"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_detail_forum.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_detail_forum.xml"
     },
     {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-44:\\drawable_baseline_phone_24.xml.flat",
