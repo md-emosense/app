@@ -41,9 +41,9 @@ class SignUpActivity : AppCompatActivity() {
             message?.let {
                 if (it == "Akun berhasil dibuat") {
                     AlertDialog.Builder(this).apply {
-                        setTitle("Error")
+                        setTitle("Berhasil")
                         setMessage(message)
-                        setPositiveButton("Berhasil") { _, _ ->
+                        setPositiveButton("Masuk") { _, _ ->
                             finish()
                         }
                         create()

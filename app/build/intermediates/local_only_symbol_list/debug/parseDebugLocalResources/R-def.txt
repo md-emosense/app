@@ -159,6 +159,7 @@ id showLessButton
 id signupButton
 id signupLinkTextView
 id signupTextView
+id splashImage
 id suburbProvinceCity
 id suggestion
 id textView2
@@ -197,6 +198,7 @@ layout activity_predict
 layout activity_profile
 layout activity_result
 layout activity_sign_up
+layout activity_splash
 layout item_clinic
 layout item_clinic_view_all
 layout item_comment

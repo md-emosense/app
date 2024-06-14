@@ -12,6 +12,10 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/drawable/ic_location.xml"
     },
     {
+        "merged": "com.example.emosense.app-debug-44:/layout_activity_splash.xml.flat",
+        "source": "com.example.emosense.app-main-46:/layout/activity_splash.xml"
+    },
+    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-44:/drawable_underline.png.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/drawable/underline.png"
     },
@@ -150,10 +154,6 @@
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-44:/layout_activity_predict.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/layout/activity_predict.xml"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-44:/layout_item_flashcard.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/item_flashcard.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-44:/drawable_image_card_1.jpeg.flat",
