@@ -56,6 +56,7 @@ class AddForumActivity : AppCompatActivity() {
                     }
                     Toast.makeText(this, "Forum terkirim!", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this@AddForumActivity, ForumActivity::class.java)
+                    finish()
                     startActivity(intent)
                 }
             }

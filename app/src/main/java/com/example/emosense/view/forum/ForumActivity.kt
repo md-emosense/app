@@ -67,6 +67,8 @@ class ForumActivity : AppCompatActivity() {
     private fun setupAction() {
         binding.addButton.setOnClickListener{
             val intent = Intent(this@ForumActivity, AddForumActivity::class.java)
+            //temporary
+            finish()
             startActivity(intent)
         }
 
