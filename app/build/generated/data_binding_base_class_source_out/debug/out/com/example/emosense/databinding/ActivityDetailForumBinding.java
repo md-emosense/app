@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.emosense.R;
@@ -35,6 +36,9 @@ public final class ActivityDetailForumBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final RecyclerView rvReplies;
+
+  @NonNull
   public final TextView textView3;
 
   @NonNull
@@ -54,14 +58,15 @@ public final class ActivityDetailForumBinding implements ViewBinding {
 
   private ActivityDetailForumBinding(@NonNull ConstraintLayout rootView, @NonNull CardView card,
       @NonNull ImageView imageView2, @NonNull CircleImageView ivProfile,
-      @NonNull ConstraintLayout main, @NonNull TextView textView3, @NonNull TextView tvDesc,
-      @NonNull TextView tvName, @NonNull TextView tvNumofComments, @NonNull TextView tvTime,
-      @NonNull TextView tvTitle) {
+      @NonNull ConstraintLayout main, @NonNull RecyclerView rvReplies, @NonNull TextView textView3,
+      @NonNull TextView tvDesc, @NonNull TextView tvName, @NonNull TextView tvNumofComments,
+      @NonNull TextView tvTime, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.card = card;
     this.imageView2 = imageView2;
     this.ivProfile = ivProfile;
     this.main = main;
+    this.rvReplies = rvReplies;
     this.textView3 = textView3;
     this.tvDesc = tvDesc;
     this.tvName = tvName;
@@ -117,6 +122,12 @@ public final class ActivityDetailForumBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.rvReplies;
+      RecyclerView rvReplies = ViewBindings.findChildViewById(rootView, id);
+      if (rvReplies == null) {
+        break missingId;
+      }
+
       id = R.id.textView3;
       TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
@@ -154,7 +165,7 @@ public final class ActivityDetailForumBinding implements ViewBinding {
       }
 
       return new ActivityDetailForumBinding((ConstraintLayout) rootView, card, imageView2,
-          ivProfile, main, textView3, tvDesc, tvName, tvNumofComments, tvTime, tvTitle);
+          ivProfile, main, rvReplies, textView3, tvDesc, tvName, tvNumofComments, tvTime, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

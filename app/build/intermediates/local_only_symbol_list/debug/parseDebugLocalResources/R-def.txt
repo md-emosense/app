@@ -153,6 +153,7 @@ id rvClinic
 id rvFlashcard
 id rvForum
 id rvNews
+id rvReplies
 id scrollView
 id scrollView2
 id showLessButton

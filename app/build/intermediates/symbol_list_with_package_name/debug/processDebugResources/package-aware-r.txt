@@ -3617,6 +3617,7 @@ id rvClinic
 id rvFlashcard
 id rvForum
 id rvNews
+id rvReplies
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth

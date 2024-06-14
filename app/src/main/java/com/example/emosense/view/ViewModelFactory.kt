@@ -7,6 +7,7 @@ import com.example.emosense.data.database.UserRepository
 import com.example.emosense.di.Injection
 import com.example.emosense.view.flashcards.FlashcardsViewModel
 import com.example.emosense.view.forum.AddForumViewModel
+import com.example.emosense.view.forum.DetailForumViewModel
 import com.example.emosense.view.forum.ForumViewModel
 import com.example.emosense.view.login.LoginViewModel
 import com.example.emosense.view.main.MainViewModel
@@ -34,6 +35,9 @@ class ViewModelFactory(private val repository: UserRepository) : ViewModelProvid
             }
             modelClass.isAssignableFrom(FlashcardsViewModel::class.java) -> {
                 FlashcardsViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(DetailForumViewModel::class.java) -> {
+                DetailForumViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
