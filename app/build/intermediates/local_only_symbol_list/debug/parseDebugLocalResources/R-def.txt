@@ -27,6 +27,7 @@ drawable baseline_insert_photo_24
 drawable baseline_location_city_24
 drawable baseline_location_primary
 drawable baseline_logout_24
+drawable baseline_pause_24
 drawable baseline_phone_24
 drawable baseline_play_circle_24
 drawable baseline_post_add_24
@@ -139,6 +140,7 @@ id no_photo_text
 id passwordEditText
 id passwordEditTextLayout
 id passwordTextView
+id pauseAudio
 id phoneContainer
 id photoCard
 id playAudio

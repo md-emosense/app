@@ -140,12 +140,20 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/drawable/ic_baseline_email_24.xml"
     },
     {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-44:/drawable_baseline_pause_24.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/drawable/baseline_pause_24.xml"
+    },
+    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-44:/drawable_ic_baseline_lock_24.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/drawable/ic_baseline_lock_24.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-44:/layout_activity_predict.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/layout/activity_predict.xml"
+    },
+    {
+        "merged": "com.example.emosense.app-debug-44:/layout_item_flashcard.xml.flat",
+        "source": "com.example.emosense.app-main-46:/layout/item_flashcard.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-44:/drawable_image_card_1.jpeg.flat",
@@ -324,10 +332,6 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/drawable/ic_add.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-44:/layout_activity_result.xml.flat",
-        "source": "com.example.emosense.app-main-46:/layout/activity_result.xml"
-    },
-    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-44:/layout_activity_forum.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/layout/activity_forum.xml"
     },
@@ -348,16 +352,16 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/drawable/happy_icon.xml"
     },
     {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-44:/layout_activity_result.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/layout/activity_result.xml"
+    },
+    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-44:/drawable_baseline_camera_alt_24.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/drawable/baseline_camera_alt_24.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-44:/drawable_ic_launcher_foreground.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/drawable/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-44:/layout_activity_result.xml.flat",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/layout/activity_result.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-44:/drawable_home.png.flat",

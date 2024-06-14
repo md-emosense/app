@@ -37,17 +37,22 @@ public final class ItemFlashcardBinding implements ViewBinding {
   public final TextView label;
 
   @NonNull
+  public final ImageView pauseAudio;
+
+  @NonNull
   public final ImageView playAudio;
 
   private ItemFlashcardBinding(@NonNull RelativeLayout rootView, @NonNull ImageButton btnFlip,
       @NonNull RelativeLayout card1, @NonNull RelativeLayout cardBack1,
-      @NonNull RelativeLayout cardFront1, @NonNull TextView label, @NonNull ImageView playAudio) {
+      @NonNull RelativeLayout cardFront1, @NonNull TextView label, @NonNull ImageView pauseAudio,
+      @NonNull ImageView playAudio) {
     this.rootView = rootView;
     this.btnFlip = btnFlip;
     this.card1 = card1;
     this.cardBack1 = cardBack1;
     this.cardFront1 = cardFront1;
     this.label = label;
+    this.pauseAudio = pauseAudio;
     this.playAudio = playAudio;
   }
 
@@ -104,6 +109,12 @@ public final class ItemFlashcardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.pauseAudio;
+      ImageView pauseAudio = ViewBindings.findChildViewById(rootView, id);
+      if (pauseAudio == null) {
+        break missingId;
+      }
+
       id = R.id.playAudio;
       ImageView playAudio = ViewBindings.findChildViewById(rootView, id);
       if (playAudio == null) {
@@ -111,7 +122,7 @@ public final class ItemFlashcardBinding implements ViewBinding {
       }
 
       return new ItemFlashcardBinding((RelativeLayout) rootView, btnFlip, card1, cardBack1,
-          cardFront1, label, playAudio);
+          cardFront1, label, pauseAudio, playAudio);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -3016,6 +3016,7 @@ drawable baseline_insert_photo_24
 drawable baseline_location_city_24
 drawable baseline_location_primary
 drawable baseline_logout_24
+drawable baseline_pause_24
 drawable baseline_phone_24
 drawable baseline_play_circle_24
 drawable baseline_post_add_24
@@ -3584,6 +3585,7 @@ id passwordTextView
 id password_toggle
 id path
 id pathRelative
+id pauseAudio
 id peekHeight
 id percent
 id phoneContainer

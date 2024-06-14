@@ -40,12 +40,14 @@ class ListFlashcardAdapter : ListAdapter<SpeechItem, ListFlashcardAdapter.ViewHo
     }
 
     class ViewHolder(private val binding: ItemFlashcardBinding) : RecyclerView.ViewHolder(binding.root) {
-        private var mediaPlayer = MediaPlayer()
+        private var mediaPlayer: MediaPlayer? = null
+        private var isPlaying = false
 
         private val context: Context = binding.root.context
         private val label = binding.label
         private val flipButton = binding.btnFlip
         private val playButton = binding.playAudio
+        private val pauseButton = binding.pauseAudio
 
         fun bind(speech: SpeechItem) {
             label.text = speech.word
@@ -58,24 +60,54 @@ class ListFlashcardAdapter : ListAdapter<SpeechItem, ListFlashcardAdapter.ViewHo
                 playAudio(speech.urlAudio, speech.word)
             }
 
+            pauseButton.setOnClickListener {
+                pauseAudio()
+            }
         }
 
         private fun playAudio(audioUrl: String, type: String) {
-            mediaPlayer!!.setAudioAttributes(
-                AudioAttributes.Builder()
-                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
-                    .build()
-            );
-            try {
-                mediaPlayer!!.setDataSource(audioUrl)
-                mediaPlayer!!.prepare()
-                mediaPlayer!!.start()
-
-                Toast.makeText(context, "Kamu sedang mendengar audio $type", Toast.LENGTH_LONG).show()
-            } catch (e : IOException) {
-                e.printStackTrace()
+            if (mediaPlayer == null) {
+                mediaPlayer = MediaPlayer().apply {
+                    setAudioAttributes(
+                        AudioAttributes.Builder()
+                            .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                            .build()
+                    )
+                    setOnCompletionListener {
+                        this@ViewHolder.isPlaying = false
+                        updatePlayPauseButtonVisibility()
+                    }
+                }
+            } else {
+                mediaPlayer?.reset()
             }
 
+            try {
+                mediaPlayer?.setDataSource(audioUrl)
+                mediaPlayer?.prepare()
+                mediaPlayer?.start()
+                isPlaying = true
+                updatePlayPauseButtonVisibility()
+                Toast.makeText(context, "Kamu sedang mendengar audio $type", Toast.LENGTH_LONG).show()
+            } catch (e: IOException) {
+                e.printStackTrace()
+            }
+        }
+
+        private fun pauseAudio() {
+            mediaPlayer?.pause()
+            isPlaying = false
+            updatePlayPauseButtonVisibility()
+        }
+
+        private fun updatePlayPauseButtonVisibility() {
+            if (isPlaying) {
+                playButton.visibility = View.GONE
+                pauseButton.visibility = View.VISIBLE
+            } else {
+                playButton.visibility = View.VISIBLE
+                pauseButton.visibility = View.GONE
+            }
         }
 
         private fun flipCard(card: View, frontId: Int, backId: Int) {
@@ -104,6 +136,12 @@ class ListFlashcardAdapter : ListAdapter<SpeechItem, ListFlashcardAdapter.ViewHo
             animFlipOut.start()
         }
 
+        init {
+            mediaPlayer?.setOnCompletionListener {
+                isPlaying = false
+                updatePlayPauseButtonVisibility()
+            }
+        }
     }
 
     companion object {
@@ -117,5 +155,5 @@ class ListFlashcardAdapter : ListAdapter<SpeechItem, ListFlashcardAdapter.ViewHo
             }
         }
     }
-
 }
+
