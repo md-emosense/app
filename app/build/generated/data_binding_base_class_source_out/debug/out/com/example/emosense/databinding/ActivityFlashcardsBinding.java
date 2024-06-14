@@ -5,13 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.emosense.R;
@@ -21,94 +21,42 @@ import java.lang.String;
 
 public final class ActivityFlashcardsBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final ImageButton backButton;
 
   @NonNull
-  public final ImageButton btnFlip;
-
-  @NonNull
-  public final ImageButton btnFlip2;
-
-  @NonNull
-  public final ImageButton btnFlip3;
-
-  @NonNull
-  public final RelativeLayout card1;
-
-  @NonNull
-  public final RelativeLayout card2;
-
-  @NonNull
-  public final RelativeLayout card3;
-
-  @NonNull
-  public final RelativeLayout cardBack1;
-
-  @NonNull
-  public final RelativeLayout cardBack2;
-
-  @NonNull
-  public final RelativeLayout cardBack3;
-
-  @NonNull
-  public final RelativeLayout cardFront1;
-
-  @NonNull
-  public final RelativeLayout cardFront2;
-
-  @NonNull
-  public final RelativeLayout cardFront3;
-
-  @NonNull
   public final CardView headerCardView;
 
   @NonNull
-  public final ImageView playMarah;
+  public final CardView instruction;
 
   @NonNull
-  public final ImageView playSedih;
+  public final ProgressBar progressBar;
 
   @NonNull
-  public final ImageView playSenang;
+  public final RecyclerView rvFlashcard;
 
   @NonNull
   public final TextView textView2;
 
-  private ActivityFlashcardsBinding(@NonNull LinearLayout rootView, @NonNull ImageButton backButton,
-      @NonNull ImageButton btnFlip, @NonNull ImageButton btnFlip2, @NonNull ImageButton btnFlip3,
-      @NonNull RelativeLayout card1, @NonNull RelativeLayout card2, @NonNull RelativeLayout card3,
-      @NonNull RelativeLayout cardBack1, @NonNull RelativeLayout cardBack2,
-      @NonNull RelativeLayout cardBack3, @NonNull RelativeLayout cardFront1,
-      @NonNull RelativeLayout cardFront2, @NonNull RelativeLayout cardFront3,
-      @NonNull CardView headerCardView, @NonNull ImageView playMarah, @NonNull ImageView playSedih,
-      @NonNull ImageView playSenang, @NonNull TextView textView2) {
+  private ActivityFlashcardsBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ImageButton backButton, @NonNull CardView headerCardView,
+      @NonNull CardView instruction, @NonNull ProgressBar progressBar,
+      @NonNull RecyclerView rvFlashcard, @NonNull TextView textView2) {
     this.rootView = rootView;
     this.backButton = backButton;
-    this.btnFlip = btnFlip;
-    this.btnFlip2 = btnFlip2;
-    this.btnFlip3 = btnFlip3;
-    this.card1 = card1;
-    this.card2 = card2;
-    this.card3 = card3;
-    this.cardBack1 = cardBack1;
-    this.cardBack2 = cardBack2;
-    this.cardBack3 = cardBack3;
-    this.cardFront1 = cardFront1;
-    this.cardFront2 = cardFront2;
-    this.cardFront3 = cardFront3;
     this.headerCardView = headerCardView;
-    this.playMarah = playMarah;
-    this.playSedih = playSedih;
-    this.playSenang = playSenang;
+    this.instruction = instruction;
+    this.progressBar = progressBar;
+    this.rvFlashcard = rvFlashcard;
     this.textView2 = textView2;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -139,99 +87,27 @@ public final class ActivityFlashcardsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnFlip;
-      ImageButton btnFlip = ViewBindings.findChildViewById(rootView, id);
-      if (btnFlip == null) {
-        break missingId;
-      }
-
-      id = R.id.btnFlip2;
-      ImageButton btnFlip2 = ViewBindings.findChildViewById(rootView, id);
-      if (btnFlip2 == null) {
-        break missingId;
-      }
-
-      id = R.id.btnFlip3;
-      ImageButton btnFlip3 = ViewBindings.findChildViewById(rootView, id);
-      if (btnFlip3 == null) {
-        break missingId;
-      }
-
-      id = R.id.card1;
-      RelativeLayout card1 = ViewBindings.findChildViewById(rootView, id);
-      if (card1 == null) {
-        break missingId;
-      }
-
-      id = R.id.card2;
-      RelativeLayout card2 = ViewBindings.findChildViewById(rootView, id);
-      if (card2 == null) {
-        break missingId;
-      }
-
-      id = R.id.card3;
-      RelativeLayout card3 = ViewBindings.findChildViewById(rootView, id);
-      if (card3 == null) {
-        break missingId;
-      }
-
-      id = R.id.cardBack1;
-      RelativeLayout cardBack1 = ViewBindings.findChildViewById(rootView, id);
-      if (cardBack1 == null) {
-        break missingId;
-      }
-
-      id = R.id.cardBack2;
-      RelativeLayout cardBack2 = ViewBindings.findChildViewById(rootView, id);
-      if (cardBack2 == null) {
-        break missingId;
-      }
-
-      id = R.id.cardBack3;
-      RelativeLayout cardBack3 = ViewBindings.findChildViewById(rootView, id);
-      if (cardBack3 == null) {
-        break missingId;
-      }
-
-      id = R.id.cardFront1;
-      RelativeLayout cardFront1 = ViewBindings.findChildViewById(rootView, id);
-      if (cardFront1 == null) {
-        break missingId;
-      }
-
-      id = R.id.cardFront2;
-      RelativeLayout cardFront2 = ViewBindings.findChildViewById(rootView, id);
-      if (cardFront2 == null) {
-        break missingId;
-      }
-
-      id = R.id.cardFront3;
-      RelativeLayout cardFront3 = ViewBindings.findChildViewById(rootView, id);
-      if (cardFront3 == null) {
-        break missingId;
-      }
-
       id = R.id.headerCardView;
       CardView headerCardView = ViewBindings.findChildViewById(rootView, id);
       if (headerCardView == null) {
         break missingId;
       }
 
-      id = R.id.playMarah;
-      ImageView playMarah = ViewBindings.findChildViewById(rootView, id);
-      if (playMarah == null) {
+      id = R.id.instruction;
+      CardView instruction = ViewBindings.findChildViewById(rootView, id);
+      if (instruction == null) {
         break missingId;
       }
 
-      id = R.id.playSedih;
-      ImageView playSedih = ViewBindings.findChildViewById(rootView, id);
-      if (playSedih == null) {
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
         break missingId;
       }
 
-      id = R.id.playSenang;
-      ImageView playSenang = ViewBindings.findChildViewById(rootView, id);
-      if (playSenang == null) {
+      id = R.id.rvFlashcard;
+      RecyclerView rvFlashcard = ViewBindings.findChildViewById(rootView, id);
+      if (rvFlashcard == null) {
         break missingId;
       }
 
@@ -241,9 +117,8 @@ public final class ActivityFlashcardsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityFlashcardsBinding((LinearLayout) rootView, backButton, btnFlip, btnFlip2,
-          btnFlip3, card1, card2, card3, cardBack1, cardBack2, cardBack3, cardFront1, cardFront2,
-          cardFront3, headerCardView, playMarah, playSedih, playSenang, textView2);
+      return new ActivityFlashcardsBinding((ConstraintLayout) rootView, backButton, headerCardView,
+          instruction, progressBar, rvFlashcard, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -12,6 +12,7 @@ import com.example.emosense.data.response.PredictResponse
 import com.example.emosense.data.response.ProfileResponse
 import com.example.emosense.data.response.RegisterResponse
 import com.example.emosense.data.response.ReplyResponse
+import com.example.emosense.data.response.SpeechResponse
 import com.example.emosense.data.response.UpdateProfileResponse
 import com.example.emosense.data.response.UserResponse
 import okhttp3.MultipartBody
@@ -46,6 +47,9 @@ interface ApiService {
 
     @GET("forum")
     fun getAllForum(): Call<ListForumResponse>
+
+    @GET("speech")
+    fun getAllSpeech(): Call<SpeechResponse>
 
     @GET("forum/{id}")
     fun getForumDetail(

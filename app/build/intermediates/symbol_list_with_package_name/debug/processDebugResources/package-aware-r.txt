@@ -3271,8 +3271,6 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnFlip
-id btnFlip2
-id btnFlip3
 id buttonLayout
 id buttonPanel
 id cache_measures
@@ -3281,14 +3279,8 @@ id cameraButton
 id cancel_button
 id card
 id card1
-id card2
-id card3
 id cardBack1
-id cardBack2
-id cardBack3
 id cardFront1
-id cardFront2
-id cardFront3
 id cardView
 id cardView2
 id carryVelocity
@@ -3448,6 +3440,7 @@ id included
 id indeterminate
 id info
 id informationalTextView
+id instruction
 id invisible
 id inward
 id italic
@@ -3458,6 +3451,7 @@ id ivNews
 id ivProfile
 id jumpToEnd
 id jumpToStart
+id label
 id labeled
 id layout
 id left
@@ -3592,9 +3586,7 @@ id percent
 id phoneContainer
 id photoCard
 id pin
-id playMarah
-id playSedih
-id playSenang
+id playAudio
 id position
 id postLayout
 id predictButton
@@ -3617,6 +3609,7 @@ id right_side
 id rounded
 id row_index_key
 id rvClinic
+id rvFlashcard
 id rvForum
 id rvNews
 id save_non_transition_alpha
@@ -3929,6 +3922,7 @@ layout ime_secondary_split_test_activity
 layout item_clinic
 layout item_clinic_view_all
 layout item_comment
+layout item_flashcard
 layout item_forum
 layout item_news
 layout m3_alert_dialog

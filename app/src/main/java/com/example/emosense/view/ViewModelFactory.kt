@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.emosense.data.database.UserRepository
 import com.example.emosense.di.Injection
+import com.example.emosense.view.flashcards.FlashcardsViewModel
 import com.example.emosense.view.forum.AddForumViewModel
 import com.example.emosense.view.forum.ForumViewModel
 import com.example.emosense.view.login.LoginViewModel
@@ -30,6 +31,9 @@ class ViewModelFactory(private val repository: UserRepository) : ViewModelProvid
             }
             modelClass.isAssignableFrom(PredictViewModel::class.java) -> {
                 PredictViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(FlashcardsViewModel::class.java) -> {
+                FlashcardsViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
