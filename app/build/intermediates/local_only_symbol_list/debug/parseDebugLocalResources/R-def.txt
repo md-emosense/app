@@ -133,6 +133,9 @@ id nameTextView
 id navigation_detection
 id navigation_forum
 id navigation_home
+id no_photo_image
+id no_photo_layout
+id no_photo_text
 id passwordEditText
 id passwordEditTextLayout
 id passwordTextView
@@ -155,6 +158,7 @@ id signupButton
 id signupLinkTextView
 id signupTextView
 id suburbProvinceCity
+id suggestion
 id textView2
 id textView3
 id textView4

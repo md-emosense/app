@@ -55,6 +55,9 @@ public final class ActivityResultBinding implements ViewBinding {
   public final ScrollView scrollView2;
 
   @NonNull
+  public final TextView suggestion;
+
+  @NonNull
   public final TextView textView2;
 
   private ActivityResultBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton backButton,
@@ -62,7 +65,7 @@ public final class ActivityResultBinding implements ViewBinding {
       @NonNull CardView headerCardView, @NonNull ConstraintLayout main,
       @NonNull ImageView previewImageView, @NonNull ProgressBar progressBar,
       @NonNull LinearProgressIndicator progressIndicator, @NonNull ScrollView scrollView2,
-      @NonNull TextView textView2) {
+      @NonNull TextView suggestion, @NonNull TextView textView2) {
     this.rootView = rootView;
     this.backButton = backButton;
     this.buttonLayout = buttonLayout;
@@ -73,6 +76,7 @@ public final class ActivityResultBinding implements ViewBinding {
     this.progressBar = progressBar;
     this.progressIndicator = progressIndicator;
     this.scrollView2 = scrollView2;
+    this.suggestion = suggestion;
     this.textView2 = textView2;
   }
 
@@ -153,6 +157,12 @@ public final class ActivityResultBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.suggestion;
+      TextView suggestion = ViewBindings.findChildViewById(rootView, id);
+      if (suggestion == null) {
+        break missingId;
+      }
+
       id = R.id.textView2;
       TextView textView2 = ViewBindings.findChildViewById(rootView, id);
       if (textView2 == null) {
@@ -161,7 +171,7 @@ public final class ActivityResultBinding implements ViewBinding {
 
       return new ActivityResultBinding((ConstraintLayout) rootView, backButton, buttonLayout,
           cameraButton, headerCardView, main, previewImageView, progressBar, progressIndicator,
-          scrollView2, textView2);
+          scrollView2, suggestion, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

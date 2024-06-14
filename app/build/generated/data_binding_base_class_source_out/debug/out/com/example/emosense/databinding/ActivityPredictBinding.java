@@ -46,6 +46,15 @@ public final class ActivityPredictBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final ImageView noPhotoImage;
+
+  @NonNull
+  public final LinearLayout noPhotoLayout;
+
+  @NonNull
+  public final TextView noPhotoText;
+
+  @NonNull
   public final ImageView previewImageView;
 
   @NonNull
@@ -66,9 +75,11 @@ public final class ActivityPredictBinding implements ViewBinding {
   private ActivityPredictBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageButton backButton, @NonNull LinearLayout buttonLayout,
       @NonNull Button cameraButton, @NonNull Button galleryButton, @NonNull CardView headerCardView,
-      @NonNull ConstraintLayout main, @NonNull ImageView previewImageView,
-      @NonNull ProgressBar progressBar, @NonNull LinearProgressIndicator progressIndicator,
-      @NonNull ScrollView scrollView2, @NonNull TextView textView2, @NonNull Button uploadButton) {
+      @NonNull ConstraintLayout main, @NonNull ImageView noPhotoImage,
+      @NonNull LinearLayout noPhotoLayout, @NonNull TextView noPhotoText,
+      @NonNull ImageView previewImageView, @NonNull ProgressBar progressBar,
+      @NonNull LinearProgressIndicator progressIndicator, @NonNull ScrollView scrollView2,
+      @NonNull TextView textView2, @NonNull Button uploadButton) {
     this.rootView = rootView;
     this.backButton = backButton;
     this.buttonLayout = buttonLayout;
@@ -76,6 +87,9 @@ public final class ActivityPredictBinding implements ViewBinding {
     this.galleryButton = galleryButton;
     this.headerCardView = headerCardView;
     this.main = main;
+    this.noPhotoImage = noPhotoImage;
+    this.noPhotoLayout = noPhotoLayout;
+    this.noPhotoText = noPhotoText;
     this.previewImageView = previewImageView;
     this.progressBar = progressBar;
     this.progressIndicator = progressIndicator;
@@ -143,6 +157,24 @@ public final class ActivityPredictBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.no_photo_image;
+      ImageView noPhotoImage = ViewBindings.findChildViewById(rootView, id);
+      if (noPhotoImage == null) {
+        break missingId;
+      }
+
+      id = R.id.no_photo_layout;
+      LinearLayout noPhotoLayout = ViewBindings.findChildViewById(rootView, id);
+      if (noPhotoLayout == null) {
+        break missingId;
+      }
+
+      id = R.id.no_photo_text;
+      TextView noPhotoText = ViewBindings.findChildViewById(rootView, id);
+      if (noPhotoText == null) {
+        break missingId;
+      }
+
       id = R.id.previewImageView;
       ImageView previewImageView = ViewBindings.findChildViewById(rootView, id);
       if (previewImageView == null) {
@@ -180,8 +212,9 @@ public final class ActivityPredictBinding implements ViewBinding {
       }
 
       return new ActivityPredictBinding((ConstraintLayout) rootView, backButton, buttonLayout,
-          cameraButton, galleryButton, headerCardView, main, previewImageView, progressBar,
-          progressIndicator, scrollView2, textView2, uploadButton);
+          cameraButton, galleryButton, headerCardView, main, noPhotoImage, noPhotoLayout,
+          noPhotoText, previewImageView, progressBar, progressIndicator, scrollView2, textView2,
+          uploadButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

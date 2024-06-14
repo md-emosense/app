@@ -12,14 +12,20 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.emosense.R
 import com.example.emosense.adapter.ListNewsAdapter
 import com.example.emosense.data.dataclass.News
+import com.example.emosense.databinding.ActivityNewsBinding
+import com.example.emosense.databinding.ActivityPredictBinding
 
 class NewsActivity : AppCompatActivity() {
     private lateinit var rvNews: RecyclerView
     private val list = ArrayList<News>()
 
+    private lateinit var binding: ActivityNewsBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news)
+
+        binding = ActivityNewsBinding.inflate(layoutInflater)
 
         setupView()
 
@@ -28,6 +34,10 @@ class NewsActivity : AppCompatActivity() {
 
         list.addAll(getNewsList())
         showRecyclerList()
+
+        binding.backButton.setOnClickListener {
+            finish()
+        }
 
     }
 

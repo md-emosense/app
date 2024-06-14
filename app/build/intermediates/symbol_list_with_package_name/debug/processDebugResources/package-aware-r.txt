@@ -3543,6 +3543,9 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
+id no_photo_image
+id no_photo_layout
+id no_photo_text
 id none
 id normal
 id north
@@ -3678,6 +3681,7 @@ id stretch
 id submenuarrow
 id submit_area
 id suburbProvinceCity
+id suggestion
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions

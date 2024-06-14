@@ -2,6 +2,7 @@ package com.example.emosense.view.clinic
 
 import android.os.Build
 import android.os.Bundle
+import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.activity.enableEdgeToEdge
@@ -55,12 +56,24 @@ class ClinicActivity : AppCompatActivity() {
         binding.backButton.setOnClickListener {
             finish()
         }
+
+        viewModel.isLoading.observe(this) {
+            showLoading(it)
+        }
     }
 
     private fun setClinicData(clinicData: List<ClinicItem>) {
         val adapter = ListClinicAllAdapter()
         adapter.submitList(clinicData)
         binding.rvClinic.adapter = adapter
+    }
+
+    private fun showLoading(isLoading: Boolean) {
+        if (isLoading) {
+            binding.progressBar.visibility = View.VISIBLE
+        } else {
+            binding.progressBar.visibility = View.GONE
+        }
     }
 
     private fun setupView() {

@@ -3542,6 +3542,9 @@ int id neverCompleteToEnd 0x7f0a017c
 int id neverCompleteToStart 0x7f0a017d
 int id noScroll 0x7f0a017e
 int id noState 0x7f0a017f
+int id no_photo_image 0x7f0a026c
+int id no_photo_layout 0x7f0a026d
+int id no_photo_text 0x7f0a026e
 int id none 0x7f0a0180
 int id normal 0x7f0a0181
 int id north 0x7f0a0182
@@ -3677,6 +3680,7 @@ int id stretch 0x7f0a0204
 int id submenuarrow 0x7f0a0205
 int id submit_area 0x7f0a0206
 int id suburbProvinceCity 0x7f0a0207
+int id suggestion 0x7f0a026f
 int id supportScrollUp 0x7f0a0208
 int id tabMode 0x7f0a0209
 int id tag_accessibility_actions 0x7f0a020a

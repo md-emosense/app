@@ -36,10 +36,6 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/layout/activity_news.xml"
     },
     {
-        "merged": "com.example.emosense.app-mergeDebugResources-43:/layout/activity_flashcards.xml",
-        "source": "com.example.emosense.app-main-46:/layout/activity_flashcards.xml"
-    },
-    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-43:/layout/activity_flashcards.xml",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/layout/activity_flashcards.xml"
     },
@@ -66,6 +62,10 @@
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-43:/layout/activity_forum.xml",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-46:/layout/activity_forum.xml"
+    },
+    {
+        "merged": "com.example.emosense.app-mergeDebugResources-43:/layout/activity_result.xml",
+        "source": "com.example.emosense.app-main-46:/layout/activity_result.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-43:/layout/item_flashcard.xml",

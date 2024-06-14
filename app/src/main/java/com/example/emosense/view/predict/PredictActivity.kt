@@ -105,7 +105,10 @@ class PredictActivity : AppCompatActivity() {
     private fun showImage() {
         currentImageUri?.let {
             Log.d("Image URI", "showImage: $it")
+            binding.noPhotoLayout.visibility = View.GONE
             binding.previewImageView.setImageURI(it)
+            binding.previewImageView.visibility = View.VISIBLE
+
         }
     }
 
