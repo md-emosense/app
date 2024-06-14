@@ -2,6 +2,7 @@ package com.example.emosense.view.signup
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
@@ -15,6 +16,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.emosense.databinding.ActivitySignUpBinding
 import com.example.emosense.view.login.LoginActivity
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
 
 
 class SignUpActivity : AppCompatActivity() {
@@ -64,6 +68,36 @@ class SignUpActivity : AppCompatActivity() {
         }
 
         submitCheck()
+
+        setupDatePicker()
+    }
+
+    private fun setupDatePicker() {
+        val calendar = Calendar.getInstance()
+        val year = calendar.get(Calendar.YEAR)
+        val month = calendar.get(Calendar.MONTH)
+        val day = calendar.get(Calendar.DAY_OF_MONTH)
+
+        val datePickerDialog = DatePickerDialog(
+            this,
+            { _, selectedYear, selectedMonth, selectedDay ->
+                val selectedDate = "$selectedYear-${selectedMonth + 1}-$selectedDay"
+                binding.familyDobEditText.setText(selectedDate)
+            },
+            year,
+            month,
+            day
+        )
+
+        binding.familyDobEditText.setOnClickListener {
+            datePickerDialog.show()
+        }
+
+        binding.familyDobEditText.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                datePickerDialog.show()
+            }
+        }
     }
 
     private fun setupAction() {
@@ -126,9 +160,27 @@ class SignUpActivity : AppCompatActivity() {
                 binding.familyNameEditTextLayout.error = null
             }
 
+            if (!isDateValid(birthday)) {
+                binding.familyDobEditTextLayout.error = "Tanggal lahir harus dalam format yyyy-MM-dd"
+                isValid = false
+            } else {
+                binding.familyDobEditTextLayout.error = null
+            }
+
             if (isValid) {
                 signupViewModel.signup(name, email, password, childName, adhdDesc, birthday)
             }
+        }
+    }
+
+    private fun isDateValid(date: String): Boolean {
+        return try {
+            val sdf = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+            sdf.isLenient = false
+            sdf.parse(date)
+            true
+        } catch (e: Exception) {
+            false
         }
     }
 
