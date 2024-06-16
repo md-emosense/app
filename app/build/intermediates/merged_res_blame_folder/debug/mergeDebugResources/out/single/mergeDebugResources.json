@@ -8,10 +8,6 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/drawable/ic_comment.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-45:/drawable_forum.png.flat",
-        "source": "com.example.emosense.app-main-47:/drawable/forum.png"
-    },
-    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_image_news_2.jpg.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/drawable/image_news_2.jpg"
     },
@@ -196,6 +192,10 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/font/poppins.xml"
     },
     {
+        "merged": "com.example.emosense.app-debug-45:/layout_activity_predict.xml.flat",
+        "source": "com.example.emosense.app-main-47:/layout/activity_predict.xml"
+    },
+    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_home.png.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/drawable/home.png"
     },
@@ -220,12 +220,12 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/drawable/camera.png"
     },
     {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_neutral.xml.flat",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/drawable/neutral.xml"
-    },
-    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/layout_activity_predict.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_predict.xml"
+    },
+    {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_neutral.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/drawable/neutral.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_baseline_location_city_24.xml.flat",

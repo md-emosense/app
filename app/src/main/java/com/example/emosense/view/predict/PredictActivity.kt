@@ -59,6 +59,10 @@ class PredictActivity : AppCompatActivity() {
         viewModel.getSession().observe(this) { user ->
             binding.uploadButton.setOnClickListener { uploadImage(user.id) }
         }
+
+        viewModel.isLoading.observe(this) {
+            showLoading(it)
+        }
     }
 
     private fun setupView() {
