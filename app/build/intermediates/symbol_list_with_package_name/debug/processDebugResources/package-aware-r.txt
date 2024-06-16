@@ -3008,6 +3008,7 @@ drawable baseline_add_photo_alternate_24
 drawable baseline_arrow_forward_24
 drawable baseline_calendar_month_24
 drawable baseline_camera_alt_24
+drawable baseline_email_24
 drawable baseline_expand_less_24
 drawable baseline_expand_more_24
 drawable baseline_flip_24
@@ -3029,12 +3030,14 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable camera
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable disgust_icon
+drawable forum
 drawable forum1
 drawable forum_gray
 drawable happy_icon
@@ -3157,6 +3160,7 @@ drawable profile
 drawable profile2
 drawable sad_icon
 drawable scared_icon
+drawable speech
 drawable surprised_icon
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3277,6 +3281,7 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cameraButton
+id cameraText
 id cancel_button
 id card
 id card1
@@ -3313,12 +3318,14 @@ id collapseActionView
 id compress
 id confirm_button
 id constraint
+id contactHeader
 id container
 id content
 id contentPanel
 id contiguous
 id continuousVelocity
 id coordinator
+id copyrightText
 id cos
 id counterclockwise
 id cradle
@@ -3368,6 +3375,8 @@ id edit_text_id
 id elastic
 id emailEditText
 id emailEditTextLayout
+id emailLogoImageView
+id emailText
 id emailTextView
 id embed
 id end
@@ -3403,7 +3412,9 @@ id fitXY
 id fixed
 id flip
 id floating
+id footerView
 id forever
+id forumText
 id fragment_container
 id fragment_container_view_tag
 id frost
@@ -3437,6 +3448,7 @@ id image
 id imageView
 id imageView2
 id imageView3
+id imageView4
 id immediateStop
 id included
 id indeterminate
@@ -3590,6 +3602,8 @@ id pauseAudio
 id peekHeight
 id percent
 id phoneContainer
+id phoneLogoImageView
+id phoneText
 id photoCard
 id pin
 id playAudio
@@ -3664,6 +3678,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id speechText
 id splashImage
 id spline
 id split_action_bar
@@ -3713,6 +3728,7 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textViewAbout
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3897,6 +3913,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_about
 layout activity_add_forum
 layout activity_clinic
 layout activity_detail_forum

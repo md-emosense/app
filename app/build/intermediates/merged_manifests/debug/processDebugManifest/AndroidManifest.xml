@@ -35,6 +35,9 @@
         android:theme="@style/Theme.EmoSense"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.emosense.view.about.AboutActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.emosense.view.splash.SplashActivity"
             android:exported="true" >
             <intent-filter>

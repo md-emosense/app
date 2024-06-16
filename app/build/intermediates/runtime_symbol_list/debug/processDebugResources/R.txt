@@ -3007,6 +3007,7 @@ int drawable baseline_add_photo_alternate_24 0x7f08007d
 int drawable baseline_arrow_forward_24 0x7f08007e
 int drawable baseline_calendar_month_24 0x7f08007f
 int drawable baseline_camera_alt_24 0x7f080080
+int drawable baseline_email_24 0x7f08011b
 int drawable baseline_expand_less_24 0x7f080081
 int drawable baseline_expand_more_24 0x7f080082
 int drawable baseline_flip_24 0x7f080083
@@ -3028,12 +3029,14 @@ int drawable btn_radio_off_mtrl 0x7f080092
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f080093
 int drawable btn_radio_on_mtrl 0x7f080094
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f080095
+int drawable camera 0x7f08011c
 int drawable design_fab_background 0x7f080096
 int drawable design_ic_visibility 0x7f080097
 int drawable design_ic_visibility_off 0x7f080098
 int drawable design_password_eye 0x7f080099
 int drawable design_snackbar_background 0x7f08009a
 int drawable disgust_icon 0x7f08009b
+int drawable forum 0x7f08011d
 int drawable forum1 0x7f08009c
 int drawable forum_gray 0x7f08009d
 int drawable happy_icon 0x7f08009e
@@ -3156,6 +3159,7 @@ int drawable profile 0x7f080112
 int drawable profile2 0x7f080113
 int drawable sad_icon 0x7f080114
 int drawable scared_icon 0x7f080115
+int drawable speech 0x7f08011e
 int drawable surprised_icon 0x7f080116
 int drawable test_level_drawable 0x7f080117
 int drawable tooltip_frame_dark 0x7f080118
@@ -3276,6 +3280,7 @@ int id buttonPanel 0x7f0a006b
 int id cache_measures 0x7f0a006c
 int id callMeasure 0x7f0a006d
 int id cameraButton 0x7f0a006e
+int id cameraText 0x7f0a0269
 int id cancel_button 0x7f0a006f
 int id card 0x7f0a0070
 int id card1 0x7f0a0071
@@ -3312,12 +3317,14 @@ int id collapseActionView 0x7f0a008f
 int id compress 0x7f0a0090
 int id confirm_button 0x7f0a0091
 int id constraint 0x7f0a0092
+int id contactHeader 0x7f0a026a
 int id container 0x7f0a0093
 int id content 0x7f0a0094
 int id contentPanel 0x7f0a0095
 int id contiguous 0x7f0a0096
 int id continuousVelocity 0x7f0a0097
 int id coordinator 0x7f0a0098
+int id copyrightText 0x7f0a026b
 int id cos 0x7f0a0099
 int id counterclockwise 0x7f0a009a
 int id cradle 0x7f0a009b
@@ -3367,6 +3374,8 @@ int id edit_text_id 0x7f0a00c6
 int id elastic 0x7f0a00c7
 int id emailEditText 0x7f0a00c8
 int id emailEditTextLayout 0x7f0a00c9
+int id emailLogoImageView 0x7f0a026c
+int id emailText 0x7f0a026d
 int id emailTextView 0x7f0a00ca
 int id embed 0x7f0a00cb
 int id end 0x7f0a00cc
@@ -3402,7 +3411,9 @@ int id fitXY 0x7f0a00e9
 int id fixed 0x7f0a00ea
 int id flip 0x7f0a00eb
 int id floating 0x7f0a00ec
+int id footerView 0x7f0a026e
 int id forever 0x7f0a00ed
+int id forumText 0x7f0a026f
 int id fragment_container 0x7f0a00ee
 int id fragment_container_view_tag 0x7f0a00ef
 int id frost 0x7f0a00f0
@@ -3436,6 +3447,7 @@ int id image 0x7f0a010b
 int id imageView 0x7f0a010c
 int id imageView2 0x7f0a010d
 int id imageView3 0x7f0a010e
+int id imageView4 0x7f0a0270
 int id immediateStop 0x7f0a010f
 int id included 0x7f0a0110
 int id indeterminate 0x7f0a0111
@@ -3589,6 +3601,8 @@ int id pauseAudio 0x7f0a01a4
 int id peekHeight 0x7f0a01a5
 int id percent 0x7f0a01a6
 int id phoneContainer 0x7f0a01a7
+int id phoneLogoImageView 0x7f0a0271
+int id phoneText 0x7f0a0272
 int id photoCard 0x7f0a01a8
 int id pin 0x7f0a01a9
 int id playAudio 0x7f0a01aa
@@ -3663,6 +3677,7 @@ int id snapMargins 0x7f0a01ee
 int id south 0x7f0a01ef
 int id spacer 0x7f0a01f0
 int id special_effects_controller_view_tag 0x7f0a01f1
+int id speechText 0x7f0a0273
 int id splashImage 0x7f0a01f2
 int id spline 0x7f0a01f3
 int id split_action_bar 0x7f0a01f4
@@ -3712,6 +3727,7 @@ int id textView2 0x7f0a021f
 int id textView3 0x7f0a0220
 int id textView4 0x7f0a0221
 int id textView5 0x7f0a0222
+int id textViewAbout 0x7f0a0274
 int id text_input_end_icon 0x7f0a0223
 int id text_input_error_icon 0x7f0a0224
 int id text_input_start_icon 0x7f0a0225
@@ -3896,6 +3912,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0d0018
 int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
+int layout activity_about 0x7f0d0081
 int layout activity_add_forum 0x7f0d001c
 int layout activity_clinic 0x7f0d001d
 int layout activity_detail_forum 0x7f0d001e

@@ -4,6 +4,7 @@ package com.example.emosense.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,6 +23,9 @@ public final class ActivityProfileBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageButton backButton;
+
+  @NonNull
   public final CardView cardView;
 
   @NonNull
@@ -31,7 +35,13 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final CircleImageView circleImageView;
 
   @NonNull
+  public final CardView headerCardView;
+
+  @NonNull
   public final ConstraintLayout main;
+
+  @NonNull
+  public final TextView textView2;
 
   @NonNull
   public final TextView tvAbout;
@@ -57,17 +67,21 @@ public final class ActivityProfileBinding implements ViewBinding {
   @NonNull
   public final TextView tvLogout;
 
-  private ActivityProfileBinding(@NonNull ConstraintLayout rootView, @NonNull CardView cardView,
-      @NonNull CardView cardView2, @NonNull CircleImageView circleImageView,
-      @NonNull ConstraintLayout main, @NonNull TextView tvAbout, @NonNull TextView tvCall,
-      @NonNull TextView tvChangePassword, @NonNull TextView tvChildData,
+  private ActivityProfileBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ImageButton backButton, @NonNull CardView cardView, @NonNull CardView cardView2,
+      @NonNull CircleImageView circleImageView, @NonNull CardView headerCardView,
+      @NonNull ConstraintLayout main, @NonNull TextView textView2, @NonNull TextView tvAbout,
+      @NonNull TextView tvCall, @NonNull TextView tvChangePassword, @NonNull TextView tvChildData,
       @NonNull TextView tvEditProfile, @NonNull TextView tvEmail, @NonNull TextView tvFullName,
       @NonNull TextView tvLogout) {
     this.rootView = rootView;
+    this.backButton = backButton;
     this.cardView = cardView;
     this.cardView2 = cardView2;
     this.circleImageView = circleImageView;
+    this.headerCardView = headerCardView;
     this.main = main;
+    this.textView2 = textView2;
     this.tvAbout = tvAbout;
     this.tvCall = tvCall;
     this.tvChangePassword = tvChangePassword;
@@ -105,6 +119,12 @@ public final class ActivityProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.backButton;
+      ImageButton backButton = ViewBindings.findChildViewById(rootView, id);
+      if (backButton == null) {
+        break missingId;
+      }
+
       id = R.id.cardView;
       CardView cardView = ViewBindings.findChildViewById(rootView, id);
       if (cardView == null) {
@@ -123,7 +143,19 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.headerCardView;
+      CardView headerCardView = ViewBindings.findChildViewById(rootView, id);
+      if (headerCardView == null) {
+        break missingId;
+      }
+
       ConstraintLayout main = (ConstraintLayout) rootView;
+
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
+        break missingId;
+      }
 
       id = R.id.tvAbout;
       TextView tvAbout = ViewBindings.findChildViewById(rootView, id);
@@ -173,9 +205,9 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProfileBinding((ConstraintLayout) rootView, cardView, cardView2,
-          circleImageView, main, tvAbout, tvCall, tvChangePassword, tvChildData, tvEditProfile,
-          tvEmail, tvFullName, tvLogout);
+      return new ActivityProfileBinding((ConstraintLayout) rootView, backButton, cardView,
+          cardView2, circleImageView, headerCardView, main, textView2, tvAbout, tvCall,
+          tvChangePassword, tvChildData, tvEditProfile, tvEmail, tvFullName, tvLogout);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -56,12 +56,12 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_news.xml"
     },
     {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-44:/layout/activity_sign_up.xml",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_sign_up.xml"
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-44:/layout/activity_about.xml",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_about.xml"
     },
     {
-        "merged": "com.example.emosense.app-mergeDebugResources-44:/layout/fragment_forum.xml",
-        "source": "com.example.emosense.app-main-47:/layout/fragment_forum.xml"
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-44:/layout/activity_sign_up.xml",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_sign_up.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-44:/layout/activity_news_detail.xml",
@@ -80,12 +80,12 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_clinic.xml"
     },
     {
-        "merged": "com.example.emosense.app-mergeDebugResources-44:/layout/fragment_home.xml",
-        "source": "com.example.emosense.app-main-47:/layout/fragment_home.xml"
-    },
-    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-44:/layout/activity_flashcards.xml",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_flashcards.xml"
+    },
+    {
+        "merged": "com.example.emosense.app-mergeDebugResources-44:/layout/activity_profile.xml",
+        "source": "com.example.emosense.app-main-47:/layout/activity_profile.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-mergeDebugResources-44:/layout/activity_splash.xml",

@@ -19,6 +19,7 @@ drawable baseline_add_photo_alternate_24
 drawable baseline_arrow_forward_24
 drawable baseline_calendar_month_24
 drawable baseline_camera_alt_24
+drawable baseline_email_24
 drawable baseline_expand_less_24
 drawable baseline_expand_more_24
 drawable baseline_flip_24
@@ -32,7 +33,9 @@ drawable baseline_phone_24
 drawable baseline_play_circle_24
 drawable baseline_post_add_24
 drawable baseline_rocket_launch_24
+drawable camera
 drawable disgust_icon
+drawable forum
 drawable forum1
 drawable forum_gray
 drawable happy_icon
@@ -64,6 +67,7 @@ drawable profile
 drawable profile2
 drawable sad_icon
 drawable scared_icon
+drawable speech
 drawable surprised_icon
 drawable underline
 font inter_medium
@@ -80,6 +84,7 @@ id bottom_navigation
 id btnFlip
 id buttonLayout
 id cameraButton
+id cameraText
 id card
 id card1
 id cardBack1
@@ -93,11 +98,15 @@ id cityprovince
 id clinicAddress
 id clinicName
 id clinicPhone
+id contactHeader
+id copyrightText
 id detailsContainer
 id editBody
 id editTitle
 id emailEditText
 id emailEditTextLayout
+id emailLogoImageView
+id emailText
 id emailTextView
 id expandButton
 id familyAdhdDescriptionEditText
@@ -111,6 +120,8 @@ id familyNameEditText
 id familyNameEditTextLayout
 id familyNameTextView
 id familyTitleTextView
+id footerView
+id forumText
 id fragment_container
 id galleryButton
 id guidelineHorizontal
@@ -119,6 +130,7 @@ id headerCardView
 id imageView
 id imageView2
 id imageView3
+id imageView4
 id informationalTextView
 id instruction
 id ivClinic
@@ -143,6 +155,8 @@ id passwordEditTextLayout
 id passwordTextView
 id pauseAudio
 id phoneContainer
+id phoneLogoImageView
+id phoneText
 id photoCard
 id playAudio
 id predictButton
@@ -161,6 +175,7 @@ id showLessButton
 id signupButton
 id signupLinkTextView
 id signupTextView
+id speechText
 id splashImage
 id suburbProvinceCity
 id suggestion
@@ -168,6 +183,7 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textViewAbout
 id titleDaftarTextView
 id titleTextView
 id tvAbout
@@ -187,6 +203,7 @@ id tvTime
 id tvTitle
 id tvWelcome
 id uploadButton
+layout activity_about
 layout activity_add_forum
 layout activity_clinic
 layout activity_detail_forum
