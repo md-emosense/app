@@ -167,6 +167,7 @@ Pengguna DAS lainnya, Jessica Kiss, yang kedua anaknya penyandang disabilitas, b
     <string name="family_dob">Tanggal Lahir</string>
     <string name="family_name">Nama</string>
     <string name="greeting">Halo %1$s,</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hint_password">Masukkan password...</string>
     <string name="login">Masuk</string>
     <string name="logout">Keluar</string>

@@ -111,6 +111,7 @@ id familyNameEditText
 id familyNameEditTextLayout
 id familyNameTextView
 id familyTitleTextView
+id fragment_container
 id galleryButton
 id guidelineHorizontal
 id guidelineHorizontal2
@@ -200,6 +201,8 @@ layout activity_profile
 layout activity_result
 layout activity_sign_up
 layout activity_splash
+layout fragment_forum
+layout fragment_home
 layout item_clinic
 layout item_clinic_view_all
 layout item_comment
@@ -216,6 +219,7 @@ string family_adhd_description
 string family_dob
 string family_name
 string greeting
+string hello_blank_fragment
 string hint_password
 string login
 string logout

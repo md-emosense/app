@@ -3404,6 +3404,7 @@ id fixed
 id flip
 id floating
 id forever
+id fragment_container
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3926,6 +3927,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_forum
+layout fragment_home
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_clinic
@@ -4057,6 +4060,7 @@ string family_adhd_description
 string family_dob
 string family_name
 string greeting
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string hint_password
 string icon_content_description

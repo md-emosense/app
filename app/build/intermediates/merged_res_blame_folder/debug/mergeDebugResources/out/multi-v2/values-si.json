@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.emosense.app-mergeDebugResources-42:/values-si/values-si.xml",
+            "outputFile": "com.example.emosense.app-mergeDebugResources-43:/values-si/values-si.xml",
             "map": [
                 {
                     "source": "/Users/refianyshadrina/.gradle/caches/transforms-4/8f01ac1317ec8da5aa32fbef68c91075/transformed/core-1.13.1/res/values-si/values-si.xml",

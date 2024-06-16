@@ -4,15 +4,14 @@ package com.example.emosense.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.emosense.R;
@@ -37,16 +36,13 @@ public final class ActivityMainBinding implements ViewBinding {
   public final BottomNavigationView bottomNavigationView;
 
   @NonNull
+  public final FrameLayout fragmentContainer;
+
+  @NonNull
   public final CardView headerCardView;
 
   @NonNull
-  public final CardView imageView;
-
-  @NonNull
   public final ImageView ivLogo;
-
-  @NonNull
-  public final ConstraintLayout main;
 
   @NonNull
   public final FloatingActionButton predictButton;
@@ -54,60 +50,20 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final ImageButton profileButton;
 
-  @NonNull
-  public final RecyclerView rvClinic;
-
-  @NonNull
-  public final RecyclerView rvNews;
-
-  @NonNull
-  public final ScrollView scrollView;
-
-  @NonNull
-  public final TextView textView4;
-
-  @NonNull
-  public final TextView textView5;
-
-  @NonNull
-  public final TextView tvMoreClinic;
-
-  @NonNull
-  public final TextView tvMoreNews;
-
-  @NonNull
-  public final TextView tvName;
-
-  @NonNull
-  public final TextView tvWelcome;
-
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appTitle,
       @NonNull BottomAppBar bottomNavigation, @NonNull BottomNavigationView bottomNavigationView,
-      @NonNull CardView headerCardView, @NonNull CardView imageView, @NonNull ImageView ivLogo,
-      @NonNull ConstraintLayout main, @NonNull FloatingActionButton predictButton,
-      @NonNull ImageButton profileButton, @NonNull RecyclerView rvClinic,
-      @NonNull RecyclerView rvNews, @NonNull ScrollView scrollView, @NonNull TextView textView4,
-      @NonNull TextView textView5, @NonNull TextView tvMoreClinic, @NonNull TextView tvMoreNews,
-      @NonNull TextView tvName, @NonNull TextView tvWelcome) {
+      @NonNull FrameLayout fragmentContainer, @NonNull CardView headerCardView,
+      @NonNull ImageView ivLogo, @NonNull FloatingActionButton predictButton,
+      @NonNull ImageButton profileButton) {
     this.rootView = rootView;
     this.appTitle = appTitle;
     this.bottomNavigation = bottomNavigation;
     this.bottomNavigationView = bottomNavigationView;
+    this.fragmentContainer = fragmentContainer;
     this.headerCardView = headerCardView;
-    this.imageView = imageView;
     this.ivLogo = ivLogo;
-    this.main = main;
     this.predictButton = predictButton;
     this.profileButton = profileButton;
-    this.rvClinic = rvClinic;
-    this.rvNews = rvNews;
-    this.scrollView = scrollView;
-    this.textView4 = textView4;
-    this.textView5 = textView5;
-    this.tvMoreClinic = tvMoreClinic;
-    this.tvMoreNews = tvMoreNews;
-    this.tvName = tvName;
-    this.tvWelcome = tvWelcome;
   }
 
   @Override
@@ -155,27 +111,21 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.fragment_container;
+      FrameLayout fragmentContainer = ViewBindings.findChildViewById(rootView, id);
+      if (fragmentContainer == null) {
+        break missingId;
+      }
+
       id = R.id.headerCardView;
       CardView headerCardView = ViewBindings.findChildViewById(rootView, id);
       if (headerCardView == null) {
         break missingId;
       }
 
-      id = R.id.imageView;
-      CardView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
-        break missingId;
-      }
-
       id = R.id.ivLogo;
       ImageView ivLogo = ViewBindings.findChildViewById(rootView, id);
       if (ivLogo == null) {
-        break missingId;
-      }
-
-      id = R.id.main;
-      ConstraintLayout main = ViewBindings.findChildViewById(rootView, id);
-      if (main == null) {
         break missingId;
       }
 
@@ -191,64 +141,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.rvClinic;
-      RecyclerView rvClinic = ViewBindings.findChildViewById(rootView, id);
-      if (rvClinic == null) {
-        break missingId;
-      }
-
-      id = R.id.rvNews;
-      RecyclerView rvNews = ViewBindings.findChildViewById(rootView, id);
-      if (rvNews == null) {
-        break missingId;
-      }
-
-      id = R.id.scrollView;
-      ScrollView scrollView = ViewBindings.findChildViewById(rootView, id);
-      if (scrollView == null) {
-        break missingId;
-      }
-
-      id = R.id.textView4;
-      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
-      if (textView4 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView5;
-      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
-      if (textView5 == null) {
-        break missingId;
-      }
-
-      id = R.id.tvMoreClinic;
-      TextView tvMoreClinic = ViewBindings.findChildViewById(rootView, id);
-      if (tvMoreClinic == null) {
-        break missingId;
-      }
-
-      id = R.id.tvMoreNews;
-      TextView tvMoreNews = ViewBindings.findChildViewById(rootView, id);
-      if (tvMoreNews == null) {
-        break missingId;
-      }
-
-      id = R.id.tvName;
-      TextView tvName = ViewBindings.findChildViewById(rootView, id);
-      if (tvName == null) {
-        break missingId;
-      }
-
-      id = R.id.tvWelcome;
-      TextView tvWelcome = ViewBindings.findChildViewById(rootView, id);
-      if (tvWelcome == null) {
-        break missingId;
-      }
-
       return new ActivityMainBinding((ConstraintLayout) rootView, appTitle, bottomNavigation,
-          bottomNavigationView, headerCardView, imageView, ivLogo, main, predictButton,
-          profileButton, rvClinic, rvNews, scrollView, textView4, textView5, tvMoreClinic,
-          tvMoreNews, tvName, tvWelcome);
+          bottomNavigationView, fragmentContainer, headerCardView, ivLogo, predictButton,
+          profileButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
