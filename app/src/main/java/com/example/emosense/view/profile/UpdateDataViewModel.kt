@@ -58,4 +58,36 @@ class UpdateDataViewModel(private val repository: UserRepository) : ViewModel() 
 
         })
     }
+
+    fun editProfile(userData: UserData, password: String, id: Int, name: String, childBirthday: String, email: String){
+        _isLoading.value = true
+
+        val request = UpdateProfileRequest(id,name,email,password,userData.childName.toString(),childBirthday,userData.adhdDesc.toString())
+        val api = ApiConfig.getApiService().updateProfile(request)
+        api.enqueue(object : retrofit2.Callback<UpdateProfileResponse> {
+            override fun onResponse(
+                call: Call<UpdateProfileResponse>,
+                response: Response<UpdateProfileResponse>
+            ) {
+                _isLoading.value = false
+                if (response.isSuccessful && response.body() != null) {
+                    _message.value = "Data berhasil diubah"
+                } else {
+                    when (response.code()) {
+                        400 -> _message.value =
+                            "Data gagal diubah"
+                        else -> {
+                            _message.value = response.message()
+                        }
+                    }
+                }
+            }
+
+            override fun onFailure(call: Call<UpdateProfileResponse>, t: Throwable) {
+                _isLoading.value = false
+                _message.value = t.message.toString()
+            }
+
+        })
+    }
 }

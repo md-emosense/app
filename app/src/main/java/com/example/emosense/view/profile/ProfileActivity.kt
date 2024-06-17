@@ -5,22 +5,23 @@ import android.os.Build
 import android.os.Bundle
 import android.text.Html
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.WindowInsets
 import android.view.WindowManager
+import android.widget.EditText
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.emosense.R
+import com.example.emosense.data.response.UserData
 import com.example.emosense.databinding.ActivityProfileBinding
 import com.example.emosense.view.ViewModelFactory
 import com.example.emosense.view.about.AboutActivity
 import com.example.emosense.view.login.LoginActivity
-import com.example.emosense.view.main.MainViewModel
-import com.example.emosense.view.news.NewsDetailActivity
 
 class ProfileActivity : AppCompatActivity() {
-    private val viewModel by viewModels<MainViewModel> {
+    private val viewModel by viewModels<ProfileViewModel> {
         ViewModelFactory.getInstance(this)
     }
     private lateinit var binding: ActivityProfileBinding
@@ -83,9 +84,6 @@ class ProfileActivity : AppCompatActivity() {
             profile?.let { profile ->
                 binding.tvFullName.text = profile.fullName
                 binding.tvEmail.text = profile.email
-//                binding.tvChildName.text = it.childName
-//                binding.tvChildBirthday.text = it.childBirthday
-//                binding.tvAdhdDesc.text = it.adhdDesc
 
                 val coloredEmail = "<font color='${ContextCompat.getColor(this, R.color.primary)}'>${profile.email}</font>"
 
@@ -96,16 +94,15 @@ class ProfileActivity : AppCompatActivity() {
                 }
 
                 binding.tvEditProfile.setOnClickListener {
-                    val intent = Intent(this@ProfileActivity, EditProfileActivity::class.java)
-                    intent.putExtra("profile", profile)
-                    startActivity(intent)
+                    checkPassword(profile)
                 }
 
                 binding.tvChangePassword.setOnClickListener {
                     val intent = Intent(this@ProfileActivity, ChangePasswordActivity::class.java)
-                    intent.putExtra("profile", profile)
+                    intent.putExtra(EditProfileActivity.EXTRA_USER, profile)
                     startActivity(intent)
                 }
+
                 binding.tvCall.setOnClickListener {
                     AlertDialog.Builder(this)
                         .setTitle("Hubungi Kami")
@@ -116,11 +113,56 @@ class ProfileActivity : AppCompatActivity() {
                                 .setPositiveButton("OK") { _, _ -> }
                                 .show()
                         }
-                        .setNegativeButton("Tidak") { _, _ ->
-                        }
+                        .setNegativeButton("Tidak") { _, _ -> }
                         .show()
                 }
             }
         }
     }
+
+    private fun checkPassword(user: UserData) {
+        val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_enter_password, null)
+        val etPassword = dialogView.findViewById<EditText>(R.id.etPassword)
+
+        val dialog = AlertDialog.Builder(this)
+            .setTitle("Konfirmasi password")
+            .setView(dialogView)
+            .setPositiveButton("OK") { _, _ ->
+                val password = etPassword.text.toString()
+                if (password.isNotEmpty()) {
+                    viewModel.checkPassword(user.email.toString(), password)
+                }
+            }
+            .setNegativeButton("Cancel", null)
+            .create()
+
+        dialog.show()
+
+        viewModel.message.observe(this) { message ->
+            message?.let {
+                if (it == "Success") {
+                    val password = etPassword.text.toString()
+                    val intent = Intent(this, EditProfileActivity::class.java)
+                    intent.putExtra(EditProfileActivity.EXTRA_USER, user)
+                    intent.putExtra(EditProfileActivity.EXTRA_PASS, password)
+                    startActivity(intent)
+                    finish()
+                    dialog.dismiss()
+
+                    //bug
+//                } else {
+//                    AlertDialog.Builder(this).apply {
+//                        setTitle("Error")
+//                        setMessage(it)
+//                        setPositiveButton("OK") { dialog, _ ->
+//                            dialog.dismiss()
+//                        }
+//                        create()
+//                        show()
+//                    }
+                }
+            }
+        }
+    }
+
 }

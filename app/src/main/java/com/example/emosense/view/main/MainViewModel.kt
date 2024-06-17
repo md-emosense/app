@@ -53,22 +53,4 @@ class MainViewModel(private val repository: UserRepository) : ViewModel() {
             }
         })
     }
-
-    fun getProfile(userId: Int) {
-        val api = ApiConfig.getApiService().getProfile(userId)
-        api.enqueue(object : retrofit2.Callback<ProfileResponse> {
-            override fun onResponse(call: Call<ProfileResponse>, response: Response<ProfileResponse>) {
-                if (response.isSuccessful) {
-                    _message.value = response.body()?.status.toString()
-                    _profileResponse.value = response.body()?.data!!
-                } else {
-                    _message.value = response.message()
-                }
-            }
-
-            override fun onFailure(call: Call<ProfileResponse>, t: Throwable) {
-                _message.value = t.message.toString()
-            }
-        })
-    }
 }

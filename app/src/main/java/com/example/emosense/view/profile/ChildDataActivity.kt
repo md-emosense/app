@@ -44,9 +44,7 @@ class ChildDataActivity : AppCompatActivity() {
             intent.getParcelableExtra<UserData>(ChildDataActivity.EXTRA_USER)
         }
 
-        val id = intent.getIntExtra("extra_id", -1)
-
-        if (user != null) setupAction(user,id)
+        if (user != null) setupAction(user)
     }
 
     private fun setupView() {
@@ -62,17 +60,17 @@ class ChildDataActivity : AppCompatActivity() {
         supportActionBar?.hide()
     }
 
-    private fun setupAction(user: UserData, id: Int) {
+    private fun setupAction(user: UserData) {
         binding.tvChildName.text = user.childName
         binding.tvChildBirthday.text = user.childBirthday
         binding.tvAdhdDesc.text = user.adhdDesc
 
         binding.changeDataButton.setOnClickListener {
-            checkPassword(user, id)
+            checkPassword(user)
         }
     }
 
-    private fun checkPassword(user: UserData, id: Int) {
+    private fun checkPassword(user: UserData) {
         val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_enter_password, null)
         val etPassword = dialogView.findViewById<EditText>(R.id.etPassword)
 

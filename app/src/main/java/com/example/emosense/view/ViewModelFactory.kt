@@ -12,6 +12,7 @@ import com.example.emosense.view.forum.ForumViewModel
 import com.example.emosense.view.login.LoginViewModel
 import com.example.emosense.view.main.MainViewModel
 import com.example.emosense.view.predict.PredictViewModel
+import com.example.emosense.view.profile.ProfileViewModel
 import com.example.emosense.view.profile.UpdateDataViewModel
 
 class ViewModelFactory(private val repository: UserRepository) : ViewModelProvider.NewInstanceFactory() {
@@ -42,6 +43,9 @@ class ViewModelFactory(private val repository: UserRepository) : ViewModelProvid
             }
             modelClass.isAssignableFrom(UpdateDataViewModel::class.java) -> {
                 UpdateDataViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(ProfileViewModel::class.java) -> {
+                ProfileViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
