@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
 
         setupAction()
         setupView()
+
+        if (intent.getBooleanExtra("SHOW_FORUM_FRAGMENT", false)) {
+            showForumFragment()
+        }
     }
 
     private fun setupAction() {
@@ -79,5 +83,15 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
             .commit()
+    }
+
+    private fun showForumFragment() {
+        val fragment = ForumFragment()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .addToBackStack(null)
+            .commit()
+
+        binding.bottomNavigationView.menu.findItem(R.id.navigation_forum).isChecked = true
     }
 }

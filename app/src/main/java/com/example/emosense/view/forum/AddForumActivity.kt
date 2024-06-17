@@ -8,9 +8,11 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.example.emosense.R
 import com.example.emosense.databinding.ActivityAddForumBinding
 import com.example.emosense.view.ViewModelFactory
 import com.example.emosense.view.login.LoginActivity
+import com.example.emosense.view.main.MainActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class AddForumActivity : AppCompatActivity() {
@@ -52,16 +54,21 @@ class AddForumActivity : AppCompatActivity() {
                 body.isEmpty() -> showInputErrorDialog("Isi tidak boleh kosong.")
                 else -> {
                     viewModel.getSession().observe(this) { user ->
-                        viewModel.postForum(user.id,title,body)
+                        viewModel.postForum(user.id, title, body)
                     }
                     Toast.makeText(this, "Forum terkirim!", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this@AddForumActivity, ForumActivity::class.java)
+
+                    val intent = Intent(this@AddForumActivity, MainActivity::class.java).apply {
+                        putExtra("SHOW_FORUM_FRAGMENT", true)
+                    }
                     finish()
                     startActivity(intent)
                 }
             }
         }
     }
+
+
 
     private fun showInputErrorDialog(message: String) {
         MaterialAlertDialogBuilder(this)
