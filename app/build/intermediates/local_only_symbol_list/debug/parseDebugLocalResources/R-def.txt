@@ -92,6 +92,8 @@ id cardBack1
 id cardFront1
 id cardView
 id cardView2
+id changeButton
+id changeDataButton
 id circleImageView
 id cityContainer
 id cityProvince
@@ -109,6 +111,7 @@ id emailEditTextLayout
 id emailLogoImageView
 id emailText
 id emailTextView
+id etPassword
 id etReply
 id expandButton
 id familyAdhdDescriptionEditText
@@ -190,9 +193,12 @@ id textViewAbout
 id titleDaftarTextView
 id titleTextView
 id tvAbout
+id tvAdhdDesc
 id tvCall
 id tvChangePassword
+id tvChildBirthday
 id tvChildData
+id tvChildName
 id tvDesc
 id tvEditProfile
 id tvEmail
@@ -208,8 +214,12 @@ id tvWelcome
 id uploadButton
 layout activity_about
 layout activity_add_forum
+layout activity_change_child_data
+layout activity_change_password
+layout activity_child_data
 layout activity_clinic
 layout activity_detail_forum
+layout activity_edit_profile
 layout activity_flashcards
 layout activity_forum
 layout activity_login
@@ -221,6 +231,7 @@ layout activity_profile
 layout activity_result
 layout activity_sign_up
 layout activity_splash
+layout dialog_enter_password
 layout fragment_forum
 layout fragment_home
 layout item_clinic

@@ -3299,6 +3299,8 @@ id center_vertical
 id chain
 id chain2
 id chains
+id changeButton
+id changeDataButton
 id checkbox
 id checked
 id chronometer
@@ -3385,6 +3387,7 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id escape
+id etPassword
 id etReply
 id exitUntilCollapsed
 id expandButton
@@ -3763,9 +3766,12 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvAbout
+id tvAdhdDesc
 id tvCall
 id tvChangePassword
+id tvChildBirthday
 id tvChildData
+id tvChildName
 id tvDesc
 id tvEditProfile
 id tvEmail
@@ -3918,8 +3924,12 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_about
 layout activity_add_forum
+layout activity_change_child_data
+layout activity_change_password
+layout activity_child_data
 layout activity_clinic
 layout activity_detail_forum
+layout activity_edit_profile
 layout activity_flashcards
 layout activity_forum
 layout activity_login
@@ -3947,6 +3957,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_enter_password
 layout fragment_forum
 layout fragment_home
 layout ime_base_split_test_activity

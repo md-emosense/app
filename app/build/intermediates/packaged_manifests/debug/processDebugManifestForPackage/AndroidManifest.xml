@@ -35,6 +35,18 @@
         android:theme="@style/Theme.EmoSense"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.emosense.view.profile.ChangeChildDataActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.emosense.view.profile.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.emosense.view.profile.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.emosense.view.profile.ChildDataActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.emosense.view.about.AboutActivity"
             android:exported="false" />
         <activity

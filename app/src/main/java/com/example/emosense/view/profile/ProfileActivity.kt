@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.text.Html
+import android.util.Log
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.activity.viewModels
@@ -16,6 +17,7 @@ import com.example.emosense.view.ViewModelFactory
 import com.example.emosense.view.about.AboutActivity
 import com.example.emosense.view.login.LoginActivity
 import com.example.emosense.view.main.MainViewModel
+import com.example.emosense.view.news.NewsDetailActivity
 
 class ProfileActivity : AppCompatActivity() {
     private val viewModel by viewModels<MainViewModel> {
@@ -87,6 +89,23 @@ class ProfileActivity : AppCompatActivity() {
 
                 val coloredEmail = "<font color='${ContextCompat.getColor(this, R.color.primary)}'>${profile.email}</font>"
 
+                binding.tvChildData.setOnClickListener {
+                    val intent = Intent(this, ChildDataActivity::class.java)
+                    intent.putExtra(ChildDataActivity.EXTRA_USER, profile)
+                    startActivity(intent)
+                }
+
+                binding.tvEditProfile.setOnClickListener {
+                    val intent = Intent(this@ProfileActivity, EditProfileActivity::class.java)
+                    intent.putExtra("profile", profile)
+                    startActivity(intent)
+                }
+
+                binding.tvChangePassword.setOnClickListener {
+                    val intent = Intent(this@ProfileActivity, ChangePasswordActivity::class.java)
+                    intent.putExtra("profile", profile)
+                    startActivity(intent)
+                }
                 binding.tvCall.setOnClickListener {
                     AlertDialog.Builder(this)
                         .setTitle("Hubungi Kami")

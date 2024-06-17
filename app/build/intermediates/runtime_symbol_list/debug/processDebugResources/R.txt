@@ -3298,6 +3298,8 @@ int id center_vertical 0x7f0a007c
 int id chain 0x7f0a007d
 int id chain2 0x7f0a007e
 int id chains 0x7f0a007f
+int id changeButton 0x7f0a027e
+int id changeDataButton 0x7f0a027c
 int id checkbox 0x7f0a0080
 int id checked 0x7f0a0081
 int id chronometer 0x7f0a0082
@@ -3384,6 +3386,7 @@ int id endToStart 0x7f0a00d2
 int id enterAlways 0x7f0a00d3
 int id enterAlwaysCollapsed 0x7f0a00d4
 int id escape 0x7f0a00d5
+int id etPassword 0x7f0a027d
 int id etReply 0x7f0a0277
 int id exitUntilCollapsed 0x7f0a00d6
 int id expandButton 0x7f0a00d7
@@ -3762,9 +3765,12 @@ int id transition_scene_layoutid_cache 0x7f0a024a
 int id transition_transform 0x7f0a024b
 int id triangle 0x7f0a024c
 int id tvAbout 0x7f0a024d
+int id tvAdhdDesc 0x7f0a0279
 int id tvCall 0x7f0a024e
 int id tvChangePassword 0x7f0a024f
+int id tvChildBirthday 0x7f0a027a
 int id tvChildData 0x7f0a0250
+int id tvChildName 0x7f0a027b
 int id tvDesc 0x7f0a0251
 int id tvEditProfile 0x7f0a0252
 int id tvEmail 0x7f0a0253
@@ -3917,8 +3923,12 @@ int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
 int layout activity_about 0x7f0d001c
 int layout activity_add_forum 0x7f0d001d
+int layout activity_change_child_data 0x7f0d0086
+int layout activity_change_password 0x7f0d0082
+int layout activity_child_data 0x7f0d0083
 int layout activity_clinic 0x7f0d001e
 int layout activity_detail_forum 0x7f0d001f
+int layout activity_edit_profile 0x7f0d0084
 int layout activity_flashcards 0x7f0d0020
 int layout activity_forum 0x7f0d0021
 int layout activity_login 0x7f0d0022
@@ -3946,6 +3956,7 @@ int layout design_navigation_menu 0x7f0d0037
 int layout design_navigation_menu_item 0x7f0d0038
 int layout design_text_input_end_icon 0x7f0d0039
 int layout design_text_input_start_icon 0x7f0d003a
+int layout dialog_enter_password 0x7f0d0085
 int layout fragment_forum 0x7f0d003b
 int layout fragment_home 0x7f0d003c
 int layout ime_base_split_test_activity 0x7f0d003d

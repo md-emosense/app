@@ -1,6 +1,8 @@
 package com.example.emosense.data.response
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
 data class ProfileResponse(
 
@@ -11,6 +13,7 @@ data class ProfileResponse(
 	val status: String? = null
 )
 
+@Parcelize
 data class UserData(
 
 	@field:SerializedName("childName")
@@ -27,4 +30,4 @@ data class UserData(
 
 	@field:SerializedName("email")
 	val email: String? = null
-)
+): Parcelable
