@@ -3318,6 +3318,9 @@ int id clockwise 0x7f0a008e
 int id closest 0x7f0a008f
 int id collapseActionView 0x7f0a0090
 int id compress 0x7f0a0091
+int id confirmPasswordEditText 0x7f0a027f
+int id confirmPasswordEditTextLayout 0x7f0a0280
+int id confirmPasswordTextView 0x7f0a0281
 int id confirm_button 0x7f0a0092
 int id constraint 0x7f0a0093
 int id contactHeader 0x7f0a0094
@@ -3559,6 +3562,9 @@ int id navigation_home 0x7f0a017d
 int id never 0x7f0a017e
 int id neverCompleteToEnd 0x7f0a017f
 int id neverCompleteToStart 0x7f0a0180
+int id newPasswordEditText 0x7f0a0282
+int id newPasswordEditTextLayout 0x7f0a0283
+int id newPasswordTextView 0x7f0a0284
 int id noScroll 0x7f0a0181
 int id noState 0x7f0a0182
 int id no_photo_image 0x7f0a0183
@@ -3571,6 +3577,9 @@ int id notification_background 0x7f0a0189
 int id notification_main_column 0x7f0a018a
 int id notification_main_column_container 0x7f0a018b
 int id off 0x7f0a018c
+int id oldPasswordEditText 0x7f0a0285
+int id oldPasswordEditTextLayout 0x7f0a0286
+int id oldPasswordTextView 0x7f0a0287
 int id on 0x7f0a018d
 int id onInterceptTouchReturnSwipe 0x7f0a018e
 int id open_search_bar_text_view 0x7f0a018f

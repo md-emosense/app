@@ -101,6 +101,9 @@ id cityprovince
 id clinicAddress
 id clinicName
 id clinicPhone
+id confirmPasswordEditText
+id confirmPasswordEditTextLayout
+id confirmPasswordTextView
 id contactHeader
 id copyrightText
 id detailsContainer
@@ -152,9 +155,15 @@ id nameTextView
 id navigation_detection
 id navigation_forum
 id navigation_home
+id newPasswordEditText
+id newPasswordEditTextLayout
+id newPasswordTextView
 id no_photo_image
 id no_photo_layout
 id no_photo_text
+id oldPasswordEditText
+id oldPasswordEditTextLayout
+id oldPasswordTextView
 id passwordEditText
 id passwordEditTextLayout
 id passwordTextView

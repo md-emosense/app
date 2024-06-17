@@ -3319,6 +3319,9 @@ id clockwise
 id closest
 id collapseActionView
 id compress
+id confirmPasswordEditText
+id confirmPasswordEditTextLayout
+id confirmPasswordTextView
 id confirm_button
 id constraint
 id contactHeader
@@ -3560,6 +3563,9 @@ id navigation_home
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id newPasswordEditText
+id newPasswordEditTextLayout
+id newPasswordTextView
 id noScroll
 id noState
 id no_photo_image
@@ -3572,6 +3578,9 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id off
+id oldPasswordEditText
+id oldPasswordEditTextLayout
+id oldPasswordTextView
 id on
 id onInterceptTouchReturnSwipe
 id open_search_bar_text_view

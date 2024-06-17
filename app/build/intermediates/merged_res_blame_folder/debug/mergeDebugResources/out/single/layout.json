@@ -4,16 +4,16 @@
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\activity_news.xml"
     },
     {
-        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-44:\\layout\\activity_news_detail.xml",
-        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\activity_news_detail.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-44:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-44:\\layout\\activity_flashcards.xml",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\activity_flashcards.xml"
     },
     {
-        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-44:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-44:\\layout\\activity_news_detail.xml",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\activity_news_detail.xml"
     },
     {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-44:\\layout\\activity_about.xml",
@@ -72,6 +72,10 @@
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\fragment_home.xml"
     },
     {
+        "merged": "com.example.emosense.app-mergeDebugResources-44:/layout/activity_change_password.xml",
+        "source": "com.example.emosense.app-main-47:/layout/activity_change_password.xml"
+    },
+    {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-44:\\layout\\activity_predict.xml",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\activity_predict.xml"
     },
@@ -92,10 +96,6 @@
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\activity_clinic.xml"
     },
     {
-        "merged": "com.example.emosense.app-mergeDebugResources-44:/layout/activity_edit_profile.xml",
-        "source": "com.example.emosense.app-main-47:/layout/activity_edit_profile.xml"
-    },
-    {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-44:\\layout\\activity_forum.xml",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\activity_forum.xml"
     },
@@ -108,11 +108,11 @@
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\item_comment.xml"
     },
     {
-        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-44:\\layout\\activity_child_data.xml",
-        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\activity_child_data.xml"
-    },
-    {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-44:\\layout\\activity_edit_profile.xml",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-mergeDebugResources-44:\\layout\\activity_child_data.xml",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\activity_child_data.xml"
     }
 ]

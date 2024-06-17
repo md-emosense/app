@@ -8,6 +8,8 @@ import com.example.emosense.data.api.ApiConfig
 import com.example.emosense.data.database.UserRepository
 import com.example.emosense.data.preferences.UserModel
 import com.example.emosense.data.request.UpdateProfileRequest
+import com.example.emosense.data.request.UserRequest
+import com.example.emosense.data.response.LoginResponse
 import com.example.emosense.data.response.RegisterResponse
 import com.example.emosense.data.response.UpdateProfileResponse
 import com.example.emosense.data.response.UserData
@@ -25,6 +27,38 @@ class UpdateDataViewModel(private val repository: UserRepository) : ViewModel() 
 
     fun getSession(): LiveData<UserModel> {
         return repository.getSession().asLiveData()
+    }
+
+    fun checkPassword(email: String, password: String) {
+        _isLoading.value = true
+        val request = UserRequest(email, password)
+        val api = ApiConfig.getApiService().login(request)
+        api.enqueue(object : retrofit2.Callback<LoginResponse> {
+            override fun onResponse(
+                call: Call<LoginResponse>,
+                response: Response<LoginResponse>
+            ) {
+                _isLoading.value = false
+                if (response.isSuccessful && response.body() != null) {
+                    _message.value = "Success"
+                } else {
+                    when (response.code()) {
+                        401 -> _message.value = "Password yang Anda masukkan salah"
+                        else -> {
+                            _message.value = response.message()
+                        }
+                    }
+
+                }
+            }
+
+            override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+                _isLoading.value = false
+                _message.value = t.message.toString()
+            }
+
+        })
+
     }
 
     fun updateChildData(userData: UserData, password: String, id: Int, childName: String, childBirthday: String, childAdhd: String) {
@@ -63,6 +97,38 @@ class UpdateDataViewModel(private val repository: UserRepository) : ViewModel() 
         _isLoading.value = true
 
         val request = UpdateProfileRequest(id,name,email,password,userData.childName.toString(),childBirthday,userData.adhdDesc.toString())
+        val api = ApiConfig.getApiService().updateProfile(request)
+        api.enqueue(object : retrofit2.Callback<UpdateProfileResponse> {
+            override fun onResponse(
+                call: Call<UpdateProfileResponse>,
+                response: Response<UpdateProfileResponse>
+            ) {
+                _isLoading.value = false
+                if (response.isSuccessful && response.body() != null) {
+                    _message.value = "Data berhasil diubah"
+                } else {
+                    when (response.code()) {
+                        400 -> _message.value =
+                            "Data gagal diubah"
+                        else -> {
+                            _message.value = response.message()
+                        }
+                    }
+                }
+            }
+
+            override fun onFailure(call: Call<UpdateProfileResponse>, t: Throwable) {
+                _isLoading.value = false
+                _message.value = t.message.toString()
+            }
+
+        })
+    }
+
+    fun changePassword(userData: UserData, password: String, id: Int, childBirthday: String){
+        _isLoading.value = true
+
+        val request = UpdateProfileRequest(id,userData.fullName.toString(),userData.email.toString(),password,userData.childName.toString(),childBirthday,userData.adhdDesc.toString())
         val api = ApiConfig.getApiService().updateProfile(request)
         api.enqueue(object : retrofit2.Callback<UpdateProfileResponse> {
             override fun onResponse(
