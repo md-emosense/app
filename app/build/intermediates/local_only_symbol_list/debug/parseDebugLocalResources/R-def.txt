@@ -55,6 +55,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_location
 drawable ic_person
+drawable ic_send
 drawable image_card_1
 drawable image_news_1
 drawable image_news_2
@@ -108,6 +109,7 @@ id emailEditTextLayout
 id emailLogoImageView
 id emailText
 id emailTextView
+id etReply
 id expandButton
 id familyAdhdDescriptionEditText
 id familyAdhdDescriptionEditTextLayout
@@ -171,6 +173,7 @@ id rvNews
 id rvReplies
 id scrollView
 id scrollView2
+id sendButton
 id showLessButton
 id signupButton
 id signupLinkTextView

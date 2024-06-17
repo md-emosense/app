@@ -3075,6 +3075,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_person
 drawable ic_search_black_24
+drawable ic_send
 drawable image_card_1
 drawable image_news_1
 drawable image_news_2
@@ -3384,6 +3385,7 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id escape
+id etReply
 id exitUntilCollapsed
 id expandButton
 id expand_activities_button
@@ -3657,6 +3659,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sendButton
 id sharedValueSet
 id sharedValueUnset
 id shortcut

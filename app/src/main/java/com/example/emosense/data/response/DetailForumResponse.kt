@@ -59,5 +59,5 @@ data class ForumData(
 	val forum: Forum? = null,
 
 	@field:SerializedName("replies")
-	val replies: Replies? = null
+	val replies: List<Replies>? = null
 )

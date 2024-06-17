@@ -4,6 +4,7 @@ package com.example.emosense.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.emosense.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -27,6 +29,9 @@ public final class ActivityDetailForumBinding implements ViewBinding {
   public final CardView card;
 
   @NonNull
+  public final EditText etReply;
+
+  @NonNull
   public final ImageView imageView2;
 
   @NonNull
@@ -37,6 +42,9 @@ public final class ActivityDetailForumBinding implements ViewBinding {
 
   @NonNull
   public final RecyclerView rvReplies;
+
+  @NonNull
+  public final FloatingActionButton sendButton;
 
   @NonNull
   public final TextView textView3;
@@ -57,16 +65,19 @@ public final class ActivityDetailForumBinding implements ViewBinding {
   public final TextView tvTitle;
 
   private ActivityDetailForumBinding(@NonNull ConstraintLayout rootView, @NonNull CardView card,
-      @NonNull ImageView imageView2, @NonNull CircleImageView ivProfile,
-      @NonNull ConstraintLayout main, @NonNull RecyclerView rvReplies, @NonNull TextView textView3,
+      @NonNull EditText etReply, @NonNull ImageView imageView2, @NonNull CircleImageView ivProfile,
+      @NonNull ConstraintLayout main, @NonNull RecyclerView rvReplies,
+      @NonNull FloatingActionButton sendButton, @NonNull TextView textView3,
       @NonNull TextView tvDesc, @NonNull TextView tvName, @NonNull TextView tvNumofComments,
       @NonNull TextView tvTime, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.card = card;
+    this.etReply = etReply;
     this.imageView2 = imageView2;
     this.ivProfile = ivProfile;
     this.main = main;
     this.rvReplies = rvReplies;
+    this.sendButton = sendButton;
     this.textView3 = textView3;
     this.tvDesc = tvDesc;
     this.tvName = tvName;
@@ -108,6 +119,12 @@ public final class ActivityDetailForumBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.etReply;
+      EditText etReply = ViewBindings.findChildViewById(rootView, id);
+      if (etReply == null) {
+        break missingId;
+      }
+
       id = R.id.imageView2;
       ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
       if (imageView2 == null) {
@@ -125,6 +142,12 @@ public final class ActivityDetailForumBinding implements ViewBinding {
       id = R.id.rvReplies;
       RecyclerView rvReplies = ViewBindings.findChildViewById(rootView, id);
       if (rvReplies == null) {
+        break missingId;
+      }
+
+      id = R.id.sendButton;
+      FloatingActionButton sendButton = ViewBindings.findChildViewById(rootView, id);
+      if (sendButton == null) {
         break missingId;
       }
 
@@ -164,8 +187,9 @@ public final class ActivityDetailForumBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDetailForumBinding((ConstraintLayout) rootView, card, imageView2,
-          ivProfile, main, rvReplies, textView3, tvDesc, tvName, tvNumofComments, tvTime, tvTitle);
+      return new ActivityDetailForumBinding((ConstraintLayout) rootView, card, etReply, imageView2,
+          ivProfile, main, rvReplies, sendButton, textView3, tvDesc, tvName, tvNumofComments,
+          tvTime, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

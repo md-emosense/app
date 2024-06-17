@@ -52,6 +52,7 @@ class DetailForumActivity : AppCompatActivity() {
     }
 
     private fun setupAction() {
+
         val forumId = intent.getIntExtra(EXTRA_ID, -1)
         viewModel.getForumDetail(forumId)
         Log.d("DetailForumActivity", "Fetching forum detail for ID: $forumId")
@@ -63,8 +64,7 @@ class DetailForumActivity : AppCompatActivity() {
                 binding.tvDesc.text = forum.forum?.isi
                 binding.tvName.text = forum.forum?.userName
 
-//                ga nyambung -> replies harusnya list bkn tunggal, lg dibenerin cc
-//                setReplies(forum.replies)
+                setReplies(forum.replies)
             } else {
                 Log.e("DetailForumActivity", "Forum data is null")
             }
@@ -75,6 +75,22 @@ class DetailForumActivity : AppCompatActivity() {
 
         adapter = ListReplyAdapter()
         binding.rvReplies.adapter = adapter
+
+        binding.sendButton.setOnClickListener{
+            val reply = binding.etReply.text.toString()
+
+            viewModel.getSession().observe(this) { user ->
+                viewModel.postReply(forumId, user.id, reply) { newReply ->
+                    val replyWithUserName = newReply.copy(userName = user.name)
+                    val updatedReplies = adapter.currentList.toMutableList()
+                    updatedReplies.add(replyWithUserName)
+                    adapter.submitList(updatedReplies)
+                    binding.etReply.text.clear()
+                    binding.rvReplies.scrollToPosition(updatedReplies.size - 1)
+                }
+            }
+        }
+
 
     }
 
