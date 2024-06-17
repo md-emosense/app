@@ -126,7 +126,7 @@ class HomeFragment : Fragment() {
                 dataPhoto.getResourceId(i, -1)
             )
             listNews.add(news)
-            if (i == 2) break
+            if (i == 3) break
         }
         return listNews
     }
