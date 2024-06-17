@@ -66,6 +66,10 @@ class EditProfileActivity : AppCompatActivity() {
         binding.nameEditText.setText(user.fullName)
         binding.emailEditText.setText(user.email)
 
+        binding.backButton.setOnClickListener {
+            finish()
+        }
+
         binding.changeButton.setOnClickListener {
             val name = binding.nameEditText.text.toString()
             val email = binding.emailEditText.text.toString()

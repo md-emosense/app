@@ -4,6 +4,10 @@
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "com.example.emosense.app-debug-45:/layout_activity_child_data.xml.flat",
+        "source": "com.example.emosense.app-main-47:/layout/activity_child_data.xml"
+    },
+    {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-45:\\drawable_image_news_1.jpg.flat",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\drawable\\image_news_1.jpg"
     },
@@ -164,12 +168,12 @@
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-45:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\fragment_home.xml"
-    },
-    {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-45:\\font_poppins.xml.flat",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\font\\poppins.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-45:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-45:\\drawable_ic_forum_filled.xml.flat",
@@ -286,10 +290,6 @@
     {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-45:\\drawable_ic_add.xml.flat",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\drawable\\ic_add.xml"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-45:/layout_activity_change_password.xml.flat",
-        "source": "com.example.emosense.app-main-47:/layout/activity_change_password.xml"
     },
     {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-45:\\layout_activity_child_data.xml.flat",

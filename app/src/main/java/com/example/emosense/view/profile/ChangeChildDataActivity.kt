@@ -59,6 +59,10 @@ class ChangeChildDataActivity : AppCompatActivity() {
         binding.familyDobEditText.setText(formattedDate)
         binding.familyAdhdDescriptionEditText.setText(user.adhdDesc)
 
+        binding.backButton.setOnClickListener {
+            finish()
+        }
+
         binding.changeButton.setOnClickListener {
             val childName = binding.nameEditText.text.toString()
             val childBirthday = binding.familyDobEditText.text.toString()

@@ -68,6 +68,10 @@ class ChildDataActivity : AppCompatActivity() {
         binding.changeDataButton.setOnClickListener {
             checkPassword(user)
         }
+
+        binding.backButton.setOnClickListener {
+            finish()
+        }
     }
 
     private fun checkPassword(user: UserData) {

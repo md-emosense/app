@@ -57,6 +57,10 @@ class ChangePasswordActivity : AppCompatActivity() {
         val parsedDate = inputFormat.parse(user.childBirthday!!)
         val formattedDate = parsedDate?.let { outputFormat.format(it) } ?: user.childBirthday
 
+        binding.backButton.setOnClickListener {
+            finish()
+        }
+
         binding.changeButton.setOnClickListener {
             val oldPassword = binding.oldPasswordEditText.text.toString()
             val newPassword = binding.newPasswordEditText.text.toString()
