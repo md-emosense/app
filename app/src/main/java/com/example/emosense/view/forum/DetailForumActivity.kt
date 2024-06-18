@@ -1,9 +1,11 @@
 package com.example.emosense.view.forum
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.activity.enableEdgeToEdge
@@ -22,6 +24,9 @@ import com.example.emosense.databinding.ActivityDetailForumBinding
 import com.example.emosense.databinding.ActivityForumBinding
 import com.example.emosense.utils.formatCreatedAt
 import com.example.emosense.view.ViewModelFactory
+import com.example.emosense.view.profile.ChildDataActivity
+import com.example.emosense.view.profile.OtherProfileActivity
+import com.example.emosense.view.profile.ProfileActivity
 
 class DetailForumActivity : AppCompatActivity() {
     private val viewModel by viewModels<DetailForumViewModel> {
@@ -76,6 +81,24 @@ class DetailForumActivity : AppCompatActivity() {
                 numOfReplies = forum.replies?.size ?: 0
                 binding.tvNumofComments.text = "($numOfReplies)"
 
+                val profileClickListener = View.OnClickListener {
+                    viewModel.getSession().observe(this){user ->
+                        if (user.id == forum.forum?.userId){
+                            val intent = Intent(this, ProfileActivity::class.java)
+                            startActivity(intent)
+                        }else{
+                            val intent = Intent(this, OtherProfileActivity::class.java)
+                            intent.putExtra(OtherProfileActivity.EXTRA_ID, forum.forum?.userId!!)
+                            startActivity(intent)
+                        }
+                    }
+
+                }
+
+                binding.tvName.setOnClickListener(profileClickListener)
+                binding.tvTime.setOnClickListener(profileClickListener)
+                binding.ivProfile.setOnClickListener(profileClickListener)
+
             } else {
                 Log.e("DetailForumActivity", "Forum data is null")
             }
@@ -101,8 +124,6 @@ class DetailForumActivity : AppCompatActivity() {
                 }
             }
         }
-
-
     }
 
     private fun setReplies(replies: List<Replies?>?) {

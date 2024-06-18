@@ -19,6 +19,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".view.profile.OtherProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.profile.ChangeChildDataActivity"
             android:exported="false" />
         <activity

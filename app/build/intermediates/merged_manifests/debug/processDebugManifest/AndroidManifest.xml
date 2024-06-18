@@ -34,6 +34,9 @@
         android:theme="@style/Theme.EmoSense"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.emosense.view.profile.OtherProfileActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.emosense.view.profile.ChangeChildDataActivity"
             android:exported="false" />
         <activity

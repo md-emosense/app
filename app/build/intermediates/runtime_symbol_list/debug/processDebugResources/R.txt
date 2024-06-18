@@ -3942,6 +3942,7 @@ int layout activity_login 0x7f0d0026
 int layout activity_main 0x7f0d0027
 int layout activity_news 0x7f0d0028
 int layout activity_news_detail 0x7f0d0029
+int layout activity_other_profile 0x7f0d0087
 int layout activity_predict 0x7f0d002a
 int layout activity_profile 0x7f0d002b
 int layout activity_result 0x7f0d002c
