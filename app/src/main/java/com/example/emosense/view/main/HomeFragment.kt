@@ -4,12 +4,16 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowInsets
 import android.view.WindowManager
+import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -27,11 +31,19 @@ import com.example.emosense.view.news.NewsActivity
 import com.example.emosense.view.news.NewsDetailActivity
 import com.example.emosense.view.predict.PredictActivity
 import com.example.emosense.view.flashcards.FlashcardsActivity
+import com.example.emosense.view.profile.ChangePasswordActivity
+import com.example.emosense.view.profile.ChildDataActivity
+import com.example.emosense.view.profile.EditProfileActivity
 import com.example.emosense.view.profile.ProfileActivity
+import com.example.emosense.view.profile.ProfileViewModel
 
 class HomeFragment : Fragment() {
 
     private val viewModel by viewModels<MainViewModel> {
+        ViewModelFactory.getInstance(requireContext())
+    }
+
+    private val viewModel2 by viewModels<ProfileViewModel> {
         ViewModelFactory.getInstance(requireContext())
     }
 
@@ -56,8 +68,30 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setupClinic()
+        setupUser()
         setupAction()
         setNews()
+    }
+
+    private fun setupUser() {
+        viewModel2.getSession().observe(viewLifecycleOwner) { user ->
+            if (!user.isLogin) {
+                startActivity(Intent(requireContext(), LoginActivity::class.java))
+                requireActivity().finish()
+            } else {
+                setupProfile(user.id)
+            }
+        }
+    }
+
+    private fun setupProfile(userId: Int) {
+        viewModel2.getProfile(userId)
+
+        viewModel2.profileResponse.observe(viewLifecycleOwner) { profile ->
+            profile?.let { profile ->
+                binding.tvName.text = profile.fullName
+            }
+        }
     }
 
     private fun setupClinic() {
@@ -66,14 +100,6 @@ class HomeFragment : Fragment() {
 
         adapter = ListClinicAdapter()
         binding.rvClinic.adapter = adapter
-
-        viewModel.getSession().observe(viewLifecycleOwner) { user ->
-            if (!user.isLogin) {
-                startActivity(Intent(requireContext(), LoginActivity::class.java))
-                requireActivity().finish()
-            }
-            binding.tvName.text = user.name
-        }
 
         viewModel.getAllClinic()
 
