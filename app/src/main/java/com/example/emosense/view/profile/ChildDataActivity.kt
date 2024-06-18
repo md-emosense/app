@@ -61,9 +61,9 @@ class ChildDataActivity : AppCompatActivity() {
     }
 
     private fun setupAction(user: UserData) {
-        binding.tvChildName.text = user.childName
-        binding.tvChildBirthday.text = user.childBirthday
-        binding.tvAdhdDesc.text = user.adhdDesc
+        binding.familyNameEditText.setText(user.childName)
+        binding.familyDobEditText.setText(user.childBirthday)
+        binding.familyAdhdDescriptionEditText.setText(user.adhdDesc)
 
         binding.changeDataButton.setOnClickListener {
             checkPassword(user)
