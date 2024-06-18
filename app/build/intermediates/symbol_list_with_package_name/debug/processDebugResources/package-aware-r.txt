@@ -3084,6 +3084,7 @@ drawable image_news_4
 drawable image_news_5
 drawable indeterminate_static
 drawable logo_landscape
+drawable logo_square_smile
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3793,6 +3794,7 @@ id tvMoreClinic
 id tvMoreNews
 id tvName
 id tvNumofComments
+id tvSeparator
 id tvTime
 id tvTitle
 id tvWelcome

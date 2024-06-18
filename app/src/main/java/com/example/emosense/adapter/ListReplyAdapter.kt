@@ -1,7 +1,9 @@
 package com.example.emosense.adapter
 
+import android.os.Build
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -9,6 +11,7 @@ import com.example.emosense.data.response.ForumItem
 import com.example.emosense.data.response.Replies
 import com.example.emosense.databinding.ItemCommentBinding
 import com.example.emosense.databinding.ItemForumBinding
+import com.example.emosense.utils.formatCreatedAt
 
 class ListReplyAdapter: ListAdapter<Replies, ListReplyAdapter.ViewHolder>(ListReplyAdapter.DIFF_CALLBACK) {
     private lateinit var onItemClickCallback: ListForumAdapter.OnItemClickCallback
@@ -30,10 +33,13 @@ class ListReplyAdapter: ListAdapter<Replies, ListReplyAdapter.ViewHolder>(ListRe
     class ViewHolder(private val binding: ItemCommentBinding) : RecyclerView.ViewHolder(binding.root) {
         private val desc = binding.tvDesc
         private val name = binding.tvName
+        private val time = binding.tvTime
 
+        @RequiresApi(Build.VERSION_CODES.O)
         fun bind(reply: Replies) {
             desc.text = reply.isi
             name.text = reply.userName
+            time.text = formatCreatedAt(reply.createdAt ?: "")
         }
     }
 

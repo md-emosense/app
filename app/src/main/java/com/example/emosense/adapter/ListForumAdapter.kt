@@ -1,12 +1,15 @@
 package com.example.emosense.adapter
 
+import android.os.Build
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.emosense.data.response.ForumItem
 import com.example.emosense.databinding.ItemForumBinding
+import com.example.emosense.utils.formatCreatedAt
 
 class ListForumAdapter: ListAdapter<ForumItem, ListForumAdapter.ViewHolder>(DIFF_CALLBACK) {
 
@@ -21,6 +24,7 @@ class ListForumAdapter: ListAdapter<ForumItem, ListForumAdapter.ViewHolder>(DIFF
         return ViewHolder(binding)
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onBindViewHolder(holder: ListForumAdapter.ViewHolder, position: Int) {
         val forum = getItem(position)
         holder.bind(forum)
@@ -33,11 +37,14 @@ class ListForumAdapter: ListAdapter<ForumItem, ListForumAdapter.ViewHolder>(DIFF
         private val title = binding.tvTitle
         private val desc = binding.tvDesc
         private val name = binding.tvName
+        private val time = binding.tvTime
 
+        @RequiresApi(Build.VERSION_CODES.O)
         fun bind(forum: ForumItem) {
             title.text = forum.judul
             desc.text = forum.isi
             name.text = forum.userName
+            time.text = formatCreatedAt(forum.createdAt ?: "")
         }
     }
 

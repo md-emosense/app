@@ -63,6 +63,7 @@ drawable image_news_3
 drawable image_news_4
 drawable image_news_5
 drawable logo_landscape
+drawable logo_square_smile
 drawable neutral
 drawable profile
 drawable profile2
@@ -220,6 +221,7 @@ id tvMoreClinic
 id tvMoreNews
 id tvName
 id tvNumofComments
+id tvSeparator
 id tvTime
 id tvTitle
 id tvWelcome

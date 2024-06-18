@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -32,9 +31,6 @@ public final class ActivityDetailForumBinding implements ViewBinding {
   public final EditText etReply;
 
   @NonNull
-  public final ImageView imageView2;
-
-  @NonNull
   public final CircleImageView ivProfile;
 
   @NonNull
@@ -59,21 +55,23 @@ public final class ActivityDetailForumBinding implements ViewBinding {
   public final TextView tvNumofComments;
 
   @NonNull
+  public final TextView tvSeparator;
+
+  @NonNull
   public final TextView tvTime;
 
   @NonNull
   public final TextView tvTitle;
 
   private ActivityDetailForumBinding(@NonNull ConstraintLayout rootView, @NonNull CardView card,
-      @NonNull EditText etReply, @NonNull ImageView imageView2, @NonNull CircleImageView ivProfile,
-      @NonNull ConstraintLayout main, @NonNull RecyclerView rvReplies,
-      @NonNull FloatingActionButton sendButton, @NonNull TextView textView3,
-      @NonNull TextView tvDesc, @NonNull TextView tvName, @NonNull TextView tvNumofComments,
-      @NonNull TextView tvTime, @NonNull TextView tvTitle) {
+      @NonNull EditText etReply, @NonNull CircleImageView ivProfile, @NonNull ConstraintLayout main,
+      @NonNull RecyclerView rvReplies, @NonNull FloatingActionButton sendButton,
+      @NonNull TextView textView3, @NonNull TextView tvDesc, @NonNull TextView tvName,
+      @NonNull TextView tvNumofComments, @NonNull TextView tvSeparator, @NonNull TextView tvTime,
+      @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.card = card;
     this.etReply = etReply;
-    this.imageView2 = imageView2;
     this.ivProfile = ivProfile;
     this.main = main;
     this.rvReplies = rvReplies;
@@ -82,6 +80,7 @@ public final class ActivityDetailForumBinding implements ViewBinding {
     this.tvDesc = tvDesc;
     this.tvName = tvName;
     this.tvNumofComments = tvNumofComments;
+    this.tvSeparator = tvSeparator;
     this.tvTime = tvTime;
     this.tvTitle = tvTitle;
   }
@@ -122,12 +121,6 @@ public final class ActivityDetailForumBinding implements ViewBinding {
       id = R.id.etReply;
       EditText etReply = ViewBindings.findChildViewById(rootView, id);
       if (etReply == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView2;
-      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView2 == null) {
         break missingId;
       }
 
@@ -175,6 +168,12 @@ public final class ActivityDetailForumBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvSeparator;
+      TextView tvSeparator = ViewBindings.findChildViewById(rootView, id);
+      if (tvSeparator == null) {
+        break missingId;
+      }
+
       id = R.id.tvTime;
       TextView tvTime = ViewBindings.findChildViewById(rootView, id);
       if (tvTime == null) {
@@ -187,8 +186,8 @@ public final class ActivityDetailForumBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDetailForumBinding((ConstraintLayout) rootView, card, etReply, imageView2,
-          ivProfile, main, rvReplies, sendButton, textView3, tvDesc, tvName, tvNumofComments,
+      return new ActivityDetailForumBinding((ConstraintLayout) rootView, card, etReply, ivProfile,
+          main, rvReplies, sendButton, textView3, tvDesc, tvName, tvNumofComments, tvSeparator,
           tvTime, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -7,6 +7,7 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -18,6 +19,7 @@ import com.example.emosense.data.response.ForumItem
 import com.example.emosense.data.response.Replies
 import com.example.emosense.databinding.ActivityDetailForumBinding
 import com.example.emosense.databinding.ActivityForumBinding
+import com.example.emosense.utils.formatCreatedAt
 import com.example.emosense.view.ViewModelFactory
 
 class DetailForumActivity : AppCompatActivity() {
@@ -28,7 +30,9 @@ class DetailForumActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailForumBinding
     private lateinit var adapter: ListReplyAdapter
     private lateinit var layoutManager: LinearLayoutManager
+    private var numOfReplies: Int = 0
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailForumBinding.inflate(layoutInflater)
@@ -51,6 +55,7 @@ class DetailForumActivity : AppCompatActivity() {
         supportActionBar?.hide()
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     private fun setupAction() {
 
         val forumId = intent.getIntExtra(EXTRA_ID, -1)
@@ -63,8 +68,11 @@ class DetailForumActivity : AppCompatActivity() {
                 binding.tvTitle.text = forum.forum?.judul
                 binding.tvDesc.text = forum.forum?.isi
                 binding.tvName.text = forum.forum?.userName
+                binding.tvTime.text = formatCreatedAt(forum.forum?.createdAt ?: "")
 
                 setReplies(forum.replies)
+                numOfReplies = forum.replies?.size ?: 0
+                binding.tvNumofComments.text = numOfReplies.toString()
             } else {
                 Log.e("DetailForumActivity", "Forum data is null")
             }
