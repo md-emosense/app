@@ -42,28 +42,28 @@ class ResultActivity : AppCompatActivity() {
         }
 
         predictResponse?.let {
-            val label = it.data?.label ?: "Not detected"
+            val label = it.prediction
 
             val translatedLabel = when (label) {
-                "Angry" -> "Marah"
-                "Disgust" -> "Jijik"
-                "Fear" -> "Takut"
-                "Happy" -> "Senang"
-                "Neutral" -> "Netral"
-                "Sad" -> "Sedih"
-                "Surprise" -> "Terkejut"
+                "angry" -> "Marah"
+                "disgust" -> "Jijik"
+                "fear" -> "Takut"
+                "happy" -> "Senang"
+                "neutral" -> "Netral"
+                "sad" -> "Sedih"
+                "surprise" -> "Terkejut"
                 else -> "Tidak terdeteksi"
             }
             binding.cameraButton.text = translatedLabel
 
             val drawableResId = when (label) {
-                "Angry" -> R.drawable.angry_icon
-                "Disgust" -> R.drawable.disgust_icon
-                "Fear" -> R.drawable.scared_icon
-                "Happy" -> R.drawable.happy_icon
-                "Neutral" -> R.drawable.neutral
-                "Sad" -> R.drawable.sad_icon
-                "Surprise" -> R.drawable.surprised_icon
+                "angry" -> R.drawable.angry_icon
+                "disgust" -> R.drawable.disgust_icon
+                "fear" -> R.drawable.scared_icon
+                "happy" -> R.drawable.happy_icon
+                "neutral" -> R.drawable.neutral
+                "sad" -> R.drawable.sad_icon
+                "surprise" -> R.drawable.surprised_icon
                 else -> R.drawable.happy_icon
             }
 
@@ -72,7 +72,6 @@ class ResultActivity : AppCompatActivity() {
                 binding.cameraButton.setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null)
             }
 
-            binding.suggestion.text = it.data?.suggestion
         }
 
 

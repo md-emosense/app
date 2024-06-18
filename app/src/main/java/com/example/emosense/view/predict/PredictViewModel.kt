@@ -32,9 +32,10 @@ class PredictViewModel(private val repository: UserRepository) : ViewModel() {
         return repository.getSession().asLiveData()
     }
 
-    fun predict(multipartBody: MultipartBody.Part, requestBody: RequestBody) {
+    fun predict(multipartBody: MultipartBody.Part) {
         _isLoading.value = true
-        val api = ApiConfig.getApiService().predict(requestBody, multipartBody)
+        val alternativeBaseUrl = "http://34.50.85.136:9000/"
+        val api = ApiConfig.getApiService(alternativeBaseUrl).predict(multipartBody)
         api.enqueue(object : Callback<PredictResponse> {
             override fun onResponse(
                 call: Call<PredictResponse>,
@@ -44,7 +45,6 @@ class PredictViewModel(private val repository: UserRepository) : ViewModel() {
                 if (response.isSuccessful) {
                     val responseBody = response.body()
                     if (responseBody != null) {
-                        _message.value = responseBody.message
                         _predictResponse.value = responseBody!!
                         Log.d("PredictViewModel", "Predict response received1: $responseBody")
                     }

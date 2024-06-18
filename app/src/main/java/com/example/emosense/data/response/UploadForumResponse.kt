@@ -1,7 +1,7 @@
 package com.example.emosense.data.response
 
 data class UploadForumResponse(
-	val data: Data? = null,
+	val data: UploadData? = null,
 	val message: String? = null,
 	val status: String? = null
 )

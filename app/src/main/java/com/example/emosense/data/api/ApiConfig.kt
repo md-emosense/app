@@ -8,10 +8,10 @@ import com.example.emosense.BuildConfig;
 
 
 class ApiConfig {
-    companion object{
+    companion object {
         private const val BASE_URL = "http://34.101.246.57:9000/"
 
-        fun getApiService(): ApiService {
+        fun getApiService(baseUrl: String = BASE_URL): ApiService {
             val loggingInterceptor = if (BuildConfig.DEBUG) {
                 HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
             } else {
@@ -21,7 +21,7 @@ class ApiConfig {
                 .addInterceptor(loggingInterceptor)
                 .build()
             val retrofit = Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(baseUrl)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()

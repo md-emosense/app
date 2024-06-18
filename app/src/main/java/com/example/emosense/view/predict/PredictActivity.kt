@@ -131,20 +131,19 @@ class PredictActivity : AppCompatActivity() {
     private fun uploadImage(id: Int) {
         currentImageUri?.let { uri ->
             val imageFile = uriToFile(uri, this).reduceFileImage()
-            val requestBody = id.toString().toRequestBody("text/plain".toMediaType())
             val requestImageFile = imageFile.asRequestBody("image/jpeg".toMediaType())
             val multipartBody = MultipartBody.Part.createFormData(
-                "image",
+                "uploaded_file",
                 imageFile.name,
                 requestImageFile
             )
 
             lifecycleScope.launch {
                 try {
-                    viewModel.predict(multipartBody, requestBody)
+                    viewModel.predict(multipartBody)
                     viewModel.predictResponse.observe(this@PredictActivity) { response ->
                         Log.d("Image File", "Response received: $response")
-                        if (response.status == "success") {
+                        if (response != null) {
                             Log.d("Image File", "Success response received")
                             val intent = Intent(this@PredictActivity, ResultActivity::class.java)
                             intent.putExtra(ResultActivity.EXTRA_IMAGE, uri.toString())
@@ -161,7 +160,7 @@ class PredictActivity : AppCompatActivity() {
                 } catch (e: HttpException) {
                     val errorBody = e.response()?.errorBody()?.string()
                     val errorResponse = Gson().fromJson(errorBody, PredictResponse::class.java)
-                    showToast(errorResponse.message)
+                    showToast("Gambar tidak dapat diprediksi")
                 }
             }
         } ?: showToast(getString(R.string.empty_image_warning))

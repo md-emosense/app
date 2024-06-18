@@ -75,9 +75,8 @@ interface ApiService {
     ): Call<UpdateProfileResponse>
 
     @Multipart
-    @POST("predict")
+    @POST("predict_image")
     fun predict(
-        @Part("userId") id: RequestBody,
         @Part file: MultipartBody.Part,
     ): Call<PredictResponse>
 
