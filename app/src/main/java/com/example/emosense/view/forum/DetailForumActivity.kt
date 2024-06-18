@@ -1,5 +1,6 @@
 package com.example.emosense.view.forum
 
+import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -55,6 +56,7 @@ class DetailForumActivity : AppCompatActivity() {
         supportActionBar?.hide()
     }
 
+    @SuppressLint("SetTextI18n")
     @RequiresApi(Build.VERSION_CODES.O)
     private fun setupAction() {
 
@@ -72,7 +74,8 @@ class DetailForumActivity : AppCompatActivity() {
 
                 setReplies(forum.replies)
                 numOfReplies = forum.replies?.size ?: 0
-                binding.tvNumofComments.text = numOfReplies.toString()
+                binding.tvNumofComments.text = "($numOfReplies)"
+
             } else {
                 Log.e("DetailForumActivity", "Forum data is null")
             }

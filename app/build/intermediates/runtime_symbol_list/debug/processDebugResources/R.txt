@@ -3793,7 +3793,6 @@ int id tvMoreClinic 0x7f0a026a
 int id tvMoreNews 0x7f0a026b
 int id tvName 0x7f0a026c
 int id tvNumofComments 0x7f0a026d
-int id tvSeparator 0x7f0a0289
 int id tvTime 0x7f0a026e
 int id tvTitle 0x7f0a026f
 int id tvWelcome 0x7f0a0270

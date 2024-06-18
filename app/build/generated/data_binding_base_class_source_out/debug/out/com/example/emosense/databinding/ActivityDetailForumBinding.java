@@ -55,9 +55,6 @@ public final class ActivityDetailForumBinding implements ViewBinding {
   public final TextView tvNumofComments;
 
   @NonNull
-  public final TextView tvSeparator;
-
-  @NonNull
   public final TextView tvTime;
 
   @NonNull
@@ -67,8 +64,7 @@ public final class ActivityDetailForumBinding implements ViewBinding {
       @NonNull EditText etReply, @NonNull CircleImageView ivProfile, @NonNull ConstraintLayout main,
       @NonNull RecyclerView rvReplies, @NonNull FloatingActionButton sendButton,
       @NonNull TextView textView3, @NonNull TextView tvDesc, @NonNull TextView tvName,
-      @NonNull TextView tvNumofComments, @NonNull TextView tvSeparator, @NonNull TextView tvTime,
-      @NonNull TextView tvTitle) {
+      @NonNull TextView tvNumofComments, @NonNull TextView tvTime, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.card = card;
     this.etReply = etReply;
@@ -80,7 +76,6 @@ public final class ActivityDetailForumBinding implements ViewBinding {
     this.tvDesc = tvDesc;
     this.tvName = tvName;
     this.tvNumofComments = tvNumofComments;
-    this.tvSeparator = tvSeparator;
     this.tvTime = tvTime;
     this.tvTitle = tvTitle;
   }
@@ -168,12 +163,6 @@ public final class ActivityDetailForumBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvSeparator;
-      TextView tvSeparator = ViewBindings.findChildViewById(rootView, id);
-      if (tvSeparator == null) {
-        break missingId;
-      }
-
       id = R.id.tvTime;
       TextView tvTime = ViewBindings.findChildViewById(rootView, id);
       if (tvTime == null) {
@@ -187,8 +176,7 @@ public final class ActivityDetailForumBinding implements ViewBinding {
       }
 
       return new ActivityDetailForumBinding((ConstraintLayout) rootView, card, etReply, ivProfile,
-          main, rvReplies, sendButton, textView3, tvDesc, tvName, tvNumofComments, tvSeparator,
-          tvTime, tvTitle);
+          main, rvReplies, sendButton, textView3, tvDesc, tvName, tvNumofComments, tvTime, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -73,7 +73,8 @@ class ForumFragment : Fragment() {
     }
 
     private fun setForum(forum: List<ForumItem?>?){
-        forumAdapter.submitList(forum)
+        val reversedForum = forum?.reversed() ?: return
+        forumAdapter.submitList(reversedForum)
     }
 
     private fun showSelectedForum(id: Int) {

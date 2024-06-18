@@ -26,6 +26,6 @@ fun formatCreatedAt(createdAt: String): String {
             else -> zonedDateTime.format(DateTimeFormatter.ofPattern("dd MMMM yyyy, HH:mm", Locale("id", "ID")))
         }
     } catch (e: DateTimeParseException) {
-        "Tanggal tidak valid"
+        "Baru saja"
     }
 }

@@ -56,10 +56,6 @@
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\activity_add_forum.xml"
     },
     {
-        "merged": "com.example.emosense.app-debug-45:/layout_activity_detail_forum.xml.flat",
-        "source": "com.example.emosense.app-main-47:/layout/activity_detail_forum.xml"
-    },
-    {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-45:\\layout_fragment_forum.xml.flat",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\fragment_forum.xml"
     },
@@ -156,6 +152,10 @@
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.emosense.app-debug-45:/layout_item_forum.xml.flat",
+        "source": "com.example.emosense.app-main-47:/layout/item_forum.xml"
+    },
+    {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-45:\\drawable_home.png.flat",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\drawable\\home.png"
     },
@@ -168,12 +168,12 @@
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-45:\\font_poppins.xml.flat",
-        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\font\\poppins.xml"
-    },
-    {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-45:\\layout_fragment_home.xml.flat",
         "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-45:\\font_poppins.xml.flat",
+        "source": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-main-47:\\font\\poppins.xml"
     },
     {
         "merged": "C:\\Users\\aisha\\.gradle\\daemon\\8.6\\com.example.emosense.app-debug-45:\\drawable_ic_forum_filled.xml.flat",
