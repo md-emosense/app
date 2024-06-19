@@ -138,28 +138,29 @@ class ProfileActivity : AppCompatActivity() {
 
         dialog.show()
 
-        viewModel.message.observe(this) { message ->
+        viewModel.wrongPassword.observe(this) { message ->
             message?.let {
-                if (it == "Success") {
+                if (!it) {
                     val password = etPassword.text.toString()
                     val intent = Intent(this, EditProfileActivity::class.java)
                     intent.putExtra(EditProfileActivity.EXTRA_USER, user)
                     intent.putExtra(EditProfileActivity.EXTRA_PASS, password)
                     startActivity(intent)
-                    finish()
                     dialog.dismiss()
+                    viewModel.resetWrongPassword()
 
                     //bug
-//                } else {
-//                    AlertDialog.Builder(this).apply {
-//                        setTitle("Error")
-//                        setMessage(it)
-//                        setPositiveButton("OK") { dialog, _ ->
-//                            dialog.dismiss()
-//                        }
-//                        create()
-//                        show()
-//                    }
+                } else if (it) {
+                    AlertDialog.Builder(this).apply {
+                        setTitle("Error")
+                        setMessage("Password yang Anda masukkan salah")
+                        setPositiveButton("OK") { dialog, _ ->
+                            dialog.dismiss()
+                        }
+                        create()
+                        viewModel.resetWrongPassword()
+                        show()
+                    }
                 }
             }
         }

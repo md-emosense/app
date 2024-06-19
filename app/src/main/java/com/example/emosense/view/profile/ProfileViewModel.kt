@@ -25,6 +25,9 @@ class ProfileViewModel(private val repository: UserRepository) : ViewModel() {
     private val _message = MutableLiveData<String>()
     val message: LiveData<String> = _message
 
+    private val _wrongPassword = MutableLiveData<Boolean?>()
+    val wrongPassword: LiveData<Boolean?> = _wrongPassword
+
     private val _profileResponse = MutableLiveData<UserData>()
     val profileResponse: LiveData<UserData> = _profileResponse
 
@@ -67,12 +70,16 @@ class ProfileViewModel(private val repository: UserRepository) : ViewModel() {
             ) {
                 _isLoading.value = false
                 if (response.isSuccessful && response.body() != null) {
-                    _message.value = "Success"
+                    _wrongPassword.value = false
                 } else {
                     when (response.code()) {
-                        401 -> _message.value = "Password yang Anda masukkan salah"
+                        401 -> {
+                            _message.value = "Password yang Anda masukkan salah"
+                            _wrongPassword.value = true
+                        }
                         else -> {
                             _message.value = response.message()
+                            _wrongPassword.value = true
                         }
                     }
 
@@ -86,6 +93,10 @@ class ProfileViewModel(private val repository: UserRepository) : ViewModel() {
 
         })
 
+    }
+
+    fun resetWrongPassword() {
+        _wrongPassword.value = null
     }
 
 }
