@@ -26,7 +26,7 @@ import com.example.emosense.view.news.NewsDetailActivity
 import com.example.emosense.view.predict.PredictActivity
 
 class ChildDataActivity : AppCompatActivity() {
-    private val viewModel by viewModels<LoginViewModel> {
+    private val viewModel by viewModels<ProfileViewModel> {
         ViewModelFactory.getInstance(this)
     }
 
@@ -83,32 +83,33 @@ class ChildDataActivity : AppCompatActivity() {
             .setView(dialogView)
             .setPositiveButton("OK") { _, _ ->
                 val password = etPassword.text.toString()
-                if (password.isNotEmpty()) {
-                    viewModel.login(user.email.toString(), password)
-                    viewModel.message.observe(this){
-                        viewModel.message.observe(this) { message ->
-                            message?.let {
-                                if (it == "Success") {
-                                    val intent = Intent(this, ChangeChildDataActivity::class.java)
-                                    intent.putExtra(ChangeChildDataActivity.EXTRA_USER, user)
-                                    intent.putExtra(ChangeChildDataActivity.EXTRA_PASS, password)
-                                    startActivity(intent)
-                                    finish()
-                                } else {
-                                    AlertDialog.Builder(this).apply {
-                                        setTitle("Error")
-                                        setMessage(it)
-                                        setPositiveButton("OK") { dialog, _ ->
-                                            dialog.dismiss()
-                                        }
-                                        create()
-                                        show()
-                                    }
+                viewModel.checkPassword(user.email.toString(), password)
+                viewModel.wrongPassword.observe(this) { message ->
+                    message?.let {
+                        if (!it) {
+                            val password = etPassword.text.toString()
+                            val intent = Intent(this, ChangeChildDataActivity::class.java)
+                            intent.putExtra(ChangeChildDataActivity.EXTRA_USER, user)
+                            intent.putExtra(ChangeChildDataActivity.EXTRA_PASS, password)
+                            startActivity(intent)
+                            viewModel.resetWrongPassword()
+
+                            //bug
+                        } else if (it) {
+                            AlertDialog.Builder(this).apply {
+                                setTitle("Error")
+                                setMessage("Password yang Anda masukkan salah")
+                                setPositiveButton("OK") { dialog, _ ->
+                                    dialog.dismiss()
                                 }
+                                create()
+                                viewModel.resetWrongPassword()
+                                show()
                             }
                         }
                     }
                 }
+
             }
             .setNegativeButton("Cancel", null)
             .create()
