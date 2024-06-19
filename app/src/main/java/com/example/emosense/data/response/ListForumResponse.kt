@@ -29,5 +29,7 @@ data class ForumItem(
 	val userId: Int? = null,
 
 	@field:SerializedName("isi")
-	val isi: String? = null
+	val isi: String? = null,
+
+	var numOfReplies:  Int? = null,
 )

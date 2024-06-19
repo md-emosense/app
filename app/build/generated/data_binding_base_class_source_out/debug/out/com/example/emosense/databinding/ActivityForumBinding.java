@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -47,6 +48,9 @@ public final class ActivityForumBinding implements ViewBinding {
   public final FloatingActionButton predictButton;
 
   @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
   public final RecyclerView rvForum;
 
   @NonNull
@@ -56,8 +60,8 @@ public final class ActivityForumBinding implements ViewBinding {
       @NonNull FloatingActionButton addButton, @NonNull ImageButton backButton,
       @NonNull BottomAppBar bottomNavigation, @NonNull BottomNavigationView bottomNavigationView,
       @NonNull CardView headerCardView, @NonNull ConstraintLayout main,
-      @NonNull FloatingActionButton predictButton, @NonNull RecyclerView rvForum,
-      @NonNull TextView textView2) {
+      @NonNull FloatingActionButton predictButton, @NonNull ProgressBar progressBar,
+      @NonNull RecyclerView rvForum, @NonNull TextView textView2) {
     this.rootView = rootView;
     this.addButton = addButton;
     this.backButton = backButton;
@@ -66,6 +70,7 @@ public final class ActivityForumBinding implements ViewBinding {
     this.headerCardView = headerCardView;
     this.main = main;
     this.predictButton = predictButton;
+    this.progressBar = progressBar;
     this.rvForum = rvForum;
     this.textView2 = textView2;
   }
@@ -135,6 +140,12 @@ public final class ActivityForumBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
       id = R.id.rvForum;
       RecyclerView rvForum = ViewBindings.findChildViewById(rootView, id);
       if (rvForum == null) {
@@ -148,8 +159,8 @@ public final class ActivityForumBinding implements ViewBinding {
       }
 
       return new ActivityForumBinding((ConstraintLayout) rootView, addButton, backButton,
-          bottomNavigation, bottomNavigationView, headerCardView, main, predictButton, rvForum,
-          textView2);
+          bottomNavigation, bottomNavigationView, headerCardView, main, predictButton, progressBar,
+          rvForum, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

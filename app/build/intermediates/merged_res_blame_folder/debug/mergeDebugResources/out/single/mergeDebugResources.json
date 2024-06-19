@@ -32,6 +32,10 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_sign_up.xml"
     },
     {
+        "merged": "com.example.emosense.app-debug-45:/layout_activity_forum.xml.flat",
+        "source": "com.example.emosense.app-main-47:/layout/activity_forum.xml"
+    },
+    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/layout_activity_result.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_result.xml"
     },
@@ -56,24 +60,24 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_news.xml"
     },
     {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_image_news_1.jpg.flat",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/drawable/image_news_1.jpg"
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/layout_activity_profile.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_profile.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/layout_item_forum.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/item_forum.xml"
     },
     {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/layout_activity_profile.xml.flat",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_profile.xml"
-    },
-    {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_baseline_info_24.xml.flat",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/drawable/baseline_info_24.xml"
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_image_news_1.jpg.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/drawable/image_news_1.jpg"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/layout_activity_news_detail.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_news_detail.xml"
+    },
+    {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_baseline_info_24.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/drawable/baseline_info_24.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_ic_forum_filled.xml.flat",
@@ -116,20 +120,20 @@
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/drawable/image_card_1.jpeg"
     },
     {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/layout_activity_change_child_data.xml.flat",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_change_child_data.xml"
-    },
-    {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/layout_item_clinic.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/item_clinic.xml"
     },
     {
-        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_logo_landscape.png.flat",
-        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/drawable/logo_landscape.png"
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/layout_activity_change_child_data.xml.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_change_child_data.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/font_inter_regular.ttf.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/font/inter_regular.ttf"
+    },
+    {
+        "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_logo_landscape.png.flat",
+        "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/drawable/logo_landscape.png"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_baseline_play_circle_24.xml.flat",
@@ -142,10 +146,6 @@
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/layout_activity_add_forum.xml.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/layout/activity_add_forum.xml"
-    },
-    {
-        "merged": "com.example.emosense.app-debug-45:/layout_item_forum.xml.flat",
-        "source": "com.example.emosense.app-main-47:/layout/item_forum.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/layout_activity_about.xml.flat",
@@ -282,6 +282,10 @@
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/font_poppins_regular.ttf.flat",
         "source": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-main-47:/font/poppins_regular.ttf"
+    },
+    {
+        "merged": "com.example.emosense.app-debug-45:/layout_fragment_forum.xml.flat",
+        "source": "com.example.emosense.app-main-47:/layout/fragment_forum.xml"
     },
     {
         "merged": "/Users/refianyshadrina/.gradle/daemon/8.6/com.example.emosense.app-debug-45:/drawable_disgust_icon.xml.flat",

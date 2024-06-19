@@ -11,21 +11,21 @@ import com.example.emosense.data.response.ForumItem
 import com.example.emosense.databinding.ItemForumBinding
 import com.example.emosense.utils.formatCreatedAt
 
-class ListForumAdapter: ListAdapter<ForumItem, ListForumAdapter.ViewHolder>(DIFF_CALLBACK) {
+class ListForumAdapter : ListAdapter<ForumItem, ListForumAdapter.ViewHolder>(DIFF_CALLBACK) {
 
-    private lateinit var onItemClickCallback: ListForumAdapter.OnItemClickCallback
+    private lateinit var onItemClickCallback: OnItemClickCallback
 
-    fun setOnItemClickCallback(onItemClickCallback: ListForumAdapter.OnItemClickCallback) {
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListForumAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ItemForumBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
-    override fun onBindViewHolder(holder: ListForumAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val forum = getItem(position)
         holder.bind(forum)
         holder.itemView.setOnClickListener {
@@ -46,6 +46,10 @@ class ListForumAdapter: ListAdapter<ForumItem, ListForumAdapter.ViewHolder>(DIFF
             desc.text = forum.isi
             name.text = forum.userName
             time.text = formatCreatedAt(forum.createdAt ?: "")
+
+            forum.numOfReplies?.let {
+                numReplies.text = "$it"
+            }
         }
     }
 
@@ -65,4 +69,3 @@ class ListForumAdapter: ListAdapter<ForumItem, ListForumAdapter.ViewHolder>(DIFF
         fun onItemClicked(id: Int)
     }
 }
-
