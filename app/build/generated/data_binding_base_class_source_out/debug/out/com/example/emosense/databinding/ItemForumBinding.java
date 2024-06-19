@@ -4,6 +4,7 @@ package com.example.emosense.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,7 +22,13 @@ public final class ItemForumBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
+  public final ImageView imageView2;
+
+  @NonNull
   public final CircleImageView ivProfile;
+
+  @NonNull
+  public final TextView textView3;
 
   @NonNull
   public final TextView tvDesc;
@@ -30,18 +37,25 @@ public final class ItemForumBinding implements ViewBinding {
   public final TextView tvName;
 
   @NonNull
+  public final TextView tvNumofComments;
+
+  @NonNull
   public final TextView tvTime;
 
   @NonNull
   public final TextView tvTitle;
 
-  private ItemForumBinding(@NonNull CardView rootView, @NonNull CircleImageView ivProfile,
-      @NonNull TextView tvDesc, @NonNull TextView tvName, @NonNull TextView tvTime,
+  private ItemForumBinding(@NonNull CardView rootView, @NonNull ImageView imageView2,
+      @NonNull CircleImageView ivProfile, @NonNull TextView textView3, @NonNull TextView tvDesc,
+      @NonNull TextView tvName, @NonNull TextView tvNumofComments, @NonNull TextView tvTime,
       @NonNull TextView tvTitle) {
     this.rootView = rootView;
+    this.imageView2 = imageView2;
     this.ivProfile = ivProfile;
+    this.textView3 = textView3;
     this.tvDesc = tvDesc;
     this.tvName = tvName;
+    this.tvNumofComments = tvNumofComments;
     this.tvTime = tvTime;
     this.tvTitle = tvTitle;
   }
@@ -73,9 +87,21 @@ public final class ItemForumBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.imageView2;
+      ImageView imageView2 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView2 == null) {
+        break missingId;
+      }
+
       id = R.id.ivProfile;
       CircleImageView ivProfile = ViewBindings.findChildViewById(rootView, id);
       if (ivProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.textView3;
+      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
+      if (textView3 == null) {
         break missingId;
       }
 
@@ -91,6 +117,12 @@ public final class ItemForumBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvNumofComments;
+      TextView tvNumofComments = ViewBindings.findChildViewById(rootView, id);
+      if (tvNumofComments == null) {
+        break missingId;
+      }
+
       id = R.id.tvTime;
       TextView tvTime = ViewBindings.findChildViewById(rootView, id);
       if (tvTime == null) {
@@ -103,7 +135,8 @@ public final class ItemForumBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemForumBinding((CardView) rootView, ivProfile, tvDesc, tvName, tvTime, tvTitle);
+      return new ItemForumBinding((CardView) rootView, imageView2, ivProfile, textView3, tvDesc,
+          tvName, tvNumofComments, tvTime, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

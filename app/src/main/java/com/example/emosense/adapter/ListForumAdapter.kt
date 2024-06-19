@@ -38,6 +38,7 @@ class ListForumAdapter: ListAdapter<ForumItem, ListForumAdapter.ViewHolder>(DIFF
         private val desc = binding.tvDesc
         private val name = binding.tvName
         private val time = binding.tvTime
+        private val numReplies = binding.tvNumofComments
 
         @RequiresApi(Build.VERSION_CODES.O)
         fun bind(forum: ForumItem) {

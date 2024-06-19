@@ -8,27 +8,21 @@ import android.util.Log
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.emosense.R
-import com.example.emosense.adapter.ListForumAdapter
 import com.example.emosense.adapter.ListReplyAdapter
-import com.example.emosense.data.response.ForumItem
 import com.example.emosense.data.response.Replies
 import com.example.emosense.databinding.ActivityDetailForumBinding
-import com.example.emosense.databinding.ActivityForumBinding
 import com.example.emosense.utils.formatCreatedAt
 import com.example.emosense.view.ViewModelFactory
-import com.example.emosense.view.profile.ChildDataActivity
 import com.example.emosense.view.profile.OtherProfileActivity
 import com.example.emosense.view.profile.ProfileActivity
 
-class DetailForumActivity : AppCompatActivity() {
+class DetailForumActivity : AppCompatActivity(), ListReplyAdapter.OnItemClickCallback {
+
     private val viewModel by viewModels<DetailForumViewModel> {
         ViewModelFactory.getInstance(this)
     }
@@ -46,6 +40,14 @@ class DetailForumActivity : AppCompatActivity() {
 
         setupView()
         setupAction()
+
+        adapter = ListReplyAdapter()
+        adapter.setOnItemClickCallback(this)
+        binding.rvReplies.adapter = adapter
+
+        binding.backButton.setOnClickListener {
+            finish()
+        }
     }
 
     private fun setupView() {
@@ -64,7 +66,6 @@ class DetailForumActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     @RequiresApi(Build.VERSION_CODES.O)
     private fun setupAction() {
-
         val forumId = intent.getIntExtra(EXTRA_ID, -1)
         viewModel.getForumDetail(forumId)
         Log.d("DetailForumActivity", "Fetching forum detail for ID: $forumId")
@@ -82,17 +83,16 @@ class DetailForumActivity : AppCompatActivity() {
                 binding.tvNumofComments.text = "($numOfReplies)"
 
                 val profileClickListener = View.OnClickListener {
-                    viewModel.getSession().observe(this){user ->
-                        if (user.id == forum.forum?.userId){
+                    viewModel.getSession().observe(this) { user ->
+                        if (user.id == forum.forum?.userId) {
                             val intent = Intent(this, ProfileActivity::class.java)
                             startActivity(intent)
-                        }else{
+                        } else {
                             val intent = Intent(this, OtherProfileActivity::class.java)
                             intent.putExtra(OtherProfileActivity.EXTRA_ID, forum.forum?.userId!!)
                             startActivity(intent)
                         }
                     }
-
                 }
 
                 binding.tvName.setOnClickListener(profileClickListener)
@@ -110,7 +110,7 @@ class DetailForumActivity : AppCompatActivity() {
         adapter = ListReplyAdapter()
         binding.rvReplies.adapter = adapter
 
-        binding.sendButton.setOnClickListener{
+        binding.sendButton.setOnClickListener {
             val reply = binding.etReply.text.toString()
 
             viewModel.getSession().observe(this) { user ->
@@ -133,5 +133,18 @@ class DetailForumActivity : AppCompatActivity() {
 
     companion object {
         const val EXTRA_ID = "extra_id"
+    }
+
+    override fun onItemClicked(userId: Int) {
+        viewModel.getSession().observe(this) { user ->
+            val intent = if (user.id == userId) {
+                Intent(this, ProfileActivity::class.java)
+            } else {
+                Intent(this, OtherProfileActivity::class.java).apply {
+                    putExtra(OtherProfileActivity.EXTRA_ID, userId)
+                }
+            }
+            startActivity(intent)
+        }
     }
 }

@@ -29,6 +29,10 @@ class AddForumActivity : AppCompatActivity() {
 
         setupView()
         setupAction()
+
+        binding.backButton.setOnClickListener {
+            finish()
+        }
     }
 
     private fun setupView() {
