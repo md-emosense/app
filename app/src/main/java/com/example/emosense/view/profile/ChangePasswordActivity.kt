@@ -3,6 +3,8 @@ package com.example.emosense.view.profile
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.activity.viewModels
@@ -35,7 +37,29 @@ class ChangePasswordActivity : AppCompatActivity() {
         }
 
         setupView()
+        validateInput()
         if (user != null) setupAction(user)
+    }
+
+    private fun validateInput() {
+        binding.newPasswordEditText.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+
+            }
+
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+                if (s.length < 8) {
+                    binding.newPasswordEditTextLayout.error = "Password tidak boleh kurang dari 8 karakter"
+                } else {
+                    binding.newPasswordEditTextLayout.error = null
+                }
+            }
+
+            override fun afterTextChanged(p0: Editable?) {
+
+            }
+
+        })
     }
 
     private fun setupView() {
@@ -67,39 +91,68 @@ class ChangePasswordActivity : AppCompatActivity() {
             val confirmNewPassword = binding.confirmPasswordEditText.text.toString()
             val childBirthday = formattedDate
 
-            when {
-                oldPassword == newPassword -> {
-                    showAlertDialog("Peringatan", "Password lama dan password baru tidak boleh sama.")
-                }
-                newPassword != confirmNewPassword -> {
-                    showAlertDialog("Peringatan", "Password baru dan konfirmasi password tidak cocok.")
-                }
-                else -> {
-                    viewModel.checkPassword(user.email.toString(), oldPassword)
-                    viewModel.message.observe(this) { message ->
-                        if (message == "Success") {
-                            viewModel.getSession().observe(this) { userId ->
-                                viewModel.changePassword(user, newPassword, userId.id, childBirthday)
-                            }
-                            viewModel.message.observe(this) { updateMessage ->
-                                if (updateMessage == "Data berhasil diubah") {
-                                    AlertDialog.Builder(this).apply {
-                                        setTitle("Berhasil")
-                                        setMessage(updateMessage)
-                                        setPositiveButton("OK") { _, _ ->
-                                            finish()
-                                            val intent = Intent(this@ChangePasswordActivity, ProfileActivity::class.java)
-                                            startActivity(intent)
-                                        }
-                                        create()
-                                        show()
+            var isValid = true
+
+            if (oldPassword.isEmpty()) {
+                binding.oldPasswordEditTextLayout.error = "Mohon isi password lama Anda"
+                isValid = false
+            } else {
+                binding.oldPasswordEditTextLayout.error = null
+            }
+
+            if (newPassword.isEmpty()) {
+                binding.newPasswordEditTextLayout.error = "Mohon isi password baru"
+                isValid = false
+            } else {
+                binding.newPasswordEditTextLayout.error = null
+            }
+
+            if (confirmNewPassword.isEmpty()) {
+                binding.confirmPasswordEditTextLayout.error = "Mohon isi konfirmasi password baru"
+                isValid = false
+            } else {
+                binding.confirmPasswordEditTextLayout.error = null
+            }
+
+            if (isValid) {
+                when {
+                    oldPassword == newPassword -> {
+                        showAlertDialog("Peringatan", "Password lama dan password baru tidak boleh sama.")
+                    }
+                    newPassword != confirmNewPassword -> {
+                        showAlertDialog("Peringatan", "Password baru dan konfirmasi password tidak cocok.")
+                    }
+                    else -> {
+                        viewModel.checkPassword(user.email.toString(), oldPassword)
+                        viewModel.wrongPassword.observe(this) { password ->
+                            password?.let {
+                                if (!it) {
+                                    viewModel.getSession().observe(this) { userId ->
+                                        viewModel.changePassword(user, newPassword, userId.id, childBirthday)
                                     }
-                                } else {
-                                    showAlertDialog("Error", updateMessage)
+                                    viewModel.message.observe(this) { updateMessage ->
+                                        if (updateMessage == "Password Anda berhasil diubah") {
+                                            AlertDialog.Builder(this).apply {
+                                                setTitle("Berhasil")
+                                                setMessage(updateMessage)
+                                                setPositiveButton("OK") { _, _ ->
+                                                    finish()
+                                                    val intent = Intent(this@ChangePasswordActivity, ProfileActivity::class.java)
+                                                    startActivity(intent)
+                                                }
+                                                create()
+                                                show()
+                                            }
+                                        } else {
+                                            showAlertDialog("Error", updateMessage)
+                                        }
+                                    }
+                                    viewModel.resetWrongPassword()
+                                } else if (it) {
+                                    showAlertDialog("Error", "Password yang Anda masukkan salah")
+                                    viewModel.resetWrongPassword()
                                 }
                             }
-                        } else {
-                            showAlertDialog("Error", message)
                         }
                     }
                 }

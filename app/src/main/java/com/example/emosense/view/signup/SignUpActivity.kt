@@ -157,14 +157,12 @@ class SignUpActivity : AppCompatActivity() {
                 binding.familyDobEditTextLayout.error = "Tanggal lahir keluarga tidak boleh kosong"
                 isValid = false
             } else {
-                binding.familyNameEditTextLayout.error = null
-            }
-
-            if (!isDateValid(birthday)) {
-                binding.familyDobEditTextLayout.error = "Tanggal lahir harus dalam format yyyy-MM-dd"
-                isValid = false
-            } else {
-                binding.familyDobEditTextLayout.error = null
+                if (!isDateValid(birthday)) {
+                    binding.familyDobEditTextLayout.error = "Tanggal lahir harus dalam format yyyy-MM-dd"
+                    isValid = false
+                } else {
+                    binding.familyDobEditTextLayout.error = null
+                }
             }
 
             if (isValid) {

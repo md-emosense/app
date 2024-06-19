@@ -25,6 +25,9 @@ class UpdateDataViewModel(private val repository: UserRepository) : ViewModel() 
     private val _message = MutableLiveData<String>()
     val message: LiveData<String> = _message
 
+    private val _wrongPassword = MutableLiveData<Boolean?>()
+    val wrongPassword: LiveData<Boolean?> = _wrongPassword
+
     fun getSession(): LiveData<UserModel> {
         return repository.getSession().asLiveData()
     }
@@ -40,12 +43,16 @@ class UpdateDataViewModel(private val repository: UserRepository) : ViewModel() 
             ) {
                 _isLoading.value = false
                 if (response.isSuccessful && response.body() != null) {
-                    _message.value = "Success"
+                    _wrongPassword.value = false
                 } else {
                     when (response.code()) {
-                        401 -> _message.value = "Password yang Anda masukkan salah"
+                        401 ->{
+                            _wrongPassword.value = true
+                            _message.value = "Password yang Anda masukkan salah"
+                        }
                         else -> {
                             _message.value = response.message()
+                            _wrongPassword.value = true
                         }
                     }
 
@@ -55,6 +62,7 @@ class UpdateDataViewModel(private val repository: UserRepository) : ViewModel() 
             override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
                 _isLoading.value = false
                 _message.value = t.message.toString()
+                _wrongPassword.value = true
             }
 
         })
@@ -155,5 +163,9 @@ class UpdateDataViewModel(private val repository: UserRepository) : ViewModel() 
             }
 
         })
+    }
+
+    fun resetWrongPassword() {
+        _wrongPassword.value = null
     }
 }
