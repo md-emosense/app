@@ -4,7 +4,7 @@
             "outputFile": "com.example.emosense.app-mergeDebugResources-43:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\aisha\\.gradle\\caches\\transforms-4\\2b4245e70214f3ac7b1b8f8d8b714179\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
+                    "source": "/Users/refianyshadrina/.gradle/caches/transforms-4/2b4245e70214f3ac7b1b8f8d8b714179/transformed/appcompat-1.6.1/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\aisha\\.gradle\\caches\\transforms-4\\a4a64406a7fd3458b1c4c1477dc8ac83\\transformed\\material-1.12.0\\res\\values-v24\\values-v24.xml",
+                    "source": "/Users/refianyshadrina/.gradle/caches/transforms-4/a4a64406a7fd3458b1c4c1477dc8ac83/transformed/material-1.12.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",

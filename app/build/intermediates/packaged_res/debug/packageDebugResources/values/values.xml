@@ -192,7 +192,7 @@ Pengguna DAS lainnya, Jessica Kiss, yang kedua anaknya penyandang disabilitas, b
         <item name="colorSecondaryVariant">@color/primary</item>
         <item name="colorOnSecondary">@color/black</item>
         
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/white</item>
     </style>
     <style name="Theme.EmoSense" parent="Base.Theme.EmoSense"/>
 </resources>
