@@ -53,14 +53,43 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="8dp"
+            android:maxLines="5"
+            android:ellipsize="end"
             android:text="Menurut data yang disampaikan oleh WHO, terdapat lebih dari 1000 bayi autis yang lahir setiap tahunnya dalam 5 tahun terakhir di Indonesia Raya haah hidias asd dfjd"
             android:textColor="@color/black"
             android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ivProfile" />
+
+        <TextView
+            android:id="@+id/tvSeeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="lihat lebih banyak"
+            android:textSize="10sp"
+            android:visibility="visible"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDesc" />
+
+        <TextView
+            android:id="@+id/tvSeeLess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lihat lebih sedikit"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="10sp"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDesc" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

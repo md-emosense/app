@@ -30,14 +30,23 @@ public final class ItemCommentBinding implements ViewBinding {
   public final TextView tvName;
 
   @NonNull
+  public final TextView tvSeeLess;
+
+  @NonNull
+  public final TextView tvSeeMore;
+
+  @NonNull
   public final TextView tvTime;
 
   private ItemCommentBinding(@NonNull CardView rootView, @NonNull CircleImageView ivProfile,
-      @NonNull TextView tvDesc, @NonNull TextView tvName, @NonNull TextView tvTime) {
+      @NonNull TextView tvDesc, @NonNull TextView tvName, @NonNull TextView tvSeeLess,
+      @NonNull TextView tvSeeMore, @NonNull TextView tvTime) {
     this.rootView = rootView;
     this.ivProfile = ivProfile;
     this.tvDesc = tvDesc;
     this.tvName = tvName;
+    this.tvSeeLess = tvSeeLess;
+    this.tvSeeMore = tvSeeMore;
     this.tvTime = tvTime;
   }
 
@@ -86,13 +95,26 @@ public final class ItemCommentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvSeeLess;
+      TextView tvSeeLess = ViewBindings.findChildViewById(rootView, id);
+      if (tvSeeLess == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSeeMore;
+      TextView tvSeeMore = ViewBindings.findChildViewById(rootView, id);
+      if (tvSeeMore == null) {
+        break missingId;
+      }
+
       id = R.id.tvTime;
       TextView tvTime = ViewBindings.findChildViewById(rootView, id);
       if (tvTime == null) {
         break missingId;
       }
 
-      return new ItemCommentBinding((CardView) rootView, ivProfile, tvDesc, tvName, tvTime);
+      return new ItemCommentBinding((CardView) rootView, ivProfile, tvDesc, tvName, tvSeeLess,
+          tvSeeMore, tvTime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -3788,6 +3788,8 @@ id tvMoreClinic
 id tvMoreNews
 id tvName
 id tvNumofComments
+id tvSeeLess
+id tvSeeMore
 id tvTime
 id tvTitle
 id tvWelcome
