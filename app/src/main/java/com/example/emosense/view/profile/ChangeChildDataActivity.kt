@@ -95,6 +95,9 @@ class ChangeChildDataActivity : AppCompatActivity() {
                             setTitle("Berhasil")
                             setMessage(message)
                             setPositiveButton("OK") { _, _ ->
+                                val intent = Intent(this@ChangeChildDataActivity, ProfileActivity::class.java)
+                                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+                                startActivity(intent)
                                 finish()
                             }
                             create()
@@ -116,7 +119,6 @@ class ChangeChildDataActivity : AppCompatActivity() {
             }
         }
     }
-
 
     private fun setupDatePicker() {
         val calendar = Calendar.getInstance()
