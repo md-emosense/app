@@ -137,11 +137,6 @@ class ChangePasswordActivity : AppCompatActivity() {
                                                 setMessage(updateMessage)
                                                 setPositiveButton("OK") { _, _ ->
                                                     finish()
-                                                    val intent = Intent(
-                                                        this@ChangePasswordActivity,
-                                                        ProfileActivity::class.java
-                                                    )
-                                                    startActivity(intent)
                                                 }
 //                                                viewModel.resetMessage()
                                                 viewModel.resetWrongPassword()
