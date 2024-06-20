@@ -143,23 +143,22 @@ class ChangePasswordActivity : AppCompatActivity() {
                                                     )
                                                     startActivity(intent)
                                                 }
+//                                                viewModel.resetMessage()
                                                 viewModel.resetWrongPassword()
                                                 create()
                                                 show()
                                             }
-                                        } else {
+                                        } else if (updateMessage == "Password gagal diubah"){
                                             viewModel.resetWrongPassword()
-
+//                                            viewModel.resetMessage()
                                             showAlertDialog("Error", updateMessage)
-
                                         }
                                     }
-                                    viewModel.resetWrongPassword()
                                     viewModel.resetMessage()
+                                    viewModel.resetWrongPassword()
                                 } else if (it) {
                                     showAlertDialog("Error", "Password yang Anda masukkan salah")
                                     viewModel.resetWrongPassword()
-                                    viewModel.resetMessage()
                                 }
                             }
                         }
