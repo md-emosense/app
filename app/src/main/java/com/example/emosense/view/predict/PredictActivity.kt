@@ -148,7 +148,6 @@ class PredictActivity : AppCompatActivity() {
                             val intent = Intent(this@PredictActivity, ResultActivity::class.java)
                             intent.putExtra(ResultActivity.EXTRA_IMAGE, uri.toString())
                             intent.putExtra(ResultActivity.EXTRA_RESPONSE, Gson().toJson(response))
-                            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                             startActivity(intent)
                         } else {
                             Log.d("Image File", "Received response, but status is not 'success'")

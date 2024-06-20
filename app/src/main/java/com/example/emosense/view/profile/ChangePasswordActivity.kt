@@ -137,20 +137,29 @@ class ChangePasswordActivity : AppCompatActivity() {
                                                 setMessage(updateMessage)
                                                 setPositiveButton("OK") { _, _ ->
                                                     finish()
-                                                    val intent = Intent(this@ChangePasswordActivity, ProfileActivity::class.java)
+                                                    val intent = Intent(
+                                                        this@ChangePasswordActivity,
+                                                        ProfileActivity::class.java
+                                                    )
                                                     startActivity(intent)
                                                 }
+                                                viewModel.resetWrongPassword()
                                                 create()
                                                 show()
                                             }
                                         } else {
+                                            viewModel.resetWrongPassword()
+
                                             showAlertDialog("Error", updateMessage)
+
                                         }
                                     }
                                     viewModel.resetWrongPassword()
+                                    viewModel.resetMessage()
                                 } else if (it) {
                                     showAlertDialog("Error", "Password yang Anda masukkan salah")
                                     viewModel.resetWrongPassword()
+                                    viewModel.resetMessage()
                                 }
                             }
                         }

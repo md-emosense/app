@@ -90,16 +90,18 @@ class EditProfileActivity : AppCompatActivity() {
                                 val intent = Intent(this@EditProfileActivity, ProfileActivity::class.java)
                                 startActivity(intent)
                             }
+                            viewModel.resetMessage()
                             create()
                             show()
                         }
-                    } else {
+                    } else if (it == "Email sudah pernah digunakan") {
                         AlertDialog.Builder(this).apply {
                             setTitle("Error")
                             setMessage(it)
                             setPositiveButton("OK") { dialog, _ ->
                                 dialog.dismiss()
                             }
+                            viewModel.resetMessage()
                             create()
                             show()
                         }

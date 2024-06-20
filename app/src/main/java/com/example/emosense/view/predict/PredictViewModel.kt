@@ -34,7 +34,7 @@ class PredictViewModel(private val repository: UserRepository) : ViewModel() {
 
     fun predict(multipartBody: MultipartBody.Part) {
         _isLoading.value = true
-        val alternativeBaseUrl = "http://34.50.85.136:9000/"
+        val alternativeBaseUrl = "http://34.50.70.245:9000/"
         val api = ApiConfig.getApiService(alternativeBaseUrl).predict(multipartBody)
         api.enqueue(object : Callback<PredictResponse> {
             override fun onResponse(

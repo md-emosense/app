@@ -117,7 +117,7 @@ class UpdateDataViewModel(private val repository: UserRepository) : ViewModel() 
                 } else {
                     when (response.code()) {
                         400 -> _message.value =
-                            "Data gagal diubah"
+                            "Email sudah pernah digunakan"
                         else -> {
                             _message.value = response.message()
                         }
@@ -145,11 +145,11 @@ class UpdateDataViewModel(private val repository: UserRepository) : ViewModel() 
             ) {
                 _isLoading.value = false
                 if (response.isSuccessful && response.body() != null) {
-                    _message.value = "Data berhasil diubah"
+                    _message.value = "Password Anda berhasil diubah"
                 } else {
                     when (response.code()) {
                         400 -> _message.value =
-                            "Data gagal diubah"
+                            "Password gagal diubah"
                         else -> {
                             _message.value = response.message()
                         }
@@ -167,5 +167,9 @@ class UpdateDataViewModel(private val repository: UserRepository) : ViewModel() 
 
     fun resetWrongPassword() {
         _wrongPassword.value = null
+    }
+
+    fun resetMessage() {
+        _message.value = ""
     }
 }
