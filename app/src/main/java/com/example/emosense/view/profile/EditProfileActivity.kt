@@ -87,8 +87,6 @@ class EditProfileActivity : AppCompatActivity() {
                             setMessage(message)
                             setPositiveButton("OK") { _, _ ->
                                 finish()
-                                val intent = Intent(this@EditProfileActivity, ProfileActivity::class.java)
-                                startActivity(intent)
                             }
                             viewModel.resetMessage()
                             create()
