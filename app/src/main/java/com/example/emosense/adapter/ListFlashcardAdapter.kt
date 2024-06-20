@@ -1,22 +1,22 @@
 package com.example.emosense.adapter
 
 
-import android.view.LayoutInflater
-import android.view.ViewGroup
-import androidx.recyclerview.widget.ListAdapter
-import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.RecyclerView
-import com.example.emosense.data.response.SpeechItem
-import com.example.emosense.databinding.ItemFlashcardBinding
-import android.view.View
-import com.example.emosense.R
 import android.animation.Animator
 import android.animation.AnimatorInflater
 import android.animation.AnimatorListenerAdapter
 import android.content.Context
 import android.media.AudioAttributes
 import android.media.MediaPlayer
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.RecyclerView
+import com.example.emosense.R
+import com.example.emosense.data.response.SpeechItem
+import com.example.emosense.databinding.ItemFlashcardBinding
 import java.io.IOException
 
 class ListFlashcardAdapter : ListAdapter<SpeechItem, ListFlashcardAdapter.ViewHolder>(DIFF_CALLBACK) {
@@ -37,6 +37,14 @@ class ListFlashcardAdapter : ListAdapter<SpeechItem, ListFlashcardAdapter.ViewHo
         holder.itemView.setOnClickListener {
             listener?.invoke(user)
         }
+    }
+
+    override fun getItemId(position: Int): Long {
+        return position.toLong()
+    }
+
+    override fun getItemViewType(position: Int): Int {
+        return position
     }
 
     class ViewHolder(private val binding: ItemFlashcardBinding) : RecyclerView.ViewHolder(binding.root) {

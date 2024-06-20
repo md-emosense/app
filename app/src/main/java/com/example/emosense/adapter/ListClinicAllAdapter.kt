@@ -68,6 +68,14 @@ class ListClinicAllAdapter : ListAdapter<ClinicItem, ListClinicAllAdapter.ViewHo
         }
     }
 
+    override fun getItemId(position: Int): Long {
+        return position.toLong()
+    }
+
+    override fun getItemViewType(position: Int): Int {
+        return position
+    }
+
     companion object {
         private val DIFF_CALLBACK = object : DiffUtil.ItemCallback<ClinicItem>() {
             override fun areItemsTheSame(oldItem: ClinicItem, newItem: ClinicItem): Boolean {
