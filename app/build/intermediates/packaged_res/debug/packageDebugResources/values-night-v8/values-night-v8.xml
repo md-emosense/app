@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Base.Theme.EmoSense" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Base.Theme.EmoSense" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:fontFamily">@font/poppins</item>
         
         

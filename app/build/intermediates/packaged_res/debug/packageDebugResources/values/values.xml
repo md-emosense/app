@@ -180,7 +180,7 @@ Pengguna DAS lainnya, Jessica Kiss, yang kedua anaknya penyandang disabilitas, b
     <string name="title_login_page">Selamat Datang Kembali di Emosense!</string>
     <string name="title_signup_page">Data Diri</string>
     <string name="title_welcome_page">Selamat datang di Dicoding!</string>
-    <style name="Base.Theme.EmoSense" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Base.Theme.EmoSense" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:fontFamily">@font/poppins</item>
         
         
