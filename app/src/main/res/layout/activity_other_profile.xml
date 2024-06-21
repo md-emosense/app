@@ -110,7 +110,6 @@
                 android:id="@+id/familyNameEditTextLayout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
-                app:boxStrokeColor="@color/black"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:fontFamily="@font/poppins"
@@ -142,7 +141,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                app:boxStrokeColor="@color/black"
                 android:fontFamily="@font/poppins"
                 app:startIconDrawable="@drawable/baseline_calendar_month_24">
 
@@ -173,7 +171,6 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:boxStrokeColor="@color/black"
                 android:fontFamily="@font/poppins"
                 app:startIconDrawable="@drawable/baseline_post_add_24">
 

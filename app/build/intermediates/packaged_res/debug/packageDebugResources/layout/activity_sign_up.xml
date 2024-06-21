@@ -107,7 +107,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
-                        app:boxStrokeColor="@color/black"
                         app:errorEnabled="true"
                         android:fontFamily="@font/poppins"
                         app:startIconDrawable="@drawable/ic_baseline_person_24">
@@ -138,7 +137,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         app:errorEnabled="true"
-                        app:boxStrokeColor="@color/black"
                         android:fontFamily="@font/poppins"
                         app:startIconDrawable="@drawable/ic_baseline_email_24">
 
@@ -165,7 +163,6 @@
                         android:id="@+id/passwordEditTextLayout"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
-                        app:boxStrokeColor="@color/black"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="0dp"
                         app:endIconMode="password_toggle"
@@ -229,7 +226,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:fontFamily="@font/poppins"
-                        app:boxStrokeColor="@color/black"
                         app:errorEnabled="true"
                         app:startIconDrawable="@drawable/ic_baseline_person_24">
 
@@ -259,7 +255,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:fontFamily="@font/poppins"
-                        app:boxStrokeColor="@color/black"
                         app:errorEnabled="true"
                         app:startIconDrawable="@drawable/baseline_calendar_month_24">
 
@@ -291,7 +286,6 @@
                         android:layout_height="wrap_content"
                         app:errorEnabled="true"
                         android:fontFamily="@font/poppins"
-                        app:boxStrokeColor="@color/black"
                         app:startIconDrawable="@drawable/baseline_post_add_24">
 
                         <com.google.android.material.textfield.TextInputEditText

@@ -61,7 +61,6 @@
         android:layout_width="match_parent"
         android:layout_marginHorizontal="16dp"
         android:layout_height="wrap_content"
-        app:boxStrokeColor="@color/black"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/poppins"
         app:startIconDrawable="@drawable/ic_baseline_person_24">
@@ -92,7 +91,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        app:boxStrokeColor="@color/black"
         android:layout_marginHorizontal="16dp"
         android:fontFamily="@font/poppins"
         app:startIconDrawable="@drawable/baseline_calendar_month_24">
@@ -124,7 +122,6 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:boxStrokeColor="@color/black"
         android:layout_marginHorizontal="16dp"
         app:errorEnabled="true"
         android:fontFamily="@font/poppins"
