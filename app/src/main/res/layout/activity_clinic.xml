@@ -25,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="20dp"
+        android:background="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -34,6 +35,7 @@
             android:layout_height="60dp"
             android:orientation="horizontal"
             android:padding="8dp"
+            android:background="@color/white"
             android:gravity="center_vertical">
 
             <ImageButton

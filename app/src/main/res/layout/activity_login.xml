@@ -52,22 +52,6 @@
         app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal"
         tools:alpha="100" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/messageTextView"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="32dp"-->
-<!--        android:layout_marginEnd="32dp"-->
-<!--        android:alpha="0"-->
-<!--        android:text="@string/message_login_page"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="16sp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="1.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/titleTextView"-->
-<!--        tools:alpha="100" />-->
-
     <TextView
         android:id="@+id/emailTextView"
         android:layout_width="wrap_content"
@@ -90,6 +74,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:alpha="0"
+        app:boxStrokeColor="@color/black"
         android:fontFamily="@font/poppins"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,6 +88,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:ems="10"
+            android:textColor="@color/black"
             android:inputType="textEmailAddress"
             tools:ignore="SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -129,6 +115,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:alpha="0"
+        app:boxStrokeColor="@color/black"
         android:fontFamily="@font/poppins"
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -142,6 +129,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@color/black"
             android:fontFamily="@font/poppins"
             android:inputType="textPassword"
             tools:ignore="SpeakableTextPresentCheck" />

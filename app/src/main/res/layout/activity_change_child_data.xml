@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".view.profile.ChangeChildDataActivity">
 
@@ -12,6 +13,7 @@
         android:id="@+id/headerCardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         app:cardElevation="20dp">
 
         <LinearLayout
@@ -19,6 +21,7 @@
             android:layout_height="60dp"
             android:orientation="horizontal"
             android:padding="8dp"
+            android:background="@color/white"
             android:gravity="center_vertical">
 
             <ImageButton
@@ -58,6 +61,7 @@
         android:layout_width="match_parent"
         android:layout_marginHorizontal="16dp"
         android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/black"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/poppins"
         app:startIconDrawable="@drawable/ic_baseline_person_24">
@@ -67,6 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@color/black"
             android:fontFamily="@font/poppins"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -87,6 +92,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        app:boxStrokeColor="@color/black"
         android:layout_marginHorizontal="16dp"
         android:fontFamily="@font/poppins"
         app:startIconDrawable="@drawable/baseline_calendar_month_24">
@@ -96,6 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@color/black"
             android:fontFamily="@font/poppins"
             android:focusable="true"
             android:focusableInTouchMode="true"
@@ -117,6 +124,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/black"
         android:layout_marginHorizontal="16dp"
         app:errorEnabled="true"
         android:fontFamily="@font/poppins"
@@ -126,6 +134,7 @@
             android:id="@+id/familyAdhdDescriptionEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:ems="10"
             android:fontFamily="@font/poppins"
             android:inputType="textMultiLine" />

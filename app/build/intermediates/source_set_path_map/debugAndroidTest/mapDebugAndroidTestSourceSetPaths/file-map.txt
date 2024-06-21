@@ -1,6 +1,6 @@
-com.example.emosense.test.app-core-1.5.0-0 /Users/refianyshadrina/.gradle/caches/transforms-4/444da5b647f3b31a1a526e6baee276eb/transformed/core-1.5.0/res
-com.example.emosense.test.app-annotation-experimental-1.4.0-1 /Users/refianyshadrina/.gradle/caches/transforms-4/f8252cea9592026da4d6bbb01090c68b/transformed/annotation-experimental-1.4.0/res
-com.example.emosense.test.app-androidTest-2 /Users/refianyshadrina/Documents/emosense/app/build/generated/res/resValues/androidTest/debug
-com.example.emosense.test.app-mergeDebugAndroidTestResources-3 /Users/refianyshadrina/Documents/emosense/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.example.emosense.test.app-mergeDebugAndroidTestResources-4 /Users/refianyshadrina/Documents/emosense/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.example.emosense.test.app-debugAndroidTest-5 /Users/refianyshadrina/Documents/emosense/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
+com.example.emosense.test.app-core-1.5.0-0 C:\Users\aisha\.gradle\caches\transforms-4\444da5b647f3b31a1a526e6baee276eb\transformed\core-1.5.0\res
+com.example.emosense.test.app-annotation-experimental-1.4.0-1 C:\Users\aisha\.gradle\caches\transforms-4\f8252cea9592026da4d6bbb01090c68b\transformed\annotation-experimental-1.4.0\res
+com.example.emosense.test.app-androidTest-2 D:\emosense\app\build\generated\res\resValues\androidTest\debug
+com.example.emosense.test.app-mergeDebugAndroidTestResources-3 D:\emosense\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.emosense.test.app-mergeDebugAndroidTestResources-4 D:\emosense\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.emosense.test.app-debugAndroidTest-5 D:\emosense\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

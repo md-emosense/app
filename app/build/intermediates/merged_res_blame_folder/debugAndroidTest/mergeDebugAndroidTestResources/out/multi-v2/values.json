@@ -4,7 +4,7 @@
             "outputFile": "com.example.emosense.test.app-mergeDebugAndroidTestResources-3:/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/refianyshadrina/.gradle/caches/transforms-4/444da5b647f3b31a1a526e6baee276eb/transformed/core-1.5.0/res/values/values.xml",
+                    "source": "C:\\Users\\aisha\\.gradle\\caches\\transforms-4\\444da5b647f3b31a1a526e6baee276eb\\transformed\\core-1.5.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,11",
                         "startColumns": "0,0",
