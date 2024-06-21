@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/poppins"
-                android:text="Flashcards"
+                android:text="Terapi Bicara"
                 android:textColor="@color/primary"
                 android:textSize="18dp"
                 android:textStyle="bold" />
